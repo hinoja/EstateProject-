@@ -26,7 +26,7 @@
      -ADministrators
      -public (internautes ou potentiels clients)
 
-## Objectifs
+## Objectives
     -  Présenter de manière attractive et engageante l’expertise et le portefeuille de réalisation de l’entreprise dans ses différents domaines d’activités (achats fonciers, architectures, construction, finition).
     -  Mettre en avant les projets immobiliers récents et les témoignages clients positifs ; pour démontrer la qualité et la fiabilité de l’entreprise.
     -  Faciliter la prise de contact des nouveaux clients via des formulaires de contact.
