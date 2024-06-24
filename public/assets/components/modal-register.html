@@ -1,0 +1,44 @@
+<!-- popup register -->
+<div class="modal fade" id="modalRegister">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="flat-account bg-surface">
+                <h3 class="title text-center">Register</h3>
+                <span class="close-modal icon-close2" data-bs-dismiss="modal"></span>
+                <form action="#">
+                    <fieldset class="box-fieldset">
+                        <label for="name">Adresse mail<span>*</span>:</label>
+                        <input type="email" class="form-contact style-1" placeholder="adresse mail">
+                    </fieldset>
+                    <fieldset class="box-fieldset">
+                        <label for="pass">Password<span>*</span>:</label>
+                        <div class="box-password">
+                            <input type="password" class="form-contact style-1 password-field" placeholder="Password">
+                            <span class="show-pass">
+                                <i class="icon-pass icon-eye"></i>
+                                <i class="icon-pass icon-eye-off"></i>
+                            </span>
+                        </div>
+                    </fieldset>
+                    <fieldset class="box-fieldset">
+                        <label for="confirm">Confirm Password<span>*</span>:</label>
+                        <div class="box-password">
+                            <input type="password" class="form-contact style-1 password-field2" placeholder="Password">
+                            <span class="show-pass2">
+                                <i class="icon-pass icon-eye"></i>
+                                <i class="icon-pass icon-eye-off"></i>
+                            </span>
+                        </div>
+                    </fieldset>
+                    <fieldset class="d-flex align-items-center gap-6">
+                        <input type="checkbox" class="tf-checkbox style-2" id="cb1">
+                        <label for="cb1" class="caption-1 text-variant-1">I agree to the <span class="fw-5 text-black">Terms of User</span></label>
+                    </fieldset>
+                    
+                    <button type="submit" class="tf-btn primary w-100">Register</button>
+                    <div class="mt-12 text-variant-1 text-center noti">Already have an account?<a href="#modalLogin" data-bs-toggle="modal" class="text-black fw-5">Login Here</a> </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>
