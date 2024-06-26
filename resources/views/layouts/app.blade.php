@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Well-Done Real Estate</title>
+    <title>Well-Done Real Estate|@yield('title') </title>
 
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -63,38 +63,17 @@
                                     <div class="header-account">
                                         <div class="register">
                                             <ul class="d-flex">
-
-                                                @auth
-                                                    <div class="nav-item dropdown auth">
-                                                        <button id="auth-btn" class="btn btn-primary dropdown-toggle"
-                                                            type="button" id="dropdownMenuButton1"
-                                                            data-bs-toggle="dropdown"
-                                                            aria-expanded="false">{{ auth()->user()->name }}</button>
-                                                        <ul class="dropdown-menu dropdown-menu-start"
-                                                            aria-labelledby="dropdownMenuButton1">
-                                                            @if (auth()->user()->role_id === 1)
-                                                                <li><a class="dropdown-item"
-                                                                        href="{{ route('home') }}">@lang('Go to dashboard')</a>
-                                                                </li>
-                                                            @endif
-                                                            <form method="POST" action="{{ route('logout') }}">
-                                                                @csrf
-                                                                <li>
-                                                                    <a href="{{ route('logout') }}"
-                                                                        onclick="event.preventDefault();
-                                                                this.closest('form').submit();"
-                                                                        class="dropdown-item"> @lang('Log Out')
-                                                                    </a>
-                                                                </li>
-                                                            </form>
+                                                <div class="header-account">
+                                                    <div class="register">
+                                                        <ul class="d-flex">
+                                                            <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>
+                                                            <li>/</li>
+                                                            <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li>
                                                         </ul>
                                                     </div>
-                                                @else
-                                                    <div class="nav-item nav-link auth">
-                                                        <a href="{{ route('login') }}" type="button"
-                                                            class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
-                                                    </div>
-                                                @endauth
+                                                </div>
+
+
 
                                             </ul>
                                         </div>
@@ -103,7 +82,7 @@
                                     <div class="mobile-nav-toggler mobile-button"><span></span></div>
 
                                 </div>
-                            </div>
+                            </div>wha
                         </div>
                     </div>
                     <!-- End Header Lower -->
