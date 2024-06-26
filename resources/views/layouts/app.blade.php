@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Well-Done Real Estate</title>
 
-    <meta name="author" content="themesflat.com">
+    <meta name="author" content="Well-done Real Estate">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- font -->
@@ -36,7 +36,7 @@
                         <div class="inner-container d-flex justify-content-between align-items-center">
                             <!-- Logo Box -->
                             <div class="logo-box">
-                                <div class="logo"><a href=""><img src="{{asset('assets/images/logo/logo.jpg')}}" alt="logo" width="80" height="44"></a></div>
+                                <div class="logo"><a href=""><img src="{{asset('assets/images/logo/logo.jpg')}}" alt="logo" width="98" height="44"></a></div>
                             </div>
                             <div class="nav-outer">
                                 <!-- Main Menu -->
@@ -55,9 +55,7 @@
                             <div class="header-account">
                                 <div class="register">
                                     <ul class="d-flex">
-                                        <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>
-                                        <li>/</li>
-                                        <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li>
+                                        <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>                  
                                     </ul>
                                 </div>                                    
                             </div>
@@ -236,9 +234,7 @@
     <!-- login -->
     {{include('assets/components/modal-login.html')}}
 
-    <!-- register -->
-    {{include('assets/components/modal-register.html')}}
-
+    
 
     <!-- Javascript -->
     <script type="text/javascript" src="{{asset('assets/js/bootstrap.min.js')}}"></script>
