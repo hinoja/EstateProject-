@@ -3,9 +3,10 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -17,9 +18,14 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'avatar',
         'name',
         'email',
         'password',
+        'is_active',
+        'role_id',
+        // 'phone_number',
+        // 'slug',
     ];
 
     /**
@@ -44,4 +50,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+     // RELATIONSHIPS
+     public function role(): BelongsTo
+     {
+         return $this->belongsTo(Role::class);
+     }
 }

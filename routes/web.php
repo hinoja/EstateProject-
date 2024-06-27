@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
@@ -22,24 +23,27 @@ Route::view('/', 'welcome')->name('home');
 // __________________________________________________________________
 
 
-Route::get('/dashboard', DashboardController::class)->middleware('auth')->name('dashboard');
+Route::middleware(['auth'])->prefix('dashboard')->group(function () {
 
-// PROFILE
-Route::middleware(['auth', 'role:1'])->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/', DashboardController::class)->name('dashboard');
+    Route::get('/users', [UserController::class, 'index'])->name('dashboard.user');
 });
 
-Route::get('/dashboard/utilisateur', function () {
-    return view('dashboard.utilisateur');
-})->name('dashboard.user');
 Route::get('/dashboard/message', function () {
     return view('dashboard.message');
 })->name('message');
 Route::get('/dashboard/terrain', function () {
     return view('dashboard.terrain');
 })->name('terrain');
+
+// PROFILE
+Route::middleware(['auth'])->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+
 
 //
 // Route::get('/dashboard/maison', function () {
