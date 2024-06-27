@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Well-Done Real Estate|@yield('title') </title>
+    <title>Well-Done Real Estate</title>
 
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -38,7 +38,7 @@
                                 <div class="inner-container d-flex justify-content-between align-items-center">
                                     <!-- Logo Box -->
                                     <div class="logo-box">
-                                        <div class="logo"><a href=""><img
+                                        <div class="logo"><a href="{{ route('home') }}"><img
                                                     src="{{ asset('assets/images/logo/logo.jpg') }}" alt="logo"
                                                     width="80" height="44"></a></div>
                                     </div>
@@ -63,17 +63,38 @@
                                     <div class="header-account">
                                         <div class="register">
                                             <ul class="d-flex">
-                                                <div class="header-account">
-                                                    <div class="register">
-                                                        <ul class="d-flex">
-                                                            <li><a href="#modalLogin" data-bs-toggle="modal">Login</a></li>
-                                                            <li>/</li>
-                                                            <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li>
+
+                                                @auth
+                                                    <div class="nav-item dropdown auth">
+                                                        <button id="auth-btn" class="btn btn-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown"
+                                                            aria-expanded="false">{{ auth()->user()->name }}</button>
+                                                        <ul class="dropdown-menu dropdown-menu-start"
+                                                            aria-labelledby="dropdownMenuButton1">
+                                                            @if (auth()->user()->role_id === 1)
+                                                                <li><a class="dropdown-item"
+                                                                        href="{{ route('dashboard') }}"><small>@lang('Go to dashboard')</small></a>
+                                                                </li>
+                                                            @endif
+                                                            <form method="POST" action="{{ route('logout') }}">
+                                                                @csrf
+                                                                <li>
+                                                                    <a href="{{ route('logout') }}"
+                                                                        onclick="event.preventDefault();
+                                                                this.closest('form').submit();"
+                                                                        class="dropdown-item"> @lang('Log Out')
+                                                                    </a>
+                                                                </li>
+                                                            </form>
                                                         </ul>
                                                     </div>
-                                                </div>
-
-
+                                                @else
+                                                    <div class="nav-item nav-link auth">
+                                                        <a href="{{ route('login') }}" type="button"
+                                                            class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
+                                                    </div>
+                                                @endauth
 
                                             </ul>
                                         </div>
@@ -82,7 +103,7 @@
                                     <div class="mobile-nav-toggler mobile-button"><span></span></div>
 
                                 </div>
-                            </div>wha
+                            </div>
                         </div>
                     </div>
                     <!-- End Header Lower -->
@@ -92,7 +113,7 @@
                     <div class="mobile-menu">
                         <div class="menu-backdrop"></div>
                         <nav class="menu-box">
-                            <div class="nav-logo"><a href="index.html"><img src="images/logo/logo%402x.png"
+                            <div class="nav-logo"><a href="{{ route('home') }}"><img src="images/logo/logo%402x.png"
                                         alt="nav-logo" width="174" height="44"></a></div>
                             <div class="bottom-canvas">
                                 <div class="login-box flex align-items-center">

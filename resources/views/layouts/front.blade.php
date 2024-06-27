@@ -60,41 +60,40 @@
                                         <div class="register">
 
                                             @auth
-                                            <div class="nav-item dropdown auth">
-                                                <button id="auth-btn" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">{{ auth()->user()->name }}</button>
-                                                <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuButton1">
-                                                    @if (auth()->user()->role_id === 1)
-                                                        <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}">@lang('Go to dashboard')</a></li>
-                                                    @elseif (in_array(auth()->user()->role_id, [2, 3, 4, 5]))
-                                                        <li><a class="dropdown-item" href="{{ route('front.subscriber.profile') }}">@lang('My dashboard')</a></li>
-                                                        @if (auth()->user()->role_id === 2)
-                                                            <li><a class="dropdown-item" href="{{ route('front.jobs.create') }}">@lang('Post a job')</a></li>
+                                                <div class="nav-item dropdown auth">
+                                                    <button id="auth-btn" class="btn btn-primary dropdown-toggle"
+                                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">{{ auth()->user()->name }}</button>
+                                                    <ul class="dropdown-menu dropdown-menu-start"
+                                                        aria-labelledby="dropdownMenuButton1">
+                                                        @if (auth()->user()->role_id === 1)
+                                                            <li><a class="dropdown-item"
+                                                                    href="{{ route('admin.dashboard') }}">@lang('Go to dashboard')</a>
+                                                            </li>
+                                                        
                                                         @endif
-                                                    @elseif (auth()->user()->subscriptions->isNotEmpty() && auth()->user()->subscriptions->first()->pivot->starts_at)
-                                                        <li><a class="dropdown-item" href="{{ route('front.subscriptions.renew') }}">@lang('Upgrade my subscription')</a></li>
-                                                    @endif
-                                                    <form method="POST" action="{{ route('logout') }}">
-                                                        @csrf
-                                                        <li>
-                                                            <a href="{{ route('logout') }}"
-                                                            onclick="event.preventDefault();
+                                                        <form method="POST" action="{{ route('logout') }}">
+                                                            @csrf
+                                                            <li>
+                                                                <a href="{{ route('logout') }}"
+                                                                    onclick="event.preventDefault();
                                                             this.closest('form').submit();"
-                                                            class="dropdown-item"> @lang('Log Out')
-                                                            </a>
-                                                        </li>
-                                                    </form>
+                                                                    class="dropdown-item"> @lang('Log Out')
+                                                                </a>
+                                                            </li>
+                                                        </form>
+                                                    </ul>
+                                                </div>
+                                            @else
+                                                <ul class="d-flex">
+                                                    <li><a href="{{ route('login') }}"> @lang('Log in') </a></li>
+                                                    {{-- <li>/</li> --}}
+                                                    {{-- <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li> --}}
                                                 </ul>
-                                            </div>
-                                        @else
-                                        <ul class="d-flex">
-                                            <li><a href="{{ route('login') }}"> @lang('Log in') </a></li>
-                                            {{-- <li>/</li> --}}
-                                            {{-- <li><a href="#modalRegister" data-bs-toggle="modal">Register</a></li> --}}
-                                        </ul>
-                                            {{-- <div class="nav-item nav-link auth">
+                                                {{-- <div class="nav-item nav-link auth">
                                                 <a href="{{ route('login') }}" type="button" class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
                                             </div> --}}
-                                        @endauth
+                                            @endauth
 
 
 
