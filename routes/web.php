@@ -26,7 +26,7 @@ Route::view('/', 'welcome')->name('home');
 Route::middleware(['auth'])->prefix('dashboard')->group(function () {
 
     Route::get('/', DashboardController::class)->name('dashboard');
-    Route::get('/users', [UserController::class, 'index'])->name('dashboard.user');
+    Route::get('/users', [UserController::class, 'index'])->name('dashboard.users');
 });
 
 Route::get('/dashboard/message', function () {
