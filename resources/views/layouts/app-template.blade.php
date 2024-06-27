@@ -80,11 +80,11 @@
                         <li class="nav-menu-item active"><a class="nav-menu-link" href="{{ route('dashboard') }}"><span
                                     class="icon icon-home"></span>@lang('dashboard')</a></li>
 
-                                    <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('dashboard.user') }}"><span
-                                        class="icon icon-profile"></span>Utilisateurs</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('dashboard.user') }}"><span
+                                    class="icon icon-profile"></span>Utilisateurs</a></li>
 
-                            <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('terrain') }}"><span
-                                        class="icon icon-review"></span>Messages</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('terrain') }}"><span
+                                    class="icon icon-review"></span>Messages</a></li>
 
                         {{-- <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('terrain') }}"><span
                                     class="icon icon-list-dashes"></span>Terrains</a></li>
