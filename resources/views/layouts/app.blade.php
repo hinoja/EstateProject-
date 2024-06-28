@@ -31,6 +31,7 @@
 
                 <!-- Main Header -->
                 <header class="main-header fixed-header">
+                    
                     <!-- Header Lower -->
                     <div class="header-lower">
                         <div class="row">
@@ -47,17 +48,15 @@
                                         <nav class="main-menu show navbar-expand-md">
                                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                                 <ul class="navigation clearfix">
-                                                    <li class=" home current"><a href="#">Home</a> </li>
-                                                    <li class=""><a href="#">Listing</a> </li>
-                                                    <li class=""><a href="#">Properties</a></li>
-                                                    <li class=""><a href="#">Blog</a> </li>
+                                                    <li class="current"><a href="{{ route('home') }}">Accueil</a> </li>
+                                                    <li class=""><a href="#services">Services</a> </li>
+                                                    <li class=""><a href="#">A propos De Nous</a></li>
+                                                    <li class=""><a href="{{ route('contact') }}">Contact</a> </li>
                                                 </ul>
                                             </div>
                                         </nav>
                                         <!-- Main Menu End-->
                                     </div>
-
-
 
 
                                     <div class="header-account">
@@ -190,21 +189,22 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-cl-1">
 
-                                        <p class="text-variant-2">Specializes in providing high-class tours for those
-                                            in need. Contact Us</p>
+                                        <p class="text-variant-2">Spécialisée dans les visites de haut niveau pour
+                                             les personnes dans le besoin. Contacter l'agence
+                                        </p>
                                         <ul class="mt-12">
                                             <li class="mt-12 d-flex align-items-center gap-8">
                                                 <i class="icon icon-mapPinLine fs-20 text-variant-2"></i>
-                                                <p class="text-white">101 E 129th St, East Chicago, IN 46312, US</p>
+                                                <p class="text-white">Akwa-nord, Douala Cameroun</p>
                                             </li>
                                             <li class="mt-12 d-flex align-items-center gap-8">
                                                 <i class="icon icon-phone2 fs-20 text-variant-2"></i>
                                                 <a href="tel:1-333-345-6868"
-                                                    class="text-white caption-1">1-333-345-6868</a>
+                                                    class="text-white caption-1">+237699591992</a>
                                             </li>
                                             <li class="mt-12 d-flex align-items-center gap-8">
                                                 <i class="icon icon-mail fs-20 text-variant-2"></i>
-                                                <p class="text-white">themesflat@gmail.com</p>
+                                                <p class="text-white">welldonerealestate237@yahoo.com</p>
                                             </li>
                                         </ul>
 
@@ -214,34 +214,26 @@
                                     <div class="footer-cl-2">
                                         <div class="fw-7 text-white">Categories</div>
                                         <ul class="mt-10 navigation-menu-footer">
-                                            <li> <a href="pricing.html" class="caption-1 text-variant-2">Pricing
-                                                    Plans</a> </li>
-
-                                            <li> <a href="our-service.html" class="caption-1 text-variant-2">Our
+                                            <li> <a href="#" class="caption-1 text-variant-2">Nos
                                                     Services</a> </li>
 
-                                            <li> <a href="about-us.html" class="caption-1 text-variant-2">About Us</a>
+                                            <li> <a href="#" class="caption-1 text-variant-2">A propos de nous</a>
                                             </li>
 
-                                            <li> <a href="contact.html" class="caption-1 text-variant-2">Contact
-                                                    Us</a> </li>
+                                            <li> <a href="{{route('contact')}}" class="caption-1 text-variant-2">laisser un message </a> </li>
 
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-6">
                                     <div class="footer-cl-3">
-                                        <div class="fw-7 text-white">Our Company</div>
+                                        <div class="fw-7 text-white">Notre Companie</div>
                                         <ul class="mt-10 navigation-menu-footer">
-                                            <li> <a href="topmap-list.html" class="caption-1 text-variant-2">Property
-                                                    For Sale</a> </li>
+                                            <li> <a href="topmap-list.html" class="caption-1 text-variant-2">Vente de maison</a> </li>
 
-                                            <li> <a href="topmap-grid.html" class="caption-1 text-variant-2">Property
-                                                    For Rent</a> </li>
-                                            <li> <a href="topmap-grid.html" class="caption-1 text-variant-2">Property
-                                                    For Buy</a> </li>
-                                            <li> <a href="topmap-grid.html" class="caption-1 text-variant-2">Our
-                                                    Agents</a> </li>
+                                            <li> <a href="#" class="caption-1 text-variant-2">Location de maison</a> </li>
+                                            <li> <a href="#" class="caption-1 text-variant-2">Achat maison</a> </li>
+                                            <li> <a href="#" class="caption-1 text-variant-2">Votre Agence</a> </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -250,14 +242,13 @@
                                         <div class="fw-7 text-white">
                                             Newsletter
                                         </div>
-                                        <p class="mt-12 text-variant-2">Your Weekly/Monthly Dose of Knowledge and
-                                            Inspiration</p>
+                                        <p class="mt-12 text-variant-2">Votre dose hebdomadaire/mensuelle de connaissances et d'inspiration</p>
                                         <form class="mt-12" id="subscribe-form" action="#" method="post"
                                             accept-charset="utf-8" data-mailchimp="true">
                                             <div id="subscribe-content">
                                                 <span class="icon-left icon-mail"></span>
                                                 <input type="email" name="email-form" id="subscribe-email"
-                                                    placeholder="Your email address" />
+                                                    placeholder="address email" />
                                                 <button type="button" id="subscribe-button"
                                                     class="button-subscribe"><i class="icon icon-send"></i></button>
                                             </div>
@@ -272,7 +263,7 @@
                     <div class="bottom-footer">
                         <div class="container">
                             <div class="content-footer-bottom">
-                                <div class="copyright">©2024 Homzen. All Rights Reserved.</div>
+                                <div class="copyright">©2024 Well-done Real Estate. All Rights Reserved.</div>
 
                                 <ul class="menu-bottom">
                                     <li><a href="our-service.html">Terms Of Services</a> </li>

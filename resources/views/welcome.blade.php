@@ -13,11 +13,11 @@
                                         Find Your
                                             <span class="tf-text s1 cd-words-wrapper"> 
                                                 <span class="item-text is-visible">Dream Home</span>
-                                                <span class="item-text is-hidden">Perfect Home</span>
-                                                <span class="item-text is-hidden">Real Estate</span>
+                                                <span class="item-text is-hidden text-primary">Perfect Home</span>
+                                                <span class="item-text is-hidden">Real Estate</span>  
                                             </span>  
                                     </h1>
-                                    <p class="subtitle text-white body-1 wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">We are a real estate agency that will help you find the best residence you dream of, let’s discuss for your dream house?</p>
+                                    <p class="subtitle text-white body-1 wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms"> Nous sommes une agence immobilière qui vous aidera à trouver la meilleure résidence et/ou Terrains dont vous rêvez, discutons-en pour la maison de vos rêves ?</p>
                                 </div>
                             </div>
                             
@@ -31,34 +31,14 @@
             <section class="flat-section flat-recommended">
                 <div class="container">
                     <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <div class="text-subtitle text-primary">Featured Properties</div>
-                        <h4 class="mt-4">Recommended For You</h4>
+                        <div class="text-subtitle text-primary">Construction et Vente de Maisons</div>
+                        <h4 class="mb-5">Faites votre choix, Nous le réalisons</h4>
                     </div>
-                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <ul class="nav-tab-recommended justify-content-center" role="tablist">
-                            <li class="nav-tab-item" role="presentation">   
-                                <a href="#viewAll" class="nav-link-item"  data-bs-toggle="tab">View All</a>
-                            </li>
-                            <li class="nav-tab-item" role="presentation">
-                                <a href="#apartment" class="nav-link-item  active" data-bs-toggle="tab">Apartment</a>
-                            </li>
-                            <li class="nav-tab-item" role="presentation">
-                                <a href="#villa" class="nav-link-item" data-bs-toggle="tab">Villa</a>
-                            </li>
-                            <li class="nav-tab-item" role="presentation">
-                                <a href="#studio" class="nav-link-item" data-bs-toggle="tab">Studio</a>
-                            </li>
-                            <li class="nav-tab-item" role="presentation">
-                                <a href="#house" class="nav-link-item" data-bs-toggle="tab">House</a>
-                            </li>
-                            <li class="nav-tab-item" role="presentation">
-                                <a href="#office" class="nav-link-item" data-bs-toggle="tab">Office</a>
-                            </li>
-                        </ul>
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">                      
                         <div class="tab-content">
-                            <div class="tab-pane fade" id="viewAll" role="tabpanel">
+                            <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="homeya-box">
                                             <div class="archive-top">
                                                 <a href="property-details-v1.html" class="images-group">
@@ -67,10 +47,10 @@
                                                     </div>
                                                     <div class="top">
                                                         <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
+                                                            <li class="flag-tag success">.</li>
+                                                            {{-- <li class="flag-tag style-1">Vendu</li> --}}
                                                         </ul>
-                                                        <ul class="d-flex gap-4">
+                                                        {{-- <ul class="d-flex gap-4">
                                                             <li class="box-icon w-32">
                                                                 <span class="icon icon-arrLeftRight"></span>
                                                             </li>
@@ -80,15 +60,15 @@
                                                             <li class="box-icon w-32">
                                                                 <span class="icon icon-eye"></span>
                                                             </li>
-                                                        </ul>
+                                                        </ul> --}}
                                                     </div>
                                                     <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
+                                                        <span class="flag-tag style-2">Villa</span>
                                                     </div>
                                                 </a>
                                                 <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"> Casa Lomas de Machalí Machas</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
                                                     <ul class="meta-list">
                                                         <li class="item">
                                                             <i class="icon icon-bed"></i>
@@ -100,26 +80,20 @@
                                                         </li>
                                                         <li class="item">
                                                             <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
+                                                            <span>600 M2</span>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Arlene McCoy</span>
-                                                </div>
                                                 <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
+                                                    <h6>65 000 000 - 70 000 000</h6>
+                                                    <span class="text-variant-1">cfa</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="homeya-box">
                                             <div class="archive-top">
                                                 <a href="property-details-v1.html" class="images-group">
@@ -128,40 +102,28 @@
                                                     </div>
                                                     <div class="top">
                                                         <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
+                                                            
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
-                                                        <span class="flag-tag style-2">Apartment</span>
+                                                        <span class="flag-tag style-2">Villa</span>
                                                     </div>
                                                 </a>
                                                 <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Villa del Mar Retreat, Malibu</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>72 Sunset Avenue, Los Angeles, California</p> </div>
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
                                                     <ul class="meta-list">
                                                         <li class="item">
                                                             <i class="icon icon-bed"></i>
-                                                            <span>2</span>
+                                                            <span>5</span>
                                                         </li>
                                                         <li class="item">
                                                             <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
+                                                            <span>3</span>
                                                         </li>
                                                         <li class="item">
                                                             <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
+                                                            <span>500 M2</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -171,46 +133,29 @@
                                                     <div class="avatar avt-40 round">
                                                         <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
                                                     </div>
-                                                    <span>Annette Black</span>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
+                                                    <h6>70 000 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                    {{-- <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="homeya-box">
                                             <div class="archive-top">
                                                 <a href="property-details-v2.html" class="images-group">
                                                     <div class="images-style">
                                                         <img src="{{asset('assets/images/home/house-3.jpg')}}" alt="img">
                                                     </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
                                                     </div>
                                                     <div class="bottom">
                                                         <span class="flag-tag style-2">Villa</span>
                                                     </div>
                                                 </a>
                                                 <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Rancho Vista Verde, Santa Barbara</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
                                                     <ul class="meta-list">
                                                         <li class="item">
                                                             <i class="icon icon-bed"></i>
@@ -222,7 +167,7 @@
                                                         </li>
                                                         <li class="item">
                                                             <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
+                                                            <span>400 M2</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -232,16 +177,15 @@
                                                     <div class="avatar avt-40 round">
                                                         <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avt">
                                                     </div>
-                                                    <span>Ralph Edwards</span>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <h6>$5050,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
+                                                    <h6>70 000 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                    </div> --}}
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
                                         <div class="homeya-box">
                                             <div class="archive-top">
                                                 <a href="property-details-v3.html" class="images-group">
@@ -249,29 +193,18 @@
                                                         <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
                                                     </div>
                                                     <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
+                                                    
                                                         <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
+                                                            
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
-                                                        <span class="flag-tag style-2">House</span>
+                                                        <span class="flag-tag style-2">Maison</span>
                                                     </div>
                                                 </a>
                                                 <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Sunset Heights Estate, Beverly Hills</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>1040 Ocean, Santa Monica, California</p> </div>
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Vue sur la mer</a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>imaginez un telle propriete a Kribi</p> </div>
                                                     <ul class="meta-list">
                                                         <li class="item">
                                                             <i class="icon icon-bed"></i>
@@ -283,7 +216,7 @@
                                                         </li>
                                                         <li class="item">
                                                             <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
+                                                            <span>600 M2</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -293,431 +226,34 @@
                                                     <div class="avatar avt-40 round">
                                                         <img src="{{asset('assets/images/avatar/avt-8.jpg')}}" alt="avt">
                                                     </div>
-                                                    <span>Jacob Jones</span>
+                                                  
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
+                                                    <h6>80 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v4.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-5.')}}'" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Office</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link">Coastal Serenity Cottage</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>21 Hillside Drive, Beverly Hills, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-9.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Kathryn Murphy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-6.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>8 Broadway, Brooklyn, New York</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Floyd Miles</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="tf-btn primary size-1">View All Properties</a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade active show" id="apartment" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-1.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"> Casa Lomas de Machalí Machas</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Arlene McCoy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-2.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Apartment</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Villa del Mar Retreat, Malibu</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>72 Sunset Avenue, Los Angeles, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Annette Black</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v2.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-3.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Villa</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Rancho Vista Verde, Santa Barbara</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Ralph Edwards</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$5050,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v3.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">House</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Sunset Heights Estate, Beverly Hills</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>1040 Ocean, Santa Monica, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-8.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Jacob Jones</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                    {{-- <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="homeya-box">
                                             <div class="archive-top">
                                                 <a href="property-details-v4.html" class="images-group">
                                                     <div class="images-style">
                                                         <img src="{{asset('assets/images/home/house-5.jpg')}}" alt="img">
                                                     </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
                                                     </div>
                                                     <div class="bottom">
-                                                        <span class="flag-tag style-2">Office</span>
+                                                        <span class="flag-tag style-2">Duplex</span>
                                                     </div>
                                                 </a>
                                                 <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link">Coastal Serenity Cottage</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>21 Hillside Drive, Beverly Hills, California</p> </div>
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
                                                     <ul class="meta-list">
                                                         <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
                                                             <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
+                                                            <span>70 M2</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -727,58 +263,32 @@
                                                     <div class="avatar avt-40 round">
                                                         <img src="{{asset('assets/images/avatar/avt-9.jpg')}}" alt="avt">
                                                     </div>
-                                                    <span>Kathryn Murphy</span>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
+                                                    <h6>45 000 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="homeya-box">
                                             <div class="archive-top">
                                                 <a href="property-details-v1.html" class="images-group">
                                                     <div class="images-style">
                                                         <img src="{{asset('assets/images/home/house-6.jpg')}}" alt="img">
                                                     </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
                                                     <div class="bottom">
                                                         <span class="flag-tag style-2">Studio</span>
                                                     </div>
                                                 </a>
                                                 <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>8 Broadway, Brooklyn, New York</p> </div>
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
                                                     <ul class="meta-list">
                                                         <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
                                                             <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
+                                                            <span>100 M2</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -791,1508 +301,16 @@
                                                     <span>Floyd Miles</span>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
+                                                    <h6>65 000</h6>
                                                     <span class="text-variant-1">/SqFT</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <a href="#" class="tf-btn primary size-1">View All Properties</a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="villa" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v2.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-1.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link"> Casa Lomas de Machalí Machas</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Arlene McCoy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v3.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-2.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Apartment</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Villa del Mar Retreat, Malibu</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>72 Sunset Avenue, Los Angeles, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="images/avatar/avt-7.jpg" alt="avt">
-                                                    </div>
-                                                    <span>Annette Black</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v2.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-3.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Villa</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Rancho Vista Verde, Santa Barbara</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Ralph Edwards</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$5050,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v3.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">House</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Sunset Heights Estate, Beverly Hills</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>1040 Ocean, Santa Monica, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-8.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Jacob Jones</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-5.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Office</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Coastal Serenity Cottage</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>21 Hillside Drive, Beverly Hills, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-9.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Kathryn Murphy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v2.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-6.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>8 Broadway, Brooklyn, New York</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Floyd Miles</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="tf-btn primary size-1">View All Properties</a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="studio" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-1.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"> Casa Lomas de Machalí Machas</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Arlene McCoy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-2.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Apartment</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Villa del Mar Retreat, Malibu</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>72 Sunset Avenue, Los Angeles, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Annette Black</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v2.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-3.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Villa</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Rancho Vista Verde, Santa Barbara</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Ralph Edwards</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$5050,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v3.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">House</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Sunset Heights Estate, Beverly Hills</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>1040 Ocean, Santa Monica, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="images/avatar/avt-8.jpg" alt="avt">
-                                                    </div>
-                                                    <span>Jacob Jones</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v4.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-5.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Office</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link">Coastal Serenity Cottage</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>21 Hillside Drive, Beverly Hills, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-9.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Kathryn Murphy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-6.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>8 Broadway, Brooklyn, New York</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Floyd Miles</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="tf-btn primary size-1">View All Properties</a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="house" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v2.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-1.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link"> Casa Lomas de Machalí Machas</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Arlene McCoy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v3.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-2.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Apartment</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Villa del Mar Retreat, Malibu</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>72 Sunset Avenue, Los Angeles, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Annette Black</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v4.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-3.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Villa</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link">Rancho Vista Verde, Santa Barbara</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Ralph Edwards</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$5050,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">House</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Sunset Heights Estate, Beverly Hills</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>1040 Ocean, Santa Monica, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-8.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Jacob Jones</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-5.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Office</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Coastal Serenity Cottage</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>21 Hillside Drive, Beverly Hills, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-9.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Kathryn Murphy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-6.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>8 Broadway, Brooklyn, New York</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Floyd Miles</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="tf-btn primary size-1">View All Properties</a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="office" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-1.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"> Casa Lomas de Machalí Machas</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Arlene McCoy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-2.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Apartment</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Villa del Mar Retreat, Malibu</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>72 Sunset Avenue, Los Angeles, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Annette Black</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v2.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-3.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Villa</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Rancho Vista Verde, Santa Barbara</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>33 Maple Street, San Francisco, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Ralph Edwards</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$5050,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v3.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">House</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Sunset Heights Estate, Beverly Hills</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>1040 Ocean, Santa Monica, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>3</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-8.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Jacob Jones</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/month</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v4.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-5.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Office</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link">Coastal Serenity Cottage</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>21 Hillside Drive, Beverly Hills, California</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>4</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-9.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Kathryn Murphy</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$7250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="homeya-box">
-                                            <div class="archive-top">
-                                                <a href="property-details-v1.html" class="images-group">
-                                                    <div class="images-style">
-                                                        <img src="{{asset('assets/images/home/house-6.jpg')}}" alt="img">
-                                                    </div>
-                                                    <div class="top">
-                                                        <ul class="d-flex gap-8">
-                                                            <li class="flag-tag success">Featured</li>
-                                                            <li class="flag-tag style-1">For Sale</li>
-                                                        </ul>
-                                                        <ul class="d-flex gap-4">
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-arrLeftRight"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-heart"></span>
-                                                            </li>
-                                                            <li class="box-icon w-32">
-                                                                <span class="icon icon-eye"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="bottom">
-                                                        <span class="flag-tag style-2">Studio</span>
-                                                    </div>
-                                                </a>
-                                                <div class="content">
-                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>8 Broadway, Brooklyn, New York</p> </div>
-                                                    <ul class="meta-list">
-                                                        <li class="item">
-                                                            <i class="icon icon-bed"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-bathtub"></i>
-                                                            <span>2</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <i class="icon icon-ruler"></i>
-                                                            <span>600 SqFT</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                                <div class="d-flex gap-8 align-items-center">
-                                                    <div class="avatar avt-40 round">
-                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
-                                                    </div>
-                                                    <span>Floyd Miles</span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <h6>$250,00</h6>
-                                                    <span class="text-variant-1">/SqFT</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="tf-btn primary size-1">View All Properties</a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -2300,103 +318,272 @@
                 </div>
 
             </section>
-            <!-- End Recommended -->
-            <!-- Location -->
-            <section class="flat-section-v3 flat-location bg-surface">
-                <div class="container-full">
-                    <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <div class="text-subtitle text-primary">Explore Cities</div>
-                        <h4 class="mt-4">Our Location For You</h4>
+            
+            <section class="flat-section flat-recommended">
+                <div class="container">
+                    <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="text-subtitle text-primary">Bornage</div>
+                        <h4 class="mb-5">Lottissement Et Vente De Terrains</h4>
                     </div>
-                    <div class="wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
-                        <div class="swiper tf-sw-location overlay" data-preview-lg="4.1" data-preview-md="3" data-preview-sm="2" data-space="30" data-centered="true" data-loop="true">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="topmap-grid.html" class="box-location">
-                                        <div class="image">
-                                            <img src="{{asset('assets/images/location/location-3.jpg')}}" alt="image-location">
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis2.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1">Vendu</li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrains</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"> </a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="content">
-                                            <span class="sub-title">321 Property</span>
-                                            <h6 class="title">London, United Kingdom</h6>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis3.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                           
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p> Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="topmap-grid.html" class="box-location">
-                                        <div class="image">
-                                            <img src="{{asset('assets/images/location/location-4.jpg')}}" alt="image-location">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v2.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis4.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Lotissement</a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="content">
-                                            <span class="sub-title">221 Property</span>
-                                            <h6 class="title">Cape Town, South Africa</h6>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v3.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis5.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+                                                           
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
+                                                        Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="topmap-grid.html" class="box-location">
-                                        <div class="image">
-                                            <img src="{{asset('assets/images/location/location-5.jpg')}}" alt="image-location">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v4.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis7.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
+                                                        Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                           
                                         </div>
-                                        <div class="content">
-                                            <span class="sub-title">128 Property</span>
-                                            <h6 class="title">Seoul, South Korea</h6>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis8.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+                                                           
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
+                                                        Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+                                                    
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                           
                                         </div>
-                                    </a>
-                                </div>                            
-                                <div class="swiper-slide">
-                                    <a href="topmap-grid.html" class="box-location">
-                                        <div class="image">
-                                            <img src="{{asset('assets/images/location/location-3.jpg')}}" alt="image-location">
-                                        </div>
-                                        <div class="content">
-                                            <span class="sub-title">321 Property</span>
-                                            <h6 class="title">London, United Kingdom</h6>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="topmap-grid.html" class="box-location">
-                                        <div class="image">
-                                            <img src="{{asset('assets/images/location/location-1.jpg')}}" alt="image-location">
-                                        </div>
-                                        <div class="content">
-                                            <span class="sub-title">231 Property</span>
-                                            <h6 class="title">Sydney, Australia</h6>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="topmap-grid.html" class="box-location">
-                                        <div class="image">
-                                            <img src="{{asset('assets/images/location/location-2.jpg')}}" alt="image-location">
-                                        </div>
-                                        <div class="content">
-                                            <span class="sub-title">234 Property</span>
-                                            <h6 class="title">New Jersey, New York</h6>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="box-navigation">
-                                <div class="navigation swiper-nav-next nav-next-location"><span class="icon icon-arr-l"></span></div>
-                                <div class="navigation swiper-nav-prev nav-prev-location"><span class="icon icon-arr-r"></span></div> 
+                                    </div>
+                                </div>                             
                             </div>
                         </div>
                     </div>
-                    
+   
                 </div>
+
             </section>
-            <!-- End Location -->
+
+            <section class="flat-section flat-recommended">
+                <div class="container">
+                    <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <h4 class="mb-5">Location Engins</h4>
+                    </div>
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v3.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/engin4.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success">A louer</li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+                                                           
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Engin</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Louez nos engins a moindre prix</a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Cameroun</p> </div>
+                                                    <ul class="meta-list">
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </div>
+                    </div>
+   
+                </div>
+
+            </section>
+            
             <!-- Service & Counter  -->
-            <section class="flat-section">
+            <section class="flat-section"  id="services">
                 <div class="container">
                     <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                         <div class="box-left">
-                            <div class="text-subtitle text-primary">Our Services</div>
-                            <h4 class="mt-4">What We Do?</h4>
+                            <div class="text-subtitle text-primary">Nos Services</div>
+                            <h4 class="mt-4">Que faisons-nous ?</h4>
                         </div>
-                        <a href="#" class="btn-view"><span class="text">View All Services</span> <span class="icon icon-arrow-right2"></span> </a>
+                        {{-- <a href="#" class="btn-view"><span class="text">View All Services</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                     </div>
                     <div class="flat-service wrap-service wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
                         <div class="box-service hover-btn-view">
@@ -2404,9 +591,9 @@
                                 <span class="icon icon-buy-home"></span>
                             </div>
                             <div class="content">
-                                <h6 class="title">Buy A New Home</h6>
-                                <p class="description">Discover your dream home effortlessly. Explore diverse properties and expert guidance for a seamless buying experience.</p>
-                                <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a>
+                                <h6 class="title">Acheter un nouveau logement</h6>
+                                <p class="description">Découvrez la maison de vos rêves sans effort. Explorez diverses propriétés et bénéficiez des conseils d'experts pour une expérience d'achat sans faille.</p>
+                                {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                             </div>
                         </div>
                         <div class="box-service hover-btn-view">
@@ -2414,9 +601,9 @@
                                 <span class="icon icon-rent-home"></span>
                             </div>
                             <div class="content">
-                                <h6 class="title">Rent a home</h6>
-                                <p class="description">Discover your perfect rental effortlessly. Explore a diverse variety of listings tailored precisely to suit your unique lifestyle needs.</p>
-                                <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a>
+                                <h6 class="title">Louer un logement</h6>
+                                <p class="description">Découvrez sans effort la location qui vous convient. Explorez une grande variété d'offres adaptées précisément à vos besoins et à votre style de vie.</p>
+                                {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                             </div>
                         </div>
                         <div class="box-service hover-btn-view">
@@ -2424,47 +611,41 @@
                                 <span class="icon icon-sale-home"></span>
                             </div>
                             <div class="content">
-                                <h6 class="title">Sell a home</h6>
-                                <p class="description">Sell confidently with expert guidance and effective strategies, showcasing your property's best features for a successful sale.</p>
-                                <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a>
+                                <h6 class="title">Vendre</h6>
+                                <p class="description">Vendez en toute confiance grâce aux conseils d'un expert et à des stratégies efficaces, en mettant en valeur les meilleurs atouts de votre propriété pour une vente réussie.</p>
+                                {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                             </div>
                         </div>
                     </div>
                     <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
                         <div class="counter-box">
                             <div class="count-number">                                  
-                                <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">85</div>                                   
+                                <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">+ 85</div>                                   
                             </div>
-                            <div class="title-count">Satisfied Clients</div>                              
+                            <div class="title-count">Clients satisfaits</div>                              
                         </div>
                         <div class="counter-box">
                             <div class="count-number"> 
-                                <div class="number" data-speed="2000" data-to="112" data-inviewport="yes">112</div>                                                      
+                                <div class="number" data-speed="2000" data-to="112" data-inviewport="yes">+ 100</div>                                                      
                             </div>
-                            <div class="title-count">Awards Received</div>                                                                           
+                            <div class="title-count">Recomandations</div>                                                                           
                         </div>
+                        
                         <div class="counter-box">
                             <div class="count-number"> 
-                                <div class="number" data-speed="2000" data-to="32" data-inviewport="yes">32</div>                                                      
+                                <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">+ 66</div>                                                      
                             </div>
-                            <div class="title-count">Successful Transactions</div>                                                                           
-                        </div>
-                        <div class="counter-box">
-                            <div class="count-number"> 
-                                <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">66</div>                                                      
-                            </div>
-                            <div class="title-count">Monthly Traffic</div>                                                                           
+                            <div class="title-count">Tavaux Trimestriels</div>                                                                           
                         </div>
                     </div> 
                 </div>
             </section>
-            <!-- End Service & Counter -->
-            <!-- Benefit -->
+           
             <section class="flat-section flat-benefit bg-surface">
                 <div class="container">
                     <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <div class="text-subtitle text-primary">Our Benifit</div>
-                        <h4 class="mt-4">Why Choose Homeya</h4>
+                        <div class="text-subtitle text-primary">Nos avantages</div>
+                        <h4 class="mt-4">Pourquoi choisir Well-done</h4>
                     </div>
                     <div class="wrap-benefit wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                         <div class="box-benefit">
@@ -2472,8 +653,8 @@
                                 <span class="icon icon-proven"></span>
                             </div>
                             <div class="content text-center">
-                                <h6 class="title">Proven Expertise</h6>
-                                <p class="description">Our seasoned team excels in real estate with years of successful market navigation, offering informed decisions and optimal results.</p>
+                                <h6 class="title">Une expertise Reconnue</h6>
+                                <p class="description">Notre équipe expérimentée excelle dans l'immobilier avec des années de navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux.</p>
                             </div>
                         </div>
                         <div class="box-benefit">
@@ -2481,8 +662,8 @@
                                 <span class="icon icon-double-ruler"></span>
                             </div>
                             <div class="content text-center">
-                                <h6 class="title">Customized Solutions</h6>
-                                <p class="description">We pride ourselves on crafting personalized strategies to match your unique goals, ensuring a seamless real estate journey.</p>
+                                <h6 class="title">Solutions personnalisées</h6>
+                                <p class="description">Nous sommes fiers d'élaborer des stratégies personnalisées pour répondre à vos objectifs uniques, garantissant ainsi un parcours immobilier sans faille.</p>
                             </div>
                         </div>
                         <div class="box-benefit">
@@ -2490,16 +671,15 @@
                                 <span class="icon icon-hand"></span>
                             </div>
                             <div class="content text-center">
-                                <h6 class="title">Transparent Partnerships</h6>
-                                <p class="description">Transparency is key in our client relationships. We prioritize clear communication and ethical practices, fostering trust and reliability throughout.</p>
+                                <h6 class="title">Des partenariats transparents</h6>
+                                <p class="description">La transparence est essentielle dans nos relations avec les clients. Nous privilégions une communication claire et des pratiques éthiques, favorisant ainsi la confiance et la fiabilité.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- End Benefit -->
-            <!-- Property  -->
-            <section class="flat-section flat-property">
+           
+            {{-- <section class="flat-section flat-property">
                 <div class="container">
                     <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                         <div class="box-left">
@@ -2755,18 +935,17 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End Property  -->
-            <!-- Testimonial -->
+            </section> --}}
+           
             <section class="flat-section-v3 bg-surface flat-testimonial">
                 <div class="cus-layout-1">
                     <div class="row align-items-center">
                         <div class="col-lg-3">
                             <div class="box-title">
-                                <div class="text-subtitle text-primary">Top Properties</div>
-                                <h4 class="mt-4">What’s people say’s</h4>
+                                <div class="text-subtitle text-primary">Avis de clients</div>
+                                <h4 class="mt-4">Avis de clients</h4>
                             </div>
-                            <p class="text-variant-1 p-16">Our seasoned team excels in real estate with years of successful market navigation, offering informed decisions and optimal results.</p>
+                            <p class="text-variant-1 p-16">Notre équipe expérimentée excelle dans l'immobilier avec des années de navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux.</p>
                             <div class="box-navigation">
                                 <div class="navigation swiper-nav-next nav-next-testimonial"><span class="icon icon-arr-l"></span></div>
                                 <div class="navigation swiper-nav-prev nav-prev-testimonial"><span class="icon icon-arr-r"></span></div> 
@@ -2785,15 +964,14 @@
                                                 <li class="icon icon-star"></li>
                                             </ul>
                                             <p class="note body-1">
-                                                "I truly appreciate the professionalism and in-depth knowledge of the brokerage team. They not only helped me find the perfect home but also assisted with legal and financial aspects, making me feel confident and secure in my decision."
-                                            </p>
+                                                "J'ai vraiment apprécié le professionnalisme et les connaissances approfondies de l'équipe de courtage. Ils m'ont non seulement aidé à trouver la maison idéale, mais ils m'ont également assisté pour les aspects juridiques et financiers, ce qui m'a permis de me sentir confiant et sûr de ma décision."                                            </p>
                                             <div class="box-avt d-flex align-items-center gap-12">
                                                 <div class="avatar avt-60 round">
                                                     <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
                                                 </div>
                                                 <div class="info">
-                                                    <div class="h7 fw-7">Liam Anderson</div>
-                                                    <p class="text-variant-1 mt-4">CEO Digital</p>
+                                                    <div class="h7 fw-7">Felix Atangana</div>
+                                                    <p class="text-variant-1 mt-4">client</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2808,15 +986,14 @@
                                                 <li class="icon icon-star"></li>
                                             </ul>
                                             <p class="note body-1">
-                                                "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                            </p>
+                                                "Mon expérience avec les services de gestion immobilière a dépassé mes attentes. Ils gèrent efficacement les propriétés avec une approche professionnelle et attentive dans chaque situation. J'ai l'assurance que tout problème sera résolu rapidement et efficacement." </p>
                                             <div class="box-avt d-flex align-items-center gap-12">
                                                 <div class="avatar avt-60 round">
                                                     <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avatar">
                                                 </div>
                                                 <div class="info">
-                                                    <div class="h7 fw-7">Adam Will</div>
-                                                    <p class="text-variant-1 mt-4">CEO Agency</p>
+                                                    <div class="h7 fw-7">Claude Nana</div>
+                                                    <p class="text-variant-1 mt-4">client</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2831,15 +1008,14 @@
                                                 <li class="icon icon-star"></li>
                                             </ul>
                                             <p class="note body-1">
-                                                "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                            </p>
+                                                "J'ai récemment travaillé avec cette agence  pour acheter ma nouvelle maison et je ne peux que les recommander chaleureusement. Leur équipe a fait un travail exceptionnel tout au long du processus. Ils ont pris le temps de bien comprendre mes besoins et mes critères, et m'ont guidé avec patience et professionnalisme pour trouver la propriété idéale. Leur expertise du marché local m'a permis de faire le bon choix, et ils se sont montrés très réactifs à chaque étape. Grâce à eux, l'achat s'est déroulé sans accroc. Je suis ravi de ma nouvelle maison et je remercie toute l'équipe de Well-done pour leur excellent service."   </p>
                                             <div class="box-avt d-flex align-items-center gap-12">
                                                 <div class="avatar avt-60 round">
                                                     <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avatar">
                                                 </div>
                                                 <div class="info">
-                                                    <div class="h7 fw-7">Adam Will</div>
-                                                    <p class="text-variant-1 mt-4">CEO Agency</p>
+                                                    <div class="h7 fw-7">Adam Tchamba</div>
+                                                    <p class="text-variant-1 mt-4">Client</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2854,15 +1030,35 @@
                                                 <li class="icon icon-star"></li>
                                             </ul>
                                             <p class="note body-1">
-                                                "I truly appreciate the professionalism and in-depth knowledge of the brokerage team. They not only helped me find the perfect home but also assisted with legal and financial aspects, making me feel confident and secure in my decision."
-                                            </p>
+                                                "Je tiens à saluer l'excellent service de cette agence lors de mon achat immobilier. Leur conseiller, M. Martin, a été à l'écoute de mes besoins et a su me guider dans le choix de la bonne propriété. Tout au long des démarches, il a fait preuve d'une grande disponibilité et a géré avec brio tous les aspects techniques et juridiques. Grâce à son professionnalisme, l'acquisition s'est déroulée dans les meilleures conditions."    </p>                                        </p>
                                             <div class="box-avt d-flex align-items-center gap-12">
                                                 <div class="avatar avt-60 round">
                                                     <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
                                                 </div>
                                                 <div class="info">
-                                                    <div class="h7 fw-7">Liam Anderson</div>
-                                                    <p class="text-variant-1 mt-4">CEO Digital</p>
+                                                    <div class="h7 fw-7">Conrad Tsafack</div>
+                                                    <p class="text-variant-1 mt-4">Client</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
+                                        <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
+                                            <ul class="list-star">
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                            </ul>
+                                            <p class="note body-1">Merci pour tous</p>
+                                            <div class="box-avt d-flex align-items-center gap-12">
+                                                <div class="avatar avt-60 round">
+                                                    <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="h7 fw-7">Theandra</div>
+                                                    <p class="text-variant-1 mt-4">Client</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -2882,88 +1078,64 @@
             <section class="flat-section flat-agents">
                 <div class="container">
                     <div class="box-title text-center wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <div class="text-subtitle text-primary">Our Teams</div>
-                        <h4 class="mt-4">Meet Our Agents</h4>
+                        <div class="text-subtitle text-primary">Notre Equipe</div>
+                        <h4 class="mt-4">Nos Agents</h4>
                     </div>
                     <div class="row">
                         <div class="box col-lg-3 col-sm-6">
                             <div class="box-agent hover-img wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
                                 <a href="#" class="box-img img-style">
-                                    <img src="{{asset('assets/images/agents/agent-1.jpg')}}" alt="image-agent">
-                                    <ul class="agent-social">
-                                        <li><span class="icon icon-facebook"></span></li>
-                                        <li><span class="icon icon-linkedin"></span></li>
-                                        <li><span class="icon icon-twitter"></span></li>
-                                        <li><span class="icon icon-instagram"></span></li>
-                                    </ul>
+                                    <img src="{{asset('assets/images/welldone/boss.jpg')}}" alt="image-agent">
                                 </a>
                                 <a href="#" class="content">
                                     <div class="info">
-                                        <h6 class="link">Jack Halow</h6>
-                                        <p class="mt-4 text-variant-1">CEO & Founder</p>
+                                        <h6 class="link">Mireille Biloa</h6>
+                                        <p class="mt-4 text-variant-1">PDG et Fondateur</p>
                                     </div>
-                                    <span class="icon-phone"></span>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
                                 </a>
                             </div>
                         </div>
                         <div class="box col-lg-3 col-sm-6">
                             <div class="box-agent hover-img wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
                                 <a href="#" class="box-img img-style">
-                                    <img src="{{asset('assets/images/agents/agent-2.jpg')}}" alt="image-agent">
-                                    <ul class="agent-social">
-                                        <li><span class="icon icon-facebook"></span></li>
-                                        <li><span class="icon icon-linkedin"></span></li>
-                                        <li><span class="icon icon-twitter"></span></li>
-                                        <li><span class="icon icon-instagram"></span></li>
-                                    </ul>
+                                    <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
+                                    
                                 </a>
                                 <a href="#" class="content">
                                     <div class="info">
-                                        <h6 class="link">John Smith</h6>
-                                        <p class="mt-4 text-variant-1">Property Manager</p>
+                                        <h6 class="link">John Tchoungang</h6>
+                                        <p class="mt-4 text-variant-1">Community Manager</p>
                                     </div>
-                                    <span class="icon-phone"></span>
-                                </a>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
                             </div>
                         </div>
                         <div class="box col-lg-3 col-sm-6">
                             <div class="box-agent hover-img wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
                                 <a href="#" class="box-img img-style">
-                                    <img src="{{asset('assets/images/agents/agent-3.jpg')}}" alt="image-agent">
-                                    <ul class="agent-social">
-                                        <li><span class="icon icon-facebook"></span></li>
-                                        <li><span class="icon icon-linkedin"></span></li>
-                                        <li><span class="icon icon-twitter"></span></li>
-                                        <li><span class="icon icon-instagram"></span></li>
-                                    </ul>
+                                    <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
+                                    
                                 </a>
                                 <a href="#" class="content">
                                     <div class="info">
-                                        <h6 class="link">Chris Patt</h6>
-                                        <p class="mt-4 text-variant-1">Administrative Staff</p>
+                                        <h6 class="link">Chris Kenfack</h6>
+                                        <p class="mt-4 text-variant-1">Commercial</p>
                                     </div>
-                                    <span class="icon-phone"></span>
-                                </a>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
                             </div>
                         </div>
                         <div class="box col-lg-3 col-sm-6">
                             <div class="box-agent hover-img wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">
                                 <a href="#" class="box-img img-style">
-                                    <img src="{{asset('assets/images/agents/agent-4.jpg')}}" alt="image-agent">
-                                    <ul class="agent-social">
-                                        <li><span class="icon icon-facebook"></span></li>
-                                        <li><span class="icon icon-linkedin"></span></li>
-                                        <li><span class="icon icon-twitter"></span></li>
-                                        <li><span class="icon icon-instagram"></span></li>
-                                    </ul>
+                                    <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
+                                   
                                 </a>
                                 <a href="#" class="content">
                                     <div class="info">
-                                        <h6 class="link">Jack Halow</h6>
-                                        <p class="mt-4 text-variant-1">Real Estate Marketer</p>
+                                        <h6 class="link">Octavie Ateba</h6>
+                                        <p class="mt-4 text-variant-1">Assistant de Direction</p>
                                     </div>
-                                    <span class="icon-phone"></span>
-                                </a>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
                             </div>
                         </div>
                     </div>
@@ -2971,70 +1143,10 @@
             </section>
             <!-- End Agents -->
             <!-- Latest New -->
-            <section class="flat-section-v3 flat-latest-new bg-surface">
-                <div class="container">
-                    <div class="box-title text-center wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <div class="text-subtitle text-primary">Latest New</div>
-                        <h4 class="mt-4">Helpful Homeya Guides</h4>
-                    </div>
-                    <div class="row">
-                        <div class="box col-lg-4 col-md-6">
-                            <a href="blog-detail.html" class="flat-blog-item hover-img wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <div class="img-style">
-                                    <img src="{{asset('assets/images/blog/blog-1.jpg')}}" alt="img-blog">
-                                    <span class="date-post">January 28, 2024</span>
-                                </div>
-                                <div class="content-box">
-                                    <div class="post-author">
-                                        <span class="fw-6">Esther</span>
-                                        <span>Furniture</span>
-                                    </div>
-                                    <h6 class="title">Building gains into housing stocks and how to trade the sector</h6>
-                                    <p class="description">The average contract interest rate for 30-year fixed-rate mortgages with conforming loan balances...</p>
-                                </div>
-
-                            </a>
-                        </div>
-                        <div class="box col-lg-4 col-md-6">
-                            <a href="blog-detail.html" class="flat-blog-item hover-img wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
-                                <div class="img-style">
-                                    <img src="{{asset('assets/images/blog/blog-2.jpg')}}" alt="img-blog">
-                                    <span class="date-post">January 31, 2024</span>
-                                </div>
-                                <div class="content-box">
-                                    <div class="post-author">
-                                        <span class="fw-6">Angel</span>
-                                        <span>Interior</span>
-                                    </div>
-                                    <h6 class="title">92% of millennial homebuyers say inflation has impacted their plans</h6>
-                                    <p class="description">Mortgage applications to purchase a home, however, dropped 4% last week compared...</p>
-                                </div>
-
-                            </a>
-                        </div>
-                        <div class="box col-lg-4 col-md-6">
-                            <a href="blog-detail.html" class="flat-blog-item hover-img wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                                <div class="img-style">
-                                    <img src="{{asset('assets/images/blog/blog-3.jpg')}}" alt="img-blog">
-                                    <span class="date-post">January 28, 2024</span>
-                                </div>
-                                <div class="content-box">
-                                    <div class="post-author">
-                                        <span class="fw-6">Colleen</span>
-                                        <span>Architecture</span>
-                                    </div>
-                                    <h6 class="title">We are hiring ‘moderately,’ says Compass CEO</h6>
-                                    <p class="description">New listings were down 20% year over year in March, according to Realtor.com, and total inventory...</p>
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
             <!-- End Latest New -->
             <!-- partner -->
-            <section class="flat-section-v4 flat-partner">
+            {{-- <section class="flat-section-v4 flat-partner">
                 <div class="container">
                     <div class="wrap-partner swiper tf-sw-partner" data-preview-lg="5" data-preview-md="4" data-preview-sm="3" data-space="80">
                         <div class="swiper-wrapper">
@@ -3138,7 +1250,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> --}}
             <!-- End partner -->
 
 @endsection
