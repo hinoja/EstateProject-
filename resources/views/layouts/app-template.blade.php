@@ -12,8 +12,9 @@
     <!-- Icons -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/font-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/jqueryui.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}"> --}}
     <link rel="stylesheet"type="text/css" href="{{ asset('assets/css/styles.css') }}" />
 
     <!-- Favicon and Touch Icons  -->
@@ -40,7 +41,7 @@
                                     <div class="logo-box d-flex">
                                         <div class="logo"><a href="{{ route('home') }}"><img
                                                     src="{{ asset('assets/images/logo/logo.jpg') }}" alt="logo"
-                                                    width="98" height="44"></a></div>
+                                                    width="50" height="96"></a></div>
                                         <div class="button-show-hide">
                                             <span class="icon icon-categories"></span>
                                         </div>
@@ -49,7 +50,7 @@
                                         <a href="#" class="box-avatar dropdown-toggle" data-bs-toggle="dropdown">
                                             <div class="avatar avt-40 round">
                                                 <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('assets/images/avatar/user-default.png') }}"
-                                                    alt="">
+                                                    alt="avt">
                                             </div>
                                             <p class="name"> {{ Auth::user()->name }}<span
                                                     class="icon icon-arr-down"></span></p>
@@ -103,15 +104,17 @@
     <script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/js/carousel.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('assets/js/carousel.js') }}"></script> --}}
     <script type="text/javascript" src="{{ asset('assets/js/plugin.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/js/rangle-slider.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('assets/js/rangle-slider.js') }}"></script> --}}
     <script type="text/javascript" src="{{ asset('assets/js/countto.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/shortcodes.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/jqueryui.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/animation_heading.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
 
+    
 </body>
 
 </html>
