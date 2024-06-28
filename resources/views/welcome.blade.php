@@ -5,27 +5,27 @@
                 <!-- Slider -->
                 <section class="flat-slider home-1">
                 <div class="container relative">
-                    <div class="row">    
+                    <div class="row">
                         <div class="col-lg-12">
                             <div class="slider-content">
                                 <div class="heading text-center">
                                     <h1 class="text-white animationtext slide">
                                         Find Your
-                                            <span class="tf-text s1 cd-words-wrapper"> 
+                                            <span class="tf-text s1 cd-words-wrapper">
                                                 <span class="item-text is-visible">Dream Home</span>
                                                 <span class="item-text is-hidden text-primary">Perfect Home</span>
-                                                <span class="item-text is-hidden">Real Estate</span>  
-                                            </span>  
+                                                <span class="item-text is-hidden">Real Estate</span>
+                                            </span>
                                     </h1>
                                     <p class="subtitle text-white body-1 wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms"> Nous sommes une agence immobilière qui vous aidera à trouver la meilleure résidence et/ou Terrains dont vous rêvez, discutons-en pour la maison de vos rêves ?</p>
                                 </div>
                             </div>
-                            
-                        </div>                  
+
+                        </div>
                     </div>
                 </div>
                 <div class="overlay"></div>
-            </section> 
+            </section>
             <!-- End Slider -->
             <!-- Recommended -->
             <section class="flat-section flat-recommended">
@@ -34,7 +34,7 @@
                         <div class="text-subtitle text-primary">Construction et Vente de Maisons</div>
                         <h4 class="mb-5">Faites votre choix, Nous le réalisons</h4>
                     </div>
-                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">                      
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                         <div class="tab-content">
                             <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
                                 <div class="row">
@@ -102,7 +102,7 @@
                                                     </div>
                                                     <div class="top">
                                                         <ul class="d-flex gap-8">
-                                                            
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -193,9 +193,9 @@
                                                         <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
                                                     </div>
                                                     <div class="top">
-                                                    
+
                                                         <ul class="d-flex gap-4">
-                                                            
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -226,7 +226,7 @@
                                                     <div class="avatar avt-40 round">
                                                         <img src="{{asset('assets/images/avatar/avt-8.jpg')}}" alt="avt">
                                                     </div>
-                                                  
+
                                                 </div>
                                                 <div class="d-flex align-items-center">
                                                     <h6>80 000 F</h6>
@@ -314,11 +314,11 @@
                             </div>
                         </div>
                     </div>
-   
+
                 </div>
 
             </section>
-            
+
             <section class="flat-section flat-recommended">
                 <div class="container">
                     <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
@@ -342,7 +342,7 @@
                                                             <li class="flag-tag style-1">Vendu</li>
                                                         </ul>
                                                         <ul class="d-flex gap-4">
-                                                            
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -353,11 +353,11 @@
                                                     <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"> </a></div>
                                                     <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Kake (Souza vers usine cacao)</p> </div>
                                                     <ul class="meta-list">
-                                                       
+
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6">
@@ -369,11 +369,11 @@
                                                     </div>
                                                     <div class="top">
                                                         <ul class="d-flex gap-8">
-                                                           
+
                                                             <li class="flag-tag style-1"></li>
                                                         </ul>
                                                         <ul class="d-flex gap-4">
-                                                            
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -384,11 +384,11 @@
                                                     <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
                                                     <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p> Kake (Souza vers usine cacao)</p> </div>
                                                     <ul class="meta-list">
-                                                        
+
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6">
@@ -400,10 +400,10 @@
                                                     </div>
                                                     <div class="top">
                                                         <ul class="d-flex gap-8">
-                                                            
+
                                                         </ul>
                                                         <ul class="d-flex gap-4">
-                                                            
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -414,11 +414,11 @@
                                                     <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Lotissement</a></div>
                                                     <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Kake (Souza vers usine cacao)</p> </div>
                                                     <ul class="meta-list">
-                                                       
+
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6">
@@ -434,7 +434,7 @@
                                                             <li class="flag-tag style-1"></li>
                                                         </ul>
                                                         <ul class="d-flex gap-4">
-                                                           
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -446,11 +446,11 @@
                                                     <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
                                                         Kake (Souza vers usine cacao)</p> </div>
                                                     <ul class="meta-list">
-                                                       
+
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6">
@@ -466,7 +466,7 @@
                                                             <li class="flag-tag style-1"></li>
                                                         </ul>
                                                         <ul class="d-flex gap-4">
-                                                            
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -478,11 +478,11 @@
                                                     <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
                                                         Kake (Souza vers usine cacao)</p> </div>
                                                     <ul class="meta-list">
-                                                       
+
                                                     </ul>
                                                 </div>
                                             </div>
-                                           
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6">
@@ -498,7 +498,7 @@
                                                             <li class="flag-tag style-1"></li>
                                                         </ul>
                                                         <ul class="d-flex gap-4">
-                                                           
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -510,18 +510,18 @@
                                                     <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
                                                         Kake (Souza vers usine cacao)</p> </div>
                                                     <ul class="meta-list">
-                                                    
+
                                                     </ul>
                                                 </div>
                                             </div>
-                                           
+
                                         </div>
                                     </div>
-                                </div>                             
+                                </div>
                             </div>
                         </div>
                     </div>
-   
+
                 </div>
 
             </section>
@@ -548,7 +548,7 @@
                                                             <li class="flag-tag style-1"></li>
                                                         </ul>
                                                         <ul class="d-flex gap-4">
-                                                           
+
                                                         </ul>
                                                     </div>
                                                     <div class="bottom">
@@ -559,22 +559,22 @@
                                                     <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Louez nos engins a moindre prix</a></div>
                                                     <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Cameroun</p> </div>
                                                     <ul class="meta-list">
-                                                       
+
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
-                                </div>                             
+                                </div>
                             </div>
                         </div>
                     </div>
-   
+
                 </div>
 
             </section>
-            
+
             <!-- Service & Counter  -->
             <section class="flat-section"  id="services">
                 <div class="container">
@@ -614,33 +614,49 @@
                                 <h6 class="title">Vendre</h6>
                                 <p class="description">Vendez en toute confiance grâce aux conseils d'un expert et à des stratégies efficaces, en mettant en valeur les meilleurs atouts de votre propriété pour une vente réussie.</p>
                                 {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
-                            </div>
+                            </div>   
                         </div>
                     </div>
+                    <div class="container-fluid row  mb-5 justify-content">
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3" >Travaux de Lotissement</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat et vente de Terrains</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Prestations Immobilières</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Construction de Batiment Complet</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Locations D'engins</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Exploitation de mines et carrièrres</h6>
+
+                    </div>
+                     
+                    {{-- <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="box-left list-view">
+                            <div class="text-subtitle text-primary">
+                                <h6 class="title">Travaux de Lotissement</h6><h6 class="title">Travaux de Lotissement</h6>
+                            </div>
+                    </div> --}}
                     <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
                         <div class="counter-box">
-                            <div class="count-number">                                  
-                                <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">+ 85</div>                                   
+                            <div class="count-number">
+                                <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">+ 85</div>
                             </div>
-                            <div class="title-count">Clients satisfaits</div>                              
+                            <div class="title-count">Clients satisfaits</div>
                         </div>
                         <div class="counter-box">
-                            <div class="count-number"> 
-                                <div class="number" data-speed="2000" data-to="112" data-inviewport="yes">+ 100</div>                                                      
+                            <div class="count-number">
+                                <div class="number" data-speed="2000" data-to="100" data-inviewport="yes">+ 100</div>
                             </div>
-                            <div class="title-count">Recomandations</div>                                                                           
+                            <div class="title-count">Recomandations</div>
                         </div>
-                        
+
                         <div class="counter-box">
-                            <div class="count-number"> 
-                                <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">+ 66</div>                                                      
+                            <div class="count-number">
+                                <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">+ 66</div>
                             </div>
-                            <div class="title-count">Tavaux Trimestriels</div>                                                                           
+                            <div class="title-count">Tavaux Trimestriels</div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </section>
-           
+
             <section class="flat-section flat-benefit bg-surface">
                 <div class="container">
                     <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
@@ -678,265 +694,7 @@
                     </div>
                 </div>
             </section>
-           
-            {{-- <section class="flat-section flat-property">
-                <div class="container">
-                    <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <div class="box-left">
-                            <div class="text-subtitle text-primary">Top Properties</div>
-                            <h4 class="mt-4">Best Property Value</h4>
-                        </div>
-                        <a href="#" class="tf-btn primary size-1">View All</a>
-                    </div>
-                    <div class="wrap-property">
-                        <div class="box-left  wow fadeInLeftSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                            <div class="homeya-box lg">
-                                <div class="archive-top">
-                                    <a href="property-details-v1.html" class="images-group">
-                                        <div class="images-style">
-                                            <img src="{{asset('assets/images/home/house-7.jpg')}}" alt="img">
-                                        </div>
-                                        <div class="top">
-                                            <ul class="d-flex gap-8">
-                                                <li class="flag-tag success style-3">Featured</li>
-                                                <li class="flag-tag style-1 style-3">For Sale</li>
-                                            </ul>
-                                            <ul class="d-flex gap-4">
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-arrLeftRight"></span>
-                                                </li>
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-heart"></span>
-                                                </li>
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-eye"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="bottom">
-                                            <span class="flag-tag style-2">VILLA</span>
-                                        </div>
-                                    </a>
-                                    <div class="content">
-                                        <h5 class="text-capitalize"><a href="property-details-v1.html" class="link"> Rancho Vista Verde, Santa Barbara</a></h5>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <p class="note">"I truly appreciate the professionalism and in-depth...</p>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                    <div class="d-flex gap-8 align-items-center">
-                                        <div class="avatar avt-40 round">
-                                            <img src="{{asset('assets/images/avatar/avt-11.jpg')}}" alt="avt">
-                                        </div>
-                                        <span class="body-2">Floyd Miles</span>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <h6>$250,00</h6>
-                                        <span class="text-variant-1">/month</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                             
-                        <div class="box-right wow fadeInRightSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-1.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex gap-4 flex-wrap flex-column">
-                                            <li class="flag-tag success">Featured</li>
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">House</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-5.jp')}}g" alt="avt">
-                                            </div>
-                                            <span>Ralph Edwards</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$5050,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-2.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex">
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">Villa</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
-                                            </div>
-                                            <span>Annette Black</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$250,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-3.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex">
-                                         
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">Studio</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Coastal Serenity Cottage</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-11.jpg')}}" alt="avt">
-                                            </div>
-                                            <span>Tony Nguyen</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$5050,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> --}}
-           
+            
             <section class="flat-section-v3 bg-surface flat-testimonial">
                 <div class="cus-layout-1">
                     <div class="row align-items-center">
@@ -948,7 +706,7 @@
                             <p class="text-variant-1 p-16">Notre équipe expérimentée excelle dans l'immobilier avec des années de navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux.</p>
                             <div class="box-navigation">
                                 <div class="navigation swiper-nav-next nav-next-testimonial"><span class="icon icon-arr-l"></span></div>
-                                <div class="navigation swiper-nav-prev nav-prev-testimonial"><span class="icon icon-arr-r"></span></div> 
+                                <div class="navigation swiper-nav-prev nav-prev-testimonial"><span class="icon icon-arr-r"></span></div>
                             </div>
                         </div>
                         <div class="col-lg-9">
@@ -1063,13 +821,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
-                            
+
                         </div>
-                          
+
                     </div>
                 </div>
             </section>
@@ -1100,7 +858,7 @@
                             <div class="box-agent hover-img wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
                                 <a href="#" class="box-img img-style">
                                     <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
-                                    
+
                                 </a>
                                 <a href="#" class="content">
                                     <div class="info">
@@ -1114,7 +872,7 @@
                             <div class="box-agent hover-img wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
                                 <a href="#" class="box-img img-style">
                                     <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
-                                    
+
                                 </a>
                                 <a href="#" class="content">
                                     <div class="info">
@@ -1128,7 +886,7 @@
                             <div class="box-agent hover-img wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">
                                 <a href="#" class="box-img img-style">
                                     <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
-                                   
+
                                 </a>
                                 <a href="#" class="content">
                                     <div class="info">
@@ -1143,7 +901,7 @@
             </section>
             <!-- End Agents -->
             <!-- Latest New -->
-           
+
             <!-- End Latest New -->
             <!-- partner -->
             {{-- <section class="flat-section-v4 flat-partner">
@@ -1171,7 +929,7 @@
                                         <rect width="181.333" height="34" fill="white" transform="translate(0 0.5)"/>
                                         </clipPath>
                                         </defs>
-                                    </svg>  
+                                    </svg>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -1192,7 +950,7 @@
                                         <rect width="183.293" height="45" fill="white" transform="translate(0.5)"/>
                                         </clipPath>
                                         </defs>
-                                    </svg> 
+                                    </svg>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -1210,7 +968,7 @@
                                         <path d="M108.47 8.32387H112.243V25.1934L111.863 28.4415H108.47V8.32387ZM121.214 21.2117V21.4868C121.214 22.5433 121.101 23.5125 120.874 24.3944C120.655 25.2763 120.315 26.0403 119.852 26.6865C119.389 27.3239 118.813 27.8216 118.123 28.1796C117.442 28.5288 116.639 28.7035 115.713 28.7035C114.849 28.7035 114.098 28.5288 113.461 28.1796C112.832 27.8303 112.304 27.337 111.876 26.6996C111.448 26.0622 111.103 25.3156 110.841 24.4599C110.579 23.6042 110.383 22.6699 110.252 21.6571V21.0546C110.383 20.0417 110.579 19.1074 110.841 18.2517C111.103 17.396 111.448 16.6495 111.876 16.0121C112.304 15.3747 112.832 14.8813 113.461 14.5321C114.089 14.1828 114.831 14.0082 115.687 14.0082C116.621 14.0082 117.433 14.1872 118.123 14.5452C118.822 14.8944 119.398 15.3921 119.852 16.0383C120.315 16.6757 120.655 17.4353 120.874 18.3172C121.101 19.1904 121.214 20.1552 121.214 21.2117ZM117.442 21.4868V21.2117C117.442 20.6355 117.399 20.0941 117.311 19.5877C117.233 19.0725 117.093 18.6228 116.892 18.2386C116.691 17.8457 116.416 17.5357 116.067 17.3087C115.726 17.0817 115.286 16.9682 114.744 16.9682C114.229 16.9682 113.792 17.0555 113.434 17.2301C113.076 17.4048 112.78 17.6492 112.544 17.9636C112.317 18.2779 112.146 18.6534 112.033 19.09C111.919 19.5178 111.85 19.9893 111.823 20.5045V22.2202C111.85 22.91 111.963 23.5213 112.164 24.0539C112.374 24.5778 112.688 24.9925 113.107 25.2981C113.535 25.595 114.089 25.7435 114.77 25.7435C115.303 25.7435 115.744 25.6387 116.093 25.4291C116.442 25.2196 116.713 24.9227 116.905 24.5385C117.106 24.1543 117.246 23.7046 117.324 23.1895C117.403 22.6656 117.442 22.098 117.442 21.4868Z" fill="#161E2D"/>
                                         <path d="M131.208 25.2457V18.9328C131.208 18.4787 131.133 18.0902 130.985 17.7671C130.837 17.4353 130.605 17.1777 130.291 16.9944C129.985 16.811 129.588 16.7193 129.099 16.7193C128.68 16.7193 128.317 16.7935 128.012 16.942C127.706 17.0817 127.47 17.2869 127.305 17.5576C127.139 17.8195 127.056 18.1295 127.056 18.4875H123.284C123.284 17.885 123.423 17.3131 123.703 16.7717C123.982 16.2304 124.388 15.7545 124.921 15.3441C125.453 14.925 126.087 14.5975 126.82 14.3618C127.562 14.126 128.392 14.0082 129.308 14.0082C130.409 14.0082 131.387 14.1915 132.242 14.5582C133.098 14.925 133.77 15.4751 134.259 16.2085C134.757 16.942 135.006 17.8588 135.006 18.959V25.0231C135.006 25.8002 135.054 26.4376 135.15 26.9353C135.246 27.4243 135.386 27.8521 135.569 28.2189V28.4415H131.758C131.574 28.0573 131.435 27.5771 131.339 27.0008C131.251 26.4158 131.208 25.8308 131.208 25.2457ZM131.705 19.8103L131.732 21.9452H129.623C129.125 21.9452 128.693 22.002 128.326 22.1155C127.959 22.229 127.658 22.3905 127.422 22.6001C127.187 22.8009 127.012 23.0366 126.899 23.3073C126.794 23.578 126.741 23.8749 126.741 24.198C126.741 24.521 126.816 24.8135 126.964 25.0755C127.112 25.3287 127.326 25.5295 127.606 25.678C127.885 25.8177 128.213 25.8875 128.588 25.8875C129.156 25.8875 129.649 25.774 130.068 25.547C130.487 25.32 130.81 25.0406 131.037 24.7088C131.273 24.377 131.395 24.0626 131.404 23.7657L132.399 25.3636C132.26 25.7216 132.068 26.0927 131.823 26.4769C131.587 26.8611 131.286 27.2235 130.919 27.564C130.553 27.8958 130.112 28.1708 129.597 28.3891C129.081 28.5987 128.47 28.7035 127.763 28.7035C126.864 28.7035 126.047 28.5245 125.314 28.1665C124.589 27.7997 124.013 27.2977 123.585 26.6603C123.166 26.0141 122.956 25.2807 122.956 24.4599C122.956 23.7177 123.096 23.0585 123.375 22.4822C123.655 21.9059 124.065 21.4213 124.607 21.0284C125.157 20.6267 125.842 20.3255 126.663 20.1247C127.484 19.9151 128.435 19.8103 129.518 19.8103H131.705Z" fill="#161E2D"/>
                                         </g>
-                                    </svg>  
+                                    </svg>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -1227,7 +985,7 @@
                                         <path d="M136.962 27.3783C137.419 27.3869 137.823 27.3008 138.177 27.1199C138.538 26.939 138.836 26.6849 139.068 26.3576C139.301 26.0302 139.456 25.6512 139.533 25.2206L142.957 25.2076C142.88 26.2499 142.544 27.1543 141.949 27.921C141.364 28.6876 140.619 29.2776 139.714 29.6911C138.818 30.1046 137.867 30.2984 136.859 30.2725C135.851 30.2553 134.985 30.0529 134.262 29.6653C133.547 29.2776 132.97 28.7608 132.53 28.1148C132.091 27.4601 131.781 26.715 131.6 25.8795C131.428 25.044 131.385 24.1654 131.471 23.2437L131.51 22.8561C131.613 21.8913 131.845 20.9783 132.207 20.1169C132.569 19.2469 133.051 18.4846 133.654 17.8299C134.266 17.1667 134.985 16.6541 135.812 16.2924C136.639 15.922 137.574 15.7497 138.616 15.7755C139.693 15.7928 140.614 16.0383 141.381 16.512C142.148 16.9772 142.729 17.6146 143.125 18.4243C143.53 19.234 143.724 20.1643 143.707 21.2151L140.296 21.2022C140.304 20.7801 140.248 20.3796 140.128 20.0006C140.007 19.613 139.8 19.3029 139.507 19.0703C139.223 18.8291 138.836 18.6956 138.345 18.6698C137.767 18.6525 137.285 18.7731 136.897 19.0316C136.51 19.2814 136.195 19.6216 135.954 20.0523C135.713 20.4744 135.528 20.9352 135.399 21.4348C135.269 21.9258 135.179 22.4038 135.127 22.869L135.101 23.2437C135.058 23.6313 135.033 24.062 135.024 24.5358C135.015 25.0009 135.063 25.4488 135.166 25.8795C135.269 26.3016 135.459 26.6547 135.735 26.939C136.019 27.2146 136.428 27.3611 136.962 27.3783Z" fill="#161E2D"/>
                                         <path d="M151.214 10.168L147.764 30.0141H144.133L147.583 10.168H151.214ZM148.578 22.5331L147.635 22.546C147.729 21.7535 147.914 20.9524 148.19 20.1427C148.474 19.333 148.858 18.5966 149.34 17.9333C149.822 17.2614 150.412 16.7274 151.11 16.3311C151.817 15.9263 152.635 15.7368 153.565 15.7626C154.349 15.7798 154.999 15.9392 155.516 16.2407C156.042 16.5336 156.451 16.9341 156.744 17.4423C157.036 17.9419 157.23 18.5147 157.325 19.1608C157.42 19.7982 157.428 20.4701 157.351 21.1764L155.878 30.0141H152.221L153.72 21.1376C153.772 20.6811 153.759 20.2719 153.681 19.9102C153.612 19.5398 153.445 19.2469 153.177 19.0316C152.919 18.8076 152.536 18.6913 152.028 18.6827C151.468 18.6655 150.985 18.7645 150.58 18.9799C150.184 19.1952 149.848 19.4924 149.573 19.8714C149.297 20.2418 149.082 20.6596 148.927 21.1247C148.772 21.5812 148.655 22.0507 148.578 22.5331Z" fill="#161E2D"/>
                                         </g>
-                                    </svg>  
+                                    </svg>
                                 </div>
                             </div>
                             <div class="swiper-slide">

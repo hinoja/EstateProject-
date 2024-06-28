@@ -31,7 +31,7 @@
 
                 <!-- Main Header -->
                 <header class="main-header fixed-header">
-                    
+
                     <!-- Header Lower -->
                     <div class="header-lower">
                         <div class="row">
@@ -50,7 +50,7 @@
                                                 <ul class="navigation clearfix">
                                                     <li class="current"><a href="{{ route('home') }}">Accueil</a> </li>
                                                     <li class=""><a href="#services">Services</a> </li>
-                                                    <li class=""><a href="#">A propos De Nous</a></li>
+                                                    <li class=""><a href="{{route('about')}}">A propos</a></li>
                                                     <li class=""><a href="{{ route('contact') }}">Contact</a> </li>
                                                 </ul>
                                             </div>
