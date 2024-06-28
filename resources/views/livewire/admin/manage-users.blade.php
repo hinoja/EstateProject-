@@ -1,7 +1,7 @@
 <div>
     <div class="widget-box-2 ">
         <h6>Utilisateurs <small class="mr-5">({{ $totalUsers }}) </small><span wire:click="showCreateForm()"
-                class="btn btn-primary"> <i class="fa fa-plus" style="color: white"></i></span></h6>
+                class="btn btn-primary" style="background-color: rgb(81,132,197)"> <i class="fa fa-plus" style="color: white"></i></span></h6>
         <div class="wrap-table">
             <div class="card">
 
@@ -31,7 +31,7 @@
                                         <td>
                                             @if ($user->is_active)
                                                 <div class="py-2 px-2">
-                                                    <span
+                                                    <span style="background-color: rgb(81,132,197)"
                                                         class="py-1 px-3 rounded-full text-white badge-pill waves-effect text-lg bg-info ">
                                                         Actif </span>
                                                 </div>
@@ -56,14 +56,14 @@
                                                                 class="fa fa-lock"></i></button>
                                                     @else
                                                         <button wire:click="updateStatus({{ $user }})"
-                                                            title=" {{ __('Unblock') }} "
+                                                            title=" {{ __('Unblock') }} " style="background-color: rgb(81,132,197)"
                                                             class="btn btn-icon icon-left btn-primary"> <i
                                                                 class="fa fa-lock-open"></i></button>
                                                     @endif
                                                     <button wire:click="showDeleteForm({{ $user }})"
-                                                    title=" {{ __('Delete') }}"
-                                                    class="btn btn-icon icon-left btn-outline-danger"> <i
-                                                        class="fa fa-trash"></i></button>
+                                                        title=" {{ __('Delete') }}"
+                                                        class="btn btn-icon icon-left btn-outline-danger"> <i
+                                                            class="fa fa-trash"></i></button>
                                                 @endif
 
 
@@ -160,7 +160,7 @@
             <div class="modal-dialog modal-dialog-top" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h6 class="modal-title" id="deleteTag">Supprimer  <strong>{{ $name }}</strong></h6>
+                        <h6 class="modal-title" id="deleteTag">Supprimer <strong>{{ $name }}</strong></h6>
                         <button type="button" class="close" wire:click="closeModal()" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -169,7 +169,7 @@
                         <p class="text-danger font-weight-bold">Etes-vous sûr de vouloir supprimer ce Utilisateur ?</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"
+                        <button wire:click="closeModal()" type="button" class="btn btn-secondary"
                             data-dismiss="modal">@lang('Cancel')</button>
                         <button type="button" wire:click="destroyUser()"
                             class="btn btn-danger">@lang('Confirmer')</button>

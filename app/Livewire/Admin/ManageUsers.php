@@ -53,7 +53,9 @@ class ManageUsers extends Component
             ->update([
                 'name' => $newData['name'],
             ]);
+        Toastr()->success(trans('The User has been updated'));
         $this->alert('success', trans('The User has been updated'));
+
         $this->closeModal();
     }
 
@@ -72,7 +74,9 @@ class ManageUsers extends Component
             'role_id' => 3, //editor
             'password' => Hash::make($newData['password'])
         ]);
-        $this->alert('success', "l'Utilisateur a été crée ");
+        Toastr()->success("l'Utilisateur a été crée ");
+        $this->alert('success', "l'Utilisateur a été crée");
+
         $this->closeModal();
     }
 
@@ -93,6 +97,7 @@ class ManageUsers extends Component
     {
         $this->deleteUser = User::find($this->deleteId);
         $this->deleteUser->delete();
+        Toastr()->success("l'utilisateur a été supprimé");
         $this->alert('success', "l'utilisateur a été supprimé");
         $this->closeModal();
     }

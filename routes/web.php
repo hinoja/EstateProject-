@@ -10,6 +10,8 @@ use App\Http\Controllers\DashboardController;
 
 
 Route::view('/', 'welcome')->name('home');
+Route::view('/contact', 'contact')->name('contact');
+
 
 // _________________________________________________________
 
@@ -39,9 +41,6 @@ Route::get('/dashboard/terrain', function () {
     return view('dashboard.terrain');
 })->name('terrain');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
 
 // PROFILE
 Route::middleware(['auth'])->group(function () {

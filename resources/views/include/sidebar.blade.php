@@ -1,6 +1,5 @@
 @php
     $currentUri = Route::current()->uri;
-
 @endphp
 
 <div class="sidebar-menu-dashboard">
@@ -11,7 +10,7 @@
 
         <li class="nav-menu-item @if (Str::contains($currentUri, 'users')) active @endif"><a class="nav-menu-link"
                 href="{{ route('dashboard.users') }}"><span class="fas fa-users"></span>Utilisateurs</a></li>
-                {{-- icon icon-profile  --}}
+        {{-- icon icon-profile  --}}
 
         <li class="nav-menu-item @if (Str::contains($currentUri, 'message')) active @endif"><a class="nav-menu-link"
                 href="{{ route('dashboard.messages') }}"><span class="icon icon-review"></span>Messages</a></li>

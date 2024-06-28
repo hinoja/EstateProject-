@@ -7,13 +7,11 @@ use Livewire\Component;
 use Livewire\Attributes\On;
 use Livewire\WithPagination;
 use App\Notifications\ResponseNotification;
-use Illuminate\Support\Facades\Notification;
-use Jantinnerezo\LivewireAlert\LivewireAlert;
-use PHPUnit\Framework\Constraint\Count;
+use Illuminate\Support\Facades\Notification; 
 
 class ManageMessage extends Component
 {
-    use WithPagination, LivewireAlert;
+    use WithPagination;
 
     public $reply;
 
@@ -54,7 +52,7 @@ class ManageMessage extends Component
         Notification::send($contact, new ResponseNotification($data));
 
         $this->closeModal();
-        Toastr()->success(trans('The response was successfully sent to '));
+        Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
 
         // $this->alert('success', trans('The response was successfully sent to ') . $contact->name,);
 

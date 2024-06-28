@@ -14,7 +14,8 @@ class ResponseNotification extends Notification
      * Create a new notification instance.
      */
     public function __construct(public array $data)
-    {}
+    {
+    }
 
     /**
      * Get the notification's delivery channels.
@@ -41,7 +42,7 @@ class ResponseNotification extends Notification
             ->line(trans('You have received a response for your message sent on ') . $this->data['created_at'] . trans(' with the subject: ') . $this->data['subject'])
             ->line(trans('The content of the response is: ') . $this->data['response'])
             ->action(trans('Go to website'), url('/'));
-         }
+    }
 
     /**
      * Get the array representation of the notification.
@@ -55,34 +56,3 @@ class ResponseNotification extends Notification
         ];
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

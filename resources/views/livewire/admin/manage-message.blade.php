@@ -20,7 +20,7 @@
                                 <td>{{ $contact->subject }}</td>
                                 <td>{{ $contact->created_at }}</td>
                                 <td>
-                                    <button wire:click="showModalForm({{ $contact }})"
+                                    <button wire:click="showModalForm({{ $contact }})" {{ $contact->response ? "style='background-color: rgb(81,132,197)'" : ''}}
                                         class="btn btn-{{ $contact->response ? 'primary' : 'danger' }}"><i
                                             class="fas fa-eye"></i></button>
                                 </td>
@@ -88,12 +88,12 @@
                                             @enderror
                                             <div class="row"></div> <br>
                                             <div class="mt-2">
-                                                <button wire:loading.remove type="submit" style="float: right;"
+                                                <button style="background-color: rgb(81,132,197)" wire:loading.remove type="submit" style="float: right;"
                                                     class="btn btn-primary">
                                                     <i class="fa fa-paper-plane"></i>
                                                     @lang('Send')
                                                 </button>
-                                                <button wire:loading wire:target="replyMessage" style="float: right;"
+                                                <button style="background-color: rgb(81,132,197)" wire:loading wire:target="replyMessage" style="float: right;"
                                                     class="btn btn-primary" disabled>
                                                     <span class="spinner-border spinner-border-sm" role="status"
                                                         aria-hidden="true"></span>
