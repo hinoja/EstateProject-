@@ -22,7 +22,7 @@
                                 <li class="@if (Str::contains($currentUri, 'service')) current @endif"><a
                                         href="#services">@lang('Services')</a> </li>
                                 <li class="@if (Str::contains($currentUri, 'about')) current @endif"><a
-                                        href="#">@lang('About')</a></li>
+                                        href="{{route('about')}}">@lang('About')</a></li>
                                 <li class="@if (Str::contains($currentUri, 'contact')) current @endif"><a
                                         href="{{ route('contact') }}">@lang('Contact us')</a>
                                 </li>

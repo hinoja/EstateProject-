@@ -128,6 +128,29 @@
         </div>
     </section>
     <!-- End Location -->
+
+    <!-- banner video -->
+    <section class="flat-section flat-banner-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3>Présentation Duplex<br></h3>
+                    <h6 class="text-primary">cliquez sur la vidéo pour découvrir le résultat</h6>
+
+                </div>
+                <div class="col-md-7 hover-btn-view">
+                    <P class="body-2 text-variant-1"> Pour cette Réalisation, nous avons accompagner le client depuis l'achat de son Terrain, acquisition de son titre fontier construction et finitions </P>
+                </div>
+
+            </div>
+            <div class="banner-video">
+                <img src="{{asset('assets/images/banner/img-video.jpg')}}" alt="img-video">
+                <a href="{{asset('assets/video/video.mp4')}}" data-fancybox="gallery2" class="btn-video"> <span class="icon icon-play"></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- end banner video -->
+
     <!-- Service & Counter  -->
     <section class="flat-section" id="services">
         <div class="container">
@@ -185,6 +208,15 @@
                         {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                     </div>
                 </div>
+            </div>
+            <div class="container-fluid row  mb-5 justify-content">
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3" >Travaux de Lotissement</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat/vente de Terrains</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Prestations Immobilières</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Construction de Batiment Complet</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Locations D'engins</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Exploitation de mines/carrièrres</h6>
+
             </div>
             <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s"
                 data-wow-duration="2000ms">
