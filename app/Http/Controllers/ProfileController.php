@@ -31,14 +31,14 @@ class ProfileController extends Controller
 
         // if (isset($request->avatar)) {
             $user=User::find($request->user()->id);
-            dd($request);
-            $filename_chemin = 'avatars/' . $user->id . '.' . $user->avatar->getClientOriginalExtension();
+            // dd($request);
+            // $filename_chemin = 'avatars/' . $user->id . '.' . $user->avatar->getClientOriginalExtension();
 
-            $filename = $user->id . '.' . $user->avatar->getClientOriginalExtension();
-            $user->avatar = $filename_chemin;
-            $user->save();
+            // $filename = $user->id . '.' . $user->avatar->getClientOriginalExtension();
+            // $user->avatar = $filename_chemin;
+            // $user->save();
 
-            $request->file('avatar')->storeAs('avatars', $filename, 'public');
+            // $request->file('avatar')->storeAs('avatars', $filename, 'public');
         // }
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;

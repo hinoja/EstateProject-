@@ -12,7 +12,7 @@
     <section class="flat-title-page style-2">
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="index.html">@lang('Home')</a></li>
+                <li><a href="{{ route('home') }}">@lang('Home')</a></li>
                 <li>/ @lang('Contact us')</li>
             </ul>
             <h2 class="text-center">@lang('Contact us')</h2>

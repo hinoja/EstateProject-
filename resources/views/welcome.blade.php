@@ -1,5 +1,67 @@
 @extends('layouts.app')
 @section('title', __('Home'))
+@push('js')
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById('promo-video');
+            video.addEventListener('canplaythrough', function() {
+                video.play();
+            }, false);
+        });
+    </script>
+@endpush
+@push('css')
+    <style>
+        .flat-section.flat-banner-about {
+            padding: 20px 0;
+        }
+
+        .flat-section.flat-banner-about h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .flat-section.flat-banner-about h6.text-primary {
+            font-size: 1em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .flat-section.flat-banner-about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .banner-video {
+            position: relative;
+            text-align: center;
+        }
+
+        .banner-video video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .banner-video a.btn-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .banner-video a.btn-video .icon-play {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background: url('path_to_play_icon.png') no-repeat center center;
+            background-size: contain;
+        }
+    </style>
+@endpush
 @section('content')
     <!-- Slider -->
     <section class="flat-slider home-1">
@@ -133,22 +195,23 @@
     <section class="flat-section flat-banner-about">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <h3>Présentation Duplex<br></h3>
-                    <h6 class="text-primary">cliquez sur la vidéo pour découvrir le résultat</h6>
 
-                </div>
-                <div class="col-md-7 hover-btn-view">
-                    <P class="body-2 text-variant-1"> Pour cette Réalisation, nous avons accompagner le client depuis l'achat de son Terrain, acquisition de son titre fontier construction et finitions </P>
+                <div class="box-left">
+                    <div class="text-subtitle text-primary text-center">Découvrez Nos Réalisations</div>
+                    <h4 class="mt-4 text-center">Présentation Vidéo</h4>
                 </div>
 
             </div>
             <div class="banner-video">
-                <img src="{{asset('assets/images/banner/img-video.jpg')}}" alt="img-video">
-                <a href="{{asset('assets/video/video.mp4')}}" data-fancybox="gallery2" class="btn-video"> <span class="icon icon-play"></span></a>
+                <video id="promo-video" controls preload="auto" width="100%"
+                    poster="{{ asset('assets/images/banner/img-video.jpg') }}">
+                    <source src="{{ asset('assets/video/video.mp4') }}" type="video/mp4">
+                    Votre navigateur ne supporte pas l'élément vidéo.
+                </video>
             </div>
         </div>
     </section>
+
     <!-- end banner video -->
 
     <!-- Service & Counter  -->
@@ -203,14 +266,16 @@
                     </div>
                     <div class="content">
                         <h6 class="title">Etude Et conseils</h6>
-                        <p class="description">Notre section dediée à l'étude et aux conseils vous propose une analyse approfondie du marché immobilier local ,des conseils strtégiques pour optimiser la valeur de vos biens.
+                        <p class="description">Notre section dediée à l'étude et aux conseils vous propose une analyse
+                            approfondie du marché immobilier local ,des conseils strtégiques pour optimiser la valeur de vos
+                            biens.
                         </p>
                         {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                     </div>
                 </div>
             </div>
             <div class="container-fluid row  mb-5 justify-content">
-                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3" >Travaux de Lotissement</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Travaux de Lotissement</h6>
                 <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat/vente de Terrains</h6>
                 <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Prestations Immobilières</h6>
                 <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Construction de Batiment Complet</h6>
@@ -285,265 +350,6 @@
         </div>
     </section>
 
-    {{-- <section class="flat-section flat-property">
-                <div class="container">
-                    <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <div class="box-left">
-                            <div class="text-subtitle text-primary">Top Properties</div>
-                            <h4 class="mt-4">Best Property Value</h4>
-                        </div>
-                        <a href="#" class="tf-btn primary size-1">View All</a>
-                    </div>
-                    <div class="wrap-property">
-                        <div class="box-left  wow fadeInLeftSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                            <div class="homeya-box lg">
-                                <div class="archive-top">
-                                    <a href="property-details-v1.html" class="images-group">
-                                        <div class="images-style">
-                                            <img src="{{asset('assets/images/home/house-7.jpg')}}" alt="img">
-                                        </div>
-                                        <div class="top">
-                                            <ul class="d-flex gap-8">
-                                                <li class="flag-tag success style-3">Featured</li>
-                                                <li class="flag-tag style-1 style-3">For Sale</li>
-                                            </ul>
-                                            <ul class="d-flex gap-4">
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-arrLeftRight"></span>
-                                                </li>
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-heart"></span>
-                                                </li>
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-eye"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="bottom">
-                                            <span class="flag-tag style-2">VILLA</span>
-                                        </div>
-                                    </a>
-                                    <div class="content">
-                                        <h5 class="text-capitalize"><a href="property-details-v1.html" class="link"> Rancho Vista Verde, Santa Barbara</a></h5>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <p class="note">"I truly appreciate the professionalism and in-depth...</p>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                    <div class="d-flex gap-8 align-items-center">
-                                        <div class="avatar avt-40 round">
-                                            <img src="{{asset('assets/images/avatar/avt-11.jpg')}}" alt="avt">
-                                        </div>
-                                        <span class="body-2">Floyd Miles</span>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <h6>$250,00</h6>
-                                        <span class="text-variant-1">/month</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="box-right wow fadeInRightSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-1.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex gap-4 flex-wrap flex-column">
-                                            <li class="flag-tag success">Featured</li>
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">House</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-5.jp')}}g" alt="avt">
-                                            </div>
-                                            <span>Ralph Edwards</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$5050,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-2.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex">
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">Villa</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
-                                            </div>
-                                            <span>Annette Black</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$250,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-3.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex">
-
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">Studio</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Coastal Serenity Cottage</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-11.jpg')}}" alt="avt">
-                                            </div>
-                                            <span>Tony Nguyen</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$5050,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> --}}
-
-
 
     <!-- Testimonial -->
     <section class="flat-section-v3 bg-surface flat-testimonial">
@@ -567,117 +373,10 @@
                 <div class="col-lg-9">
                     <div class="swiper tf-sw-testimonial" data-preview-lg="2.6" data-preview-md="2" data-preview-sm="2"
                         data-space="30">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class="text-justify fs-6 note body-1">
-                                        "J'ai acheté ma maison grâce à cette agence et je les recommande vivement. Leur
-                                        équipe a fait preuve d'un professionnalisme exceptionnel, comprenant mes besoins et
-                                        me guidant avec patience. Leur connaissance du marché local et leur réactivité ont
-                                        rendu le processus fluide. Je suis ravi de ma maison et remercie l'équipe de
-                                        Well-done pour leur excellent service." </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent1.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Femi Adebayo</div>
-                                            <p class="text-variant-1 mt-4">Responsable Marketing</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class="text-justify fs-6 note body-1">
-                                        "Je tiens à saluer l'excellent service de cette agence lors de mon achat immobilier.
-                                        Ils ont été à l'écoute de mes besoins et m'ont guidé vers la bonne propriété. Ils
-                                        ont
-                                        géré tous les aspects techniques et juridiques avec professionnalisme, rendant
-                                        l'acquisition fluide et sans accroc."
-                                    </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent5.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Jean-Pierre Ngassa</div>
-                                            <p class="text-variant-1 mt-4">Directeur Hospitalier</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class="text-justify fs-6 note body-1">
-                                        "Mon expérience avec les services de gestion immobilière a été
-                                        exceptionnelle. Ils gèrent les propriétés de manière professionnelle et réactive, et
-                                        résolvent
-                                        rapidement tout problème. Leur approche attentive me donne une grande tranquillité
-                                        d'esprit."
-                                    </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent2.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Abebe Bekele</div>
-                                            <p class="text-variant-1 mt-4">Chef de Projet</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class=" text-justify fs-6 note body-1">
-                                        "Je suis très satisfait du professionnalisme et des connaissances de l'équipe de
-                                        courtage. Ils m'ont aidé à trouver la maison idéale et m'ont soutenu dans les
-                                        aspects juridiques et financiers, me permettant de prendre ma décision en toute
-                                        confiance."
-                                    </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent4.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Nneka Okeke</div>
-                                            <p class="text-variant-1 mt-4">Responsable de Communication</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        @include('include.testimonials')
 
                     </div>
+
 
                 </div>
 
@@ -703,7 +402,7 @@
                                 <h6 class="link">Mireille Biloa</h6>
                                 <p class="mt-4 text-variant-1">PDG et Fondatrice</p>
                             </div>
-                            <a  target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
+                            <a target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
                         </a>
                     </div>
                 </div>

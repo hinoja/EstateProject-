@@ -65,6 +65,7 @@ return [
     'ipv4' => 'Le champ :attribute doit être une adresse IPv4 valide.',
     'ipv6' => 'Le champ :attribute doit être une adresse IPv6 valide.',
     'json' => 'Le champ :attribute doit être un document JSON valide.',
+    'lowercase' => 'Le champ :attribute doit être une minuscule.',
     'lt' => [
         'array' => 'Le tableau :attribute doit contenir moins de :value éléments.',
         'file' => 'La taille du fichier de :attribute doit être inférieure à :value kilo-octets.',
