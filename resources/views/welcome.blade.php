@@ -47,7 +47,7 @@
                             <a href="#" class="box-location">
                                 <div class="image">
                                     <img src="{{ asset('assets/images/welldone/lotis4.jpg') }}" width="100px"
-                                        height="150px" alt="image-location">
+                                        height="150px" alt="image-location" >                                                                                                                                                                                   
                                 </div>
                                 <div class="content">
                                     <span class="sub-title"> 3000 m2</span>
@@ -55,7 +55,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" style="max-height: 50px">
                             <a href="#" class="box-location">
                                 <div class="image">
                                     <img src="{{ asset('assets/images/welldone/terrain5.jpg') }}" width="80px"
@@ -128,6 +128,37 @@
         </div>
     </section>
     <!-- End Location -->
+
+    {{-- video baner --}}
+    {{-- <div class="container mt-5 center" style="width: 100%">
+        <h4 class="text-primary">Duplex réalisé</h4>
+        <video src="{{asset('assets/video/video.mp4')}}" controls autoplay loop height="600"  ></video>
+    </div> --}}
+
+    <section class="flat-section flat-banner-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h6>
+                        Veuillez Visitez Notre Duplex <br>
+                    </h6>
+                    <span class="text-primary">Cliquez sur le Bouton </span>
+                </div>
+                <div class="col-md-7 hover-btn-view">
+                    <P class="body-2 text-variant-1">Projet Réaliser du debut à la fin; nous avons accompagnés le client de l'achat de terrain en passant par le dossier technique et titre foncier ensuite la conception du plan et en fin la construction et finition . </P>
+                </div>
+
+            </div>
+            <div class="banner-video">
+                <img src="{{asset('assets/images/banner/img-video.jpg')}}" alt="img-video">
+                {{-- <video src="{{asset('assets/video/video.mp4')}}"  autoplay loop height="600"  data-fancybox="gallery1" class="btn-video"></video> --}}
+                <a href="{{asset('assets/video/video1.mp4')}}" data-fancybox="gallery2" class="btn-video"> <span class="icon icon-play"></span></a>
+            </div>
+        </div>
+    </section>
+    
+    {{-- End video baner --}}
+
     <!-- Service & Counter  -->
     <section class="flat-section" id="services">
         <div class="container">
@@ -185,6 +216,14 @@
                         {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                     </div>
                 </div>
+            </div>
+            <div class="row  mb-5 centred">
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3" >Travaux de Lotissement</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat/vente de Terrains</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Prestations Immobilières</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Construction de Batiment Complet</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Locations D'engins</h6>
+                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Exploitation de mines et carrièrres</h6>
             </div>
             <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s"
                 data-wow-duration="2000ms">
