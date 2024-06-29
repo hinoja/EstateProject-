@@ -58,8 +58,7 @@
                 </div>
                 <div class="content">
                     <h6 class="title">Acheter un nouveau logement</h6>
-                    <p class="description">Découvrez la maison de vos rêves sans effort. Explorez diverses propriétés
-                        et bénéficiez des conseils d'experts pour une expérience d'achat sans faille.</p>
+                    <p class="description">Découvrez la maison de vos rêves sans effort. Explorez diverses propriétés et bénéficiez des conseils d'experts pour une expérience d'achat sans faille.</p>
                     {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                 </div>
             </div>
@@ -69,8 +68,7 @@
                 </div>
                 <div class="content">
                     <h6 class="title">Louer un logement</h6>
-                    <p class="description">Découvrez sans effort la location qui vous convient. Explorez une grande
-                        variété d'offres adaptées précisément à vos besoins et à votre style de vie.</p>
+                    <p class="description">Découvrez sans effort la location qui vous convient. Explorez une grande variété d'offres adaptées précisément à vos besoins et à votre style de vie.</p>
                     {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                 </div>
             </div>
@@ -80,33 +78,20 @@
                 </div>
                 <div class="content">
                     <h6 class="title">Vendre</h6>
-                    <p class="description">Vendez en toute confiance grâce aux conseils d'un expert et à des stratégies
-                        efficaces, en mettant en valeur les meilleurs atouts de votre propriété pour une vente réussie.
-                    </p>
+                    <p class="description">Vendez en toute confiance grâce aux conseils d'un expert et à des stratégies efficaces, en mettant en valeur les meilleurs atouts de votre propriété pour une vente réussie.</p>
                     {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
-                </div>
-            </div>
-            <div class="box-service hover-btn-view">
-                <div class="icon-box">
-                    <span class="icon icon-profile"></span>
-                </div>
-                <div class="content">
-                    <h6 class="title">Etude Et conseils</h6>
-                    <p class="description">Notre section dediée à l'étude et aux conseils vous propose une analyse approfondie du marché immobilier local ,des conseils strtégiques pour optimiser la valeur de vos biens.
-                    </p>
-                    {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
-                </div>
+                </div>   
             </div>
         </div>
-        <div class="row  mb-5 centred">
+        <div class="container-fluid row  mb-5 justify-content">
             <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3" >Travaux de Lotissement</h6>
-            <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat/vente de Terrains</h6>
+            <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat et vente de Terrains</h6>
             <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Prestations Immobilières</h6>
             <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Construction de Batiment Complet</h6>
             <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Locations D'engins</h6>
             <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Exploitation de mines et carrièrres</h6>
+
         </div>
-        
          
         {{-- <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
             <div class="box-left list-view">
@@ -114,188 +99,133 @@
                     <h6 class="title">Travaux de Lotissement</h6><h6 class="title">Travaux de Lotissement</h6>
                 </div>
         </div> --}}
-        <section class="flat-section flat-benefit bg-surface">
-            <div class="container">
-                <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                    <div class="text-subtitle text-primary">Nos avantages</div>
-                    <h4 class="mt-4">Pourquoi choisir Well-done</h4>
+        <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
+            <div class="counter-box">
+                <div class="count-number">
+                    <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">+ 85</div>
                 </div>
-                <div class="wrap-benefit wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                    <div class="box-benefit">
-                        <div class="icon-box">
-                            <span class="icon icon-proven"></span>
-                        </div>
-                        <div class="content text-center">
-                            <h6 class="title">Une expertise Reconnue</h6>
-                            <p class="description">Notre équipe expérimentée excelle dans l'immobilier avec des années de
-                                navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux.</p>
-                        </div>
-                    </div>
-                    <div class="box-benefit">
-                        <div class="icon-box">
-                            <span class="icon icon-double-ruler"></span>
-                        </div>
-                        <div class="content text-center">
-                            <h6 class="title">Solutions personnalisées</h6>
-                            <p class="description">Nous sommes fiers d'élaborer des stratégies personnalisées pour répondre à
-                                vos objectifs uniques, garantissant ainsi un parcours immobilier sans faille.</p>
-                        </div>
-                    </div>
-                    <div class="box-benefit">
-                        <div class="icon-box">
-                            <span class="icon icon-hand"></span>
-                        </div>
-                        <div class="content text-center">
-                            <h6 class="title">Des partenariats transparents</h6>
-                            <p class="description">La transparence est essentielle dans nos relations avec les clients. Nous
-                                privilégions une communication claire et des pratiques éthiques, favorisant ainsi la confiance
-                                et la fiabilité.</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="title-count">Clients satisfaits</div>
             </div>
-        </section>
+            <div class="counter-box">
+                <div class="count-number">
+                    <div class="number" data-speed="2000" data-to="100" data-inviewport="yes">+ 100</div>
+                </div>
+                <div class="title-count">Recomandations</div>
+            </div>
+
+            <div class="counter-box">
+                <div class="count-number">
+                    <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">+ 66</div>
+                </div>
+                <div class="title-count">Tavaux Trimestriels</div>
+            </div>
+        </div>
     </div>
 </section>
-
 <!-- End Service -->
 <!-- Testimonial -->
-<section class="flat-section-v3 bg-surface flat-testimonial">
-    <div class="cus-layout-1">
-        <div class="row align-items-center">
-            <div class="col-lg-3">
-                <div class="box-title">
-                    <div class="text-subtitle text-primary">Témoignages</div>
-                    <h4 class="mt-4">Avis des clients</h4>
+<section class="flat-section flat-testimonial-v4">
+    <div class="container">
+        <div class="box-title text-center">
+            <div class="text-subtitle text-primary">Avis de clients</div>
+            <h4 class="mt-4">Avis de clients</h4>
+        </div>
+        <div class="swiper tf-sw-testimonial" data-preview-lg="2" data-preview-md="2" data-preview-sm="2" data-space="30">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box-tes-item style-2">
+                        <ul class="list-star">
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                        </ul>
+                        <p class="note body-1">
+                            "J'ai vraiment apprécié le professionnalisme et les connaissances approfondies de l'équipe de courtage. Ils m'ont non seulement aidé à trouver la maison idéale, mais ils m'ont également assisté pour les aspects juridiques et financiers, ce qui m'a permis de me sentir confiant et sûr de ma décision."                                            </p>
+                        <div class="box-avt d-flex align-items-center gap-12">
+                            <div class="avatar avt-60 round">
+                                <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <div class="h7 fw-7">Felix Atangana</div>
+                                <p class="text-variant-1 mt-4">client</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class=" text-variant-1 p-16">"Notre équipe expérimentée excelle dans l'immobilier avec des années de
-                    navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux."
-                </p>
-                <div class="box-navigation">
-                    <div class="navigation swiper-nav-next nav-next-testimonial"><span class="icon icon-arr-l"></span>
-                    </div>
-                    <div class="navigation swiper-nav-prev nav-prev-testimonial"><span class="icon icon-arr-r"></span>
+                <div class="swiper-slide">
+                    <div class="box-tes-item style-2">
+                        <ul class="list-star">
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                        </ul>
+                        <p class="note body-1">
+                            "Mon expérience avec les services de gestion immobilière a dépassé mes attentes. Ils gèrent efficacement les propriétés avec une approche professionnelle et attentive dans chaque situation. J'ai l'assurance que tout problème sera résolu rapidement et efficacement." </p>
+                        <div class="box-avt d-flex align-items-center gap-12">
+                            <div class="avatar avt-60 round">
+                                <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <div class="h7 fw-7">Claude Nana</div>
+                                <p class="text-variant-1 mt-4">client</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-9">
-                <div class="swiper tf-sw-testimonial" data-preview-lg="2.6" data-preview-md="2" data-preview-sm="2"
-                    data-space="30">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <ul class="list-star">
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                </ul>
-                                <p class="text-justify fs-6 note body-1">
-                                    "J'ai acheté ma maison grâce à cette agence et je les recommande vivement. Leur
-                                    équipe a fait preuve d'un professionnalisme exceptionnel, comprenant mes besoins et
-                                    me guidant avec patience. Leur connaissance du marché local et leur réactivité ont
-                                    rendu le processus fluide. Je suis ravi de ma maison et remercie l'équipe de
-                                    Well-done pour leur excellent service." </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="{{ asset('assets/images/agents/agent1.jpg') }}" alt="avatar">
-                                    </div>
-                                    <div class="info">
-                                        <div class="h7 fw-7">Femi Adebayo</div>
-                                        <p class="text-variant-1 mt-4">Responsable Marketing</p>
-                                    </div>
-                                </div>
+                <div class="swiper-slide">
+                    <div class="box-tes-item style-2">
+                        <ul class="list-star">
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                        </ul>
+                        <p class="note body-1">
+                            "J'ai récemment travaillé avec cette agence  pour acheter ma nouvelle maison et je ne peux que les recommander chaleureusement. Leur équipe a fait un travail exceptionnel tout au long du processus. Ils ont pris le temps de bien comprendre mes besoins et mes critères, et m'ont guidé avec patience et professionnalisme pour trouver la propriété idéale. Leur expertise du marché local m'a permis de faire le bon choix, et ils se sont montrés très réactifs à chaque étape. Grâce à eux, l'achat s'est déroulé sans accroc. Je suis ravi de ma nouvelle maison et je remercie toute l'équipe de Well-done pour leur excellent service."   </p>
+                        <div class="box-avt d-flex align-items-center gap-12">
+                            <div class="avatar avt-60 round">
+                                <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <div class="h7 fw-7">Adam Tchamba</div>
+                                <p class="text-variant-1 mt-4">Client</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
-                                <ul class="list-star">
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                </ul>
-                                <p class="text-justify fs-6 note body-1">
-                                    "Je tiens à saluer l'excellent service de cette agence lors de mon achat immobilier.
-                                    Ils ont été à l'écoute de mes besoins et m'ont guidé vers la bonne propriété. Ils
-                                    ont
-                                    géré tous les aspects techniques et juridiques avec professionnalisme, rendant
-                                    l'acquisition fluide et sans accroc."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="{{ asset('assets/images/agents/agent5.jpg') }}" alt="avatar">
-                                    </div>
-                                    <div class="info">
-                                        <div class="h7 fw-7">Jean-Pierre Ngassa</div>
-                                        <p class="text-variant-1 mt-4">Directeur Hospitalier</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                                <ul class="list-star">
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                </ul>
-                                <p class="text-justify fs-6 note body-1">
-                                    "Mon expérience avec les services de gestion immobilière a été
-                                    exceptionnelle. Ils gèrent les propriétés de manière professionnelle et réactive, et
-                                    résolvent
-                                    rapidement tout problème. Leur approche attentive me donne une grande tranquillité
-                                    d'esprit."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="{{ asset('assets/images/agents/agent2.jpg') }}" alt="avatar">
-                                    </div>
-                                    <div class="info">
-                                        <div class="h7 fw-7">Abebe Bekele</div>
-                                        <p class="text-variant-1 mt-4">Chef de Projet</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <ul class="list-star">
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                    <li class="icon icon-star"></li>
-                                </ul>
-                                <p class=" text-justify fs-6 note body-1">
-                                    "Je suis très satisfait du professionnalisme et des connaissances de l'équipe de
-                                    courtage. Ils m'ont aidé à trouver la maison idéale et m'ont soutenu dans les
-                                    aspects juridiques et financiers, me permettant de prendre ma décision en toute
-                                    confiance."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="{{ asset('assets/images/agents/agent4.jpg') }}" alt="avatar">
-                                    </div>
-                                    <div class="info">
-                                        <div class="h7 fw-7">Nneka Okeke</div>
-                                        <p class="text-variant-1 mt-4">Responsable de Communication</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-tes-item style-2">
+                        <ul class="list-star">
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                            <li class="icon icon-star"></li>
+                        </ul>
+                        <p class="note body-1">
+                            "Je tiens à saluer l'excellent service de cette agence lors de mon achat immobilier. Leur conseiller, M. Martin, a été à l'écoute de mes besoins et a su me guider dans le choix de la bonne propriété. Tout au long des démarches, il a fait preuve d'une grande disponibilité et a géré avec brio tous les aspects techniques et juridiques. Grâce à son professionnalisme, l'acquisition s'est déroulée dans les meilleures conditions."    </p>                                        </p>
+                        <div class="box-avt d-flex align-items-center gap-12">
+                            <div class="avatar avt-60 round">
+                                <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <div class="h7 fw-7">Conrad Tsafack</div>
+                                <p class="text-variant-1 mt-4">Client</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
+            <div class="sw-pagination sw-pagination-testimonial"></div>
 
         </div>
+    
     </div>
 </section>
 <!-- End Testimonial -->
@@ -331,67 +261,72 @@
 <!-- Agents -->
 <section class="flat-section flat-agents">
     <div class="container">
-        <div class="box-title text-center wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-            <div class="text-subtitle text-primary">Notre Equipe</div>
-            <h4 class="mt-4">Nos Responsables</h4>
+        <div class="box-title text-center">
+            <div class="text-subtitle text-primary">Our Teams</div>
+            <h4 class="mt-4">Meet Our Agents</h4>
         </div>
         <div class="row">
-            <div class="box col-lg-3 col-sm-6">
-                <div class="box-agent hover-img wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                    <a href="#" class="box-img img-style">
-                        <img src="{{ asset('assets/images/welldone/boss.jpg') }}" alt="image-agent">
-                    </a>
+            <div class="box col-lg-4 col-sm-6">
+                <div class="box-agent style-1 hover-img">
+                    <div class="box-img img-style">
+                        <img src="images/agents/agent-lg-1.jpg" alt="image-agent">
+                        <ul class="agent-social">
+                            <li><a href="#" class="icon icon-facebook"></a></li>
+                            <li><a href="#" class="icon icon-linkedin"></a></li>
+                            <li><a href="#" class="icon icon-twitter"></a></li>
+                            <li><a href="#" class="icon icon-instagram"></a></li>
+                        </ul>
+                    </div>
                     <a href="#" class="content">
                         <div class="info">
-                            <h6 class="link">Mireille Biloa</h6>
-                            <p class="mt-4 text-variant-1">PDG et Fondatrice</p>
+                            <h6 class="link">Jack Halow</h6>
+                            <p class="mt-4 text-variant-1">CEO & Founder</p>
                         </div>
-                        <a  target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
+                        <span class="icon-phone"></span>
                     </a>
                 </div>
             </div>
-            <div class="box col-lg-3 col-sm-6">
-                <div class="box-agent hover-img wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
-                    <a href="#" class="box-img img-style">
-                        <img src="{{ asset('assets/images/agents/agent6.jpg') }}" alt="image-agent">
+            <div class="box col-lg-4 col-sm-6">
+                <div class="box-agent style-1 hover-img">
+                    <div class="box-img img-style">
+                        <img src="images/agents/agent-lg-2.jpg" alt="image-agent">
+                        <ul class="agent-social">
+                            <li><a href="#" class="icon icon-facebook"></a></li>
+                            <li><a href="#" class="icon icon-linkedin"></a></li>
+                            <li><a href="#" class="icon icon-twitter"></a></li>
+                            <li><a href="#" class="icon icon-instagram"></a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="content">
+                        <div class="info">
+                            <h6 class="link">John Smith</h6>
+                            <p class="mt-4 text-variant-1">Property Manager</p>
+                        </div>
+                        <span class="icon-phone"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="box col-lg-4 col-sm-6">
+                <div class="box-agent style-1 hover-img">
+                    <div class="box-img img-style">
+                        <img src="images/agents/agent-lg-3.jpg" alt="image-agent">
+                        <ul class="agent-social">
+                            <li><a href="#" class="icon icon-facebook"></a></li>
+                            <li><a href="#" class="icon icon-linkedin"></a></li>
+                            <li><a href="#" class="icon icon-twitter"></a></li>
+                            <li><a href="#" class="icon icon-instagram"></a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="content">
+                        <div class="info">
+                            <h6 class="link">Chris Patt</h6>
+                            <p class="mt-4 text-variant-1">Administrative Staff</p>
+                        </div>
+                        <span class="icon-phone"></span>
+                    </a>
+                </div>
+            </div>
 
-                    </a>
-                    <a href="#" class="content">
-                        <div class="info">
-                            <h6 class="link">John Tchoungang</h6>
-                            <p class="mt-4 text-variant-1">Community Manager</p>
-                        </div>
-                        <a target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
-                </div>
-            </div>
-            <div class="box col-lg-3 col-sm-6">
-                <div class="box-agent hover-img wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                    <a href="#" class="box-img img-style">
-                        <img src="{{ asset('assets/images/agents/agent3.jpg') }}" alt="image-agent">
-
-                    </a>
-                    <a href="#" class="content">
-                        <div class="info">
-                            <h6 class="link">Chris Kenfack</h6>
-                            <p class="mt-4 text-variant-1">Commercial</p>
-                        </div>
-                        <a target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
-                </div>
-            </div>
-            <div class="box col-lg-3 col-sm-6">
-                <div class="box-agent hover-img wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">
-                    <a href="#" class="box-img img-style">
-                        <img src="{{ asset('assets/images/agents/agent7.jpg') }}" alt="image-agent">
-
-                    </a>
-                    <a href="#" class="content">
-                        <div class="info">
-                            <h6 class="link">Octavie Ateba</h6>
-                            <p class="mt-4 text-variant-1">Assistant de Direction</p>
-                        </div>
-                        <a target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
-                </div>
-            </div>
         </div>
     </div>
 </section>

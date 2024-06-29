@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use Illuminate\View\View;
+use App\Http\Requests\ProfileUpdateRequest;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
-use App\Http\Requests\ProfileUpdateRequest;
+use Illuminate\View\View;
 
 class ProfileController extends Controller
 {
@@ -17,7 +16,7 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
-        return view('dashboard.profil', [
+        return view('profile.edit', [
             'user' => $request->user(),
         ]);
     }
@@ -29,17 +28,6 @@ class ProfileController extends Controller
     {
         $request->user()->fill($request->validated());
 
-        // if (isset($request->avatar)) {
-            $user=User::find($request->user()->id);
-            dd($request);
-            $filename_chemin = 'avatars/' . $user->id . '.' . $user->avatar->getClientOriginalExtension();
-
-            $filename = $user->id . '.' . $user->avatar->getClientOriginalExtension();
-            $user->avatar = $filename_chemin;
-            $user->save();
-
-            $request->file('avatar')->storeAs('avatars', $filename, 'public');
-        // }
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
         }

@@ -3,38 +3,30 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Well-Done Real Estate | @yield('title')</title>
+    <title>Well-Done Real Estate</title>
     <meta name="author" content="Well-done Real Estate">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="images/logo/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
-
 
     <!-- font -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/fonts.css') }}">
     <!-- Icons -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/font-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet"type="text/css" href="{{ asset('assets/css/jqueryui.min.css') }}" />
-
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/jqueryui.min.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}"> --}}
     <link rel="stylesheet"type="text/css" href="{{ asset('assets/css/styles.css') }}" />
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.jpg') }}">
     <!-- <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png"> -->
-
     {{-- -- Fontawesome Css --> --}}
+
     <link rel="stylesheet" href="{{ asset('assets/fontawesome/css/all.min.css') }}">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
-    @livewireStyles
+
 </head>
 
 <body class="body bg-surface counter-scroll">
-
     <div id="wrapper">
         <div id="page" class="clearfix">
             <div class="layout-wrap">
@@ -49,7 +41,7 @@
                                     <div class="logo-box d-flex">
                                         <div class="logo"><a href="{{ route('home') }}"><img
                                                     src="{{ asset('assets/images/logo/logo.jpg') }}" alt="logo"
-                                                    width="98" height="44"></a></div>
+                                                    width="50" height="96"></a></div>
                                         <div class="button-show-hide">
                                             <span class="icon icon-categories"></span>
                                         </div>
@@ -58,13 +50,12 @@
                                         <a href="#" class="box-avatar dropdown-toggle" data-bs-toggle="dropdown">
                                             <div class="avatar avt-40 round">
                                                 <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('assets/images/avatar/user-default.png') }}"
-                                                    alt="">
+                                                    alt="avt">
                                             </div>
                                             <p class="name"> {{ Auth::user()->name }}<span
                                                     class="icon icon-arr-down"></span></p>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="{{ route('home') }}">
-                                                    @lang('Back to home')</a>
+                                                <a class="dropdown-item" href="my-profile.html"> Profile</a>
                                                 <form method="POST" action="{{ route('logout') }}">
                                                     @csrf
                                                     <li>
@@ -89,39 +80,41 @@
                 </header>
                 <!-- end header -->
                 <!-- sidebar dashboard -->
-                @include('include.sidebar')
+                        @include('include.sidebar')
                 <!-- end sidebar dashboard -->
 
                 @yield('content')
 
                 <div class="overlay-dashboard"></div>
+
+
             </div>
         </div>
         <!-- /#page -->
+
+
     </div>
 
+
+    <!-- progression -->
+    {{ include 'assets/components/progress.html' }}
 
 
     <!-- Javascript -->
     <script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/jquery.min.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script> --}}
+    <script type="text/javascript" src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
     {{-- <script type="text/javascript" src="{{ asset('assets/js/carousel.js') }}"></script> --}}
     <script type="text/javascript" src="{{ asset('assets/js/plugin.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('assets/js/rangle-slider.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/js/countto.js') }}"></script> --}}
+    {{-- <script type="text/javascript" src="{{ asset('assets/js/rangle-slider.js') }}"></script> --}}
+    <script type="text/javascript" src="{{ asset('assets/js/countto.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/shortcodes.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('assets/js/animation_heading.js') }}"></script> --}}
+    <script type="text/javascript" src="{{ asset('assets/js/jqueryui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/animation_heading.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
 
-    @stack('js')
-    @livewireScripts
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <x-livewire-alert::scripts />
-    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
-    {!! Toastr::message() !!}
+    
 </body>
 
 </html>

@@ -1,156 +1,152 @@
-@extends('layouts.app-template')
-@section('title', __('profile page'))
+@extends('layout.app-template')
+
 @section('content')
-    <div class="main-content">
-        <div class="main-content-inner wrap-dashboard-content-2">
-            <div class="button-show-hide show-mb">
-                {{-- <span class="body-1">Show Dashboard</span> --}}
-            </div>
 
-            <div class="widget-box-2">
-                <div class="box">
-                    <h6 class="title">Compte {{ Auth::user()->role->name }} </h6>
-                    <form id="send-verification" method="post" action="{{ route('verification.send') }}">
-                        @csrf
-                    </form>
-                    <form method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data"
-                        class="mt-6 space-y-6">
-                        @csrf
-                        @method('patch')
-                        <div class="box-agent-avt">
-                            <div class="img-poster">
-                                <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('assets/images/avatar/user-default.png') }}"
-                                    alt="avatar" loading="lazy">
-                            </div>
-
-                            <div class="loc-group position-relative">
-                                <x-input-label for="avatar" :value="__('Charger un nouvelle image')" />
-                                <input type="file" class="form-control" name="avatar" value="{{ old('avatar') }}"
-                                    id="avatar" placeholder=" Ajouter une image" accept=".jpg,.png,.jpeg,.ico">
-                                {{-- <span  class="pass-show-eye"><i class="fas fa-eye-slash"></i></span> --}}
-                                <x-input-error :messages="$errors->get('avatar')" class="mt-2" />
-                            </div>
-
-                        </div>
-                </div>
-
-                <h6 class="title">Information</h6>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <x-input-label for="name" :value="__('Name')" />
-                        <x-text-input id="name" name="name" type="text" class="mt-1 block w-full"
-                            :value="old('name', $user->name)" required autofocus autocomplete="name" />
-                        <x-input-error class="mt-2" :messages="$errors->get('name')" />
-
-                    </div>
-                    <div class="col-lg-6">
-                        <x-input-label for="email" :value="__('Email')" />
-                        <x-text-input id="email" name="email" type="email" class="mt-1 block w-full"
-                            :value="old('email', $user->email)" required autocomplete="username" />
-                        <x-input-error class="mt-2" :messages="$errors->get('email')" />
-                        @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && !$user->hasVerifiedEmail())
-                            <div>
-                                <p class="text-sm mt-2 text-gray-800">
-                                    {{ __('Your email address is unverified.') }}
-
-                                    <button form="send-verification"
-                                        class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                        {{ __('Click here to re-send the verification email.') }}
-                                    </button>
-                                </p>
-
-                                @if (session('status') === 'verification-link-sent')
-                                    <p class="mt-2 font-medium text-sm text-green-600">
-                                        {{ __('A new verification link has been sent to your email address.') }}
-                                    </p>
-                                @endif
-                            </div>
-                        @endif
-                    </div>
-                </div><br>
-                <div class="box grid-4 gap-30 box-info-2">
-                    <div class="box-fieldset">
-                        <label for="job"> @lang('Created at')<span>
-                                {{ $user->formatDate($user->created_at) }}</span></label>
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <div class="flex items-center gap-4">
-                        <button type="submit" class="tf-btn primary">
-                            @lang('Update')
-                        </button>
-                        @if (session('status') === 'profile-updated')
-                            <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
-                                class="text-sm text-gray-600">{{ __('Saved.') }}</p>
-                        @endif
-                    </div>
-                </div>
-                </form>
-                <br>
-                <hr>
-                <br>
-                <form method="post" action="{{ route('password.update') }}" class="mt-6 space-y-6">
-                    @csrf
-                    @method('put')
-                    <h6 class="title">@lang('Update Password')</h6>
-                    <div class="box grid-3 gap-30">
-                        <div class="box-password">
-                            {{-- <label for="old-pass">Old Password:<span>*</span></label>
-                        <div class="box-password">
-                            <input type="password" class="form-contact style-1 password-field" placeholder="Password">
-                            <span class="show-pass">
-                                <i class="icon-pass icon-eye"></i>
-                                <i class="icon-pass icon-eye-off"></i>
-                            </span>
-                        </div> --}}
-
-                            <x-input-label for="update_password_current_password" :value="__('Current password')" />
-                            <x-text-input id="update_password_current_password" name="current_password" type="password"
-                                class="mt-1 block w-full" autocomplete="current-password" />
-                            <x-input-error :messages="$errors->updatePassword->get('current_password')" class="mt-2" />
-
-                        </div>
-                        <div class="box-password">
-                            <div>
-                                <x-input-label for="update_password_password" :value="__('New password')" />
-                                <x-text-input id="update_password_password" name="password" type="password"
-                                    class="mt-1 block w-full" autocomplete="new-password" />
-                                <x-input-error :messages="$errors->updatePassword->get('password')" class="mt-2" />
-                            </div>
-                        </div>
-                        <div class="box-password">
-                            <div>
-                                <x-input-label for="update_password_password_confirmation" :value="__('Confirm Password')" />
-                                <x-text-input id="update_password_password_confirmation" name="password_confirmation"
-                                    type="password" class="mt-1 block w-full" autocomplete="new-password" />
-                                <x-input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-2" />
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="flex items-center gap-4">
-                        <button type="submit" class="tf-btn primary">
-                            @lang('Update Password')
-                        </button>
-
-                        @if (session('status') === 'password-updated')
-                            <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
-                                class="text-sm text-gray-600">{{ __('Saved.') }}</p>
-                        @endif
-                    </div>
-                </form>
-
-            </div>
-
+<div class="main-content">
+    <div class="main-content-inner wrap-dashboard-content-2">
+        <div class="button-show-hide show-mb">
+            <span class="body-1">Show Dashboard</span>
         </div>
-
+        <div class="widget-box-2">
+            <div class="box">
+                <h6 class="title">Account Settings</h6>
+                <div class="box-agent-account">
+                    <h6>Agent Account</h6>
+                    <p class="note">Your current account type is set to agent, if you want to remove your agent account, and return to normal account, you must click the button below</p>
+                    <a href="#" class="tf-btn primary">Remove Agent Account</a>
+                </div>
+            </div>
+            <div class="box">
+                <h6 class="title">Avatar</h6>
+                <div class="box-agent-avt">
+                    <div class="avatar">
+                        <img src="images/avatar/account.jpg" alt="avatar" loading="lazy" width="128" height="128">
+                    </div>
+                    <div class="content uploadfile">
+                        <p>Upload a new avatar</p>
+                        <div class="box-ip">
+                            <input type="file" class="ip-file">
+                        </div>
+                        <p>JPEG 100x100</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h6 class="title">Agent Poster</h6>
+                <div class="box-agent-avt">
+                    <div class="img-poster">
+                        <img src="images/avatar/account-2.jpg" alt="avatar" loading="lazy">
+                    </div>
+                    <div class="content uploadfile">
+                        <p>Upload a new poster</p>
+                        <div class="box-ip">
+                            <input type="file" class="ip-file">
+                        </div>
+                        <span>JPEG 100x100</span>
+                    </div>
+                </div>
+            </div>
+            <h6 class="title">Information</h6>
+            <div class="box box-fieldset">
+                <label for="name">Full name:<span>*</span></label>
+                <input type="text" value="Demo Agent" class="form-control style-1">
+            </div>
+            <div class="box box-fieldset">
+                <label for="desc">Description:<span>*</span></label>
+                <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+            </div>
+            <div class="box grid-4 gap-30">
+                <div class="box-fieldset">
+                    <label for="company">Your Company:<span>*</span></label>
+                    <input type="text" value="Your Company" class="form-control style-1">
+                </div>
+                <div class="box-fieldset">
+                    <label for="position">Position:<span>*</span></label>
+                    <input type="text" value="Your Company" class="form-control style-1">
+                </div>
+                <div class="box-fieldset">
+                    <label for="num">Office Number:<span>*</span></label>
+                    <input type="number" value="1332565894" class="form-control style-1">
+                </div>
+                <div class="box-fieldset">
+                    <label for="address">Office Address:<span>*</span></label>
+                    <input type="text" value="10 Bringhurst St, Houston, TX" class="form-control style-1">
+                </div>
+            </div>
+            <div class="box grid-4 gap-30 box-info-2">
+                <div class="box-fieldset">
+                    <label for="job">Job:<span>*</span></label>
+                    <input type="text" value="Realter" class="form-control style-1">
+                </div>
+                <div class="box-fieldset">
+                    <label for="email">Email address:<span>*</span></label>
+                    <input type="text" value="themeflat@gmail.com" class="form-control style-1">
+                </div>
+                <div class="box-fieldset">
+                    <label for="phone">Your Phone:<span>*</span></label>
+                    <input type="number" value="1332565894" class="form-control style-1">
+                </div>
+            </div>
+            <div class="box box-fieldset">
+                <label for="location">Location:<span>*</span></label>
+                <input type="text" value="634 E 236th St, Bronx, NY 10466" class="form-control style-1">
+            </div>
+            <div class="box box-fieldset">
+                <label for="fb">Facebook:<span>*</span></label>
+                <input type="text" value="#" class="form-control style-1">
+            </div>
+            <div class="box box-fieldset">
+                <label for="tw">Twitter:<span>*</span></label>
+                <input type="text" value="#" class="form-control style-1">
+            </div>
+            <div class="box box-fieldset">
+                <label for="linkedin">Linkedin:<span>*</span></label>
+                <input type="text" value="#" class="form-control style-1">
+            </div>
+            <div class="box">
+                <a href="#" class="tf-btn primary">Save & Update</a>
+            </div>
+            <h6 class="title">Change password</h6>
+            <div class="box grid-3 gap-30">
+                <div class="box-fieldset">
+                    <label for="old-pass">Old Password:<span>*</span></label>
+                    <div class="box-password">
+                        <input type="password" class="form-contact style-1 password-field" placeholder="Password">
+                        <span class="show-pass">
+                            <i class="icon-pass icon-eye"></i>
+                            <i class="icon-pass icon-eye-off"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="box-fieldset">
+                    <label for="new-pass">New Password:<span>*</span></label>
+                    <div class="box-password">
+                        <input type="password" class="form-contact style-1 password-field2" placeholder="Password">
+                        <span class="show-pass2">
+                            <i class="icon-pass icon-eye"></i>
+                            <i class="icon-pass icon-eye-off"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="box-fieldset">
+                    <label for="confirm-pass">Confirm Password:<span>*</span></label>
+                    <div class="box-password">
+                        <input type="password" class="form-contact style-1 password-field3" placeholder="Password">
+                        <span class="show-pass3">
+                            <i class="icon-pass icon-eye"></i>
+                            <i class="icon-pass icon-eye-off"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class="tf-btn primary">Update Password</a>
+            </div>
+        </div>
     </div>
     <div class="footer-dashboard">
         <p class="text-variant-2">©2024 Homzen. All Rights Reserved.</p>
     </div>
-    </div>
+</div>
+
 @endsection

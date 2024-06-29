@@ -1,19 +1,17 @@
 @php
-    $currentUri = Route::current()->uri;
+    $currentRouteName = Route::current()->uri();
 @endphp
 
 <div class="sidebar-menu-dashboard">
     <ul class="box-menu-dashboard">
+        <li class="nav-menu-item @if ($currentRouteName = route('dashboard')) active @endif" ><a class="nav-menu-link" href="{{ route('dashboard') }}"><span
+                    class="icon icon-home"></span>@lang('dashboard')</a></li>
 
-        <li class="nav-menu-item @if (Str::contains($currentUri, 'index')) active @endif"><a class="nav-menu-link"
-                href="{{ route('dashboard') }}"><span class="icon icon-home"></span>@lang('dashboard')</a></li>
+        <li class="nav-menu-item @if (Str::contains($currentRouteName, 'users')) active open @endif"><a class="nav-menu-link" href="{{ route('dashboard.users') }}"><span
+                    class="icon icon-profile"></span>Utilisateurs</a></li>
 
-        <li class="nav-menu-item @if (Str::contains($currentUri, 'users')) active @endif"><a class="nav-menu-link"
-                href="{{ route('dashboard.users') }}"><span class="fas fa-users"></span>Utilisateurs</a></li>
-        {{-- icon icon-profile  --}}
-
-        <li class="nav-menu-item @if (Str::contains($currentUri, 'message')) active @endif"><a class="nav-menu-link"
-                href="{{ route('dashboard.messages') }}"><span class="icon icon-review"></span>Messages</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('terrain') }}"><span
+                    class="icon icon-review"></span>Messages</a></li>
 
         {{-- <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('terrain') }}"><span
                     class="icon icon-list-dashes"></span>Terrains</a></li>
@@ -32,7 +30,7 @@
         </li> --}}
 
 
-        <li class="nav-menu-item @if (Str::contains($currentUri, 'profile')) active @endif"><a class="nav-menu-link"
-                href="{{ route('profile.edit') }}"><span class="icon icon-profile"></span>Profile</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-link" href="{{ route('profile.edit') }}"><span
+                    class="icon icon-profile"></span>Profile</a></li>
     </ul>
 </div>

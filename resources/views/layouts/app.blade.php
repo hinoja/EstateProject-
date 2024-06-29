@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Well-done Real Estate | @yield('title')</title>
+    <title>Well-Done Real Estate</title>
 
     <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,15 +19,13 @@
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.jpg') }}">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
-
     <!-- <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png"> -->
-    @stack('css')
+
 </head>
 
 <body class="body counter-scroll">
-    @include('sweetalert::alert')
-    <div class="body counter-scroll">
+
+    <body class="body counter-scroll">
         <div id="wrapper">
             <div id="pagee" class="clearfix">
 
@@ -35,7 +33,78 @@
                 <header class="main-header fixed-header">
 
                     <!-- Header Lower -->
-                    @include('include.navBarFront')
+                    <div class="header-lower">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="inner-container d-flex justify-content-between align-items-center">
+                                    <!-- Logo Box -->
+                                    <div class="logo-box">
+                                        <div class="logo"><a href="{{ route('home') }}"><img
+                                                    src="{{ asset('assets/images/logo/logo.jpg') }}" alt="logo"
+                                                    width="80" height="44"></a></div>
+                                    </div>
+                                    <div class="nav-outer">
+                                        <!-- Main Menu -->
+                                        <nav class="main-menu show navbar-expand-md">
+                                            <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                                <ul class="navigation clearfix">
+                                                    <li class="current"><a href="{{ route('home') }}">Accueil</a> </li>
+                                                    <li class=""><a href="#services">Services</a> </li>
+                                                    <li class=""><a href="{{route('about')}}">A propos</a></li>
+                                                    <li class=""><a href="{{ route('contact') }}">Contact</a> </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                        <!-- Main Menu End-->
+                                    </div>
+
+
+                                    <div class="header-account">
+                                        <div class="register">
+                                            <ul class="d-flex">
+
+                                                @auth
+                                                    <div class="nav-item dropdown auth">
+                                                        <button id="auth-btn" class="btn btn-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown"
+                                                            aria-expanded="false">{{ auth()->user()->name }}</button>
+                                                        <ul class="dropdown-menu dropdown-menu-start"
+                                                            aria-labelledby="dropdownMenuButton1">
+                                                            @if (auth()->user()->role_id === 1)
+                                                                <li><a class="dropdown-item"
+                                                                        href="{{ route('dashboard') }}"><small>@lang('Go to dashboard')</small></a>
+                                                                </li>
+                                                            @endif
+                                                            <form method="POST" action="{{ route('logout') }}">
+                                                                @csrf
+                                                                <li>
+                                                                    <a href="{{ route('logout') }}"
+                                                                        onclick="event.preventDefault();
+                                                                this.closest('form').submit();"
+                                                                        class="dropdown-item"> @lang('Log Out')
+                                                                    </a>
+                                                                </li>
+                                                            </form>
+                                                        </ul>
+                                                    </div>
+                                                @else
+                                                    <div class="nav-item nav-link auth">
+                                                        <a href="{{ route('login') }}" type="button"
+                                                            class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
+                                                    </div>
+                                                @endauth
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="mobile-nav-toggler mobile-button"><span></span></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- End Header Lower -->
 
                     <!-- Mobile Menu  -->
@@ -43,9 +112,8 @@
                     <div class="mobile-menu">
                         <div class="menu-backdrop"></div>
                         <nav class="menu-box">
-                            <div class="nav-logo"><a href="{{ route('home') }}"><img
-                                        src="{{ asset('assets/images/logo/logo.jpg') }}" alt="nav-logo" width="144"
-                                        height="55"></a></div>
+                            <div class="nav-logo"><a href="{{ route('home') }}"><img src="images/logo/logo%402x.png"
+                                        alt="nav-logo" width="174" height="44"></a></div>
                             <div class="bottom-canvas">
                                 <div class="login-box flex align-items-center">
                                     <a href="#modalLogin" data-bs-toggle="modal">Login</a>
@@ -56,11 +124,11 @@
                                 <div class="mobi-icon-box">
                                     <div class="box d-flex align-items-center">
                                         <span class="icon icon-phone2"></span>
-                                        <div>(+237) 6 99 59 19 92</div>
+                                        <div>1-333-345-6868</div>
                                     </div>
                                     <div class="box d-flex align-items-center">
                                         <span class="icon icon-mail"></span>
-                                        <div>welldonerealestate237@yahoo.com</div>
+                                        <div>themesflat@gmail.com</div>
                                     </div>
                                 </div>
                             </div>
@@ -80,18 +148,18 @@
                             <div class="content-footer-top">
                                 <div class="footer-logo">
                                     <img src="{{ asset('assets/images/logo/logo.jpg') }}" alt="logo-footer"
-                                        width="160" height="44">
+                                        width="174" height="44">
                                 </div>
                                 <div class="wd-social">
-                                    <span>Suivez-nous :</span>
+                                    <span>Follow Us:</span>
                                     <ul class="list-social d-flex align-items-center">
                                         <li><a href="#" class="box-icon w-40 social"><i
                                                     class="icon icon-facebook"></i></a></li>
                                         <li><a href="#" class="box-icon w-40 social"><i
                                                     class="icon icon-linkedin"></i></a></li>
                                         <li><a href="#" class="box-icon w-40 social">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_748_6323)">
                                                         <path
                                                             d="M9.4893 6.77491L15.3176 0H13.9365L8.87577 5.88256L4.8338 0H0.171875L6.28412 8.89547L0.171875 16H1.55307L6.8973 9.78782L11.1659 16H15.8278L9.48896 6.77491H9.4893ZM7.59756 8.97384L6.97826 8.08805L2.05073 1.03974H4.17217L8.14874 6.72795L8.76804 7.61374L13.9371 15.0075H11.8157L7.59756 8.97418V8.97384Z"
@@ -121,9 +189,9 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-cl-1">
 
-                                        <p class="text-variant-2">Spécialisée les activités et opérations immobilières
-                                            pour
-                                            les personnes dans le besoin. </p>
+                                        <p class="text-variant-2">Spécialisée dans les visites de haut niveau pour
+                                             les personnes dans le besoin. Contacter l'agence
+                                        </p>
                                         <ul class="mt-12">
                                             <li class="mt-12 d-flex align-items-center gap-8">
                                                 <i class="icon icon-mapPinLine fs-20 text-variant-2"></i>
@@ -144,17 +212,15 @@
                                 </div>
                                 <div class="col-lg-2 col-md-6 col-6">
                                     <div class="footer-cl-2">
-                                        <div class="fw-7 text-white">@lang('Categories')</div>
+                                        <div class="fw-7 text-white">Categories</div>
                                         <ul class="mt-10 navigation-menu-footer">
                                             <li> <a href="#" class="caption-1 text-variant-2">Nos
                                                     Services</a> </li>
 
-                                            <li> <a href="#" class="caption-1 text-variant-2"> @lang('About')
-                                                    de Nous</a>
+                                            <li> <a href="#" class="caption-1 text-variant-2">A propos de nous</a>
                                             </li>
 
-                                            <li> <a href="{{ route('contact') }}"
-                                                    class="caption-1 text-variant-2">Laisser un Message </a> </li>
+                                            <li> <a href="{{route('contact')}}" class="caption-1 text-variant-2">laisser un message </a> </li>
 
                                         </ul>
                                     </div>
@@ -163,15 +229,11 @@
                                     <div class="footer-cl-3">
                                         <div class="fw-7 text-white">Notre Companie</div>
                                         <ul class="mt-10 navigation-menu-footer">
-                                            <li> <a href="#" class="caption-1 text-variant-2">Vente de
-                                                    maison</a> </li>
+                                            <li> <a href="topmap-list.html" class="caption-1 text-variant-2">Vente de maison</a> </li>
 
-                                            <li> <a href="#" class="caption-1 text-variant-2">Location de
-                                                    maison</a> </li>
-                                            <li> <a href="#" class="caption-1 text-variant-2">Achat maison</a>
-                                            </li>
-                                            <li> <a href="#" class="caption-1 text-variant-2">Votre Agence</a>
-                                            </li>
+                                            <li> <a href="#" class="caption-1 text-variant-2">Location de maison</a> </li>
+                                            <li> <a href="#" class="caption-1 text-variant-2">Achat maison</a> </li>
+                                            <li> <a href="#" class="caption-1 text-variant-2">Votre Agence</a> </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -180,8 +242,7 @@
                                         <div class="fw-7 text-white">
                                             Newsletter
                                         </div>
-                                        <p class="mt-12 text-variant-2">Votre dose hebdomadaire/mensuelle de
-                                            connaissances et d'inspiration</p>
+                                        <p class="mt-12 text-variant-2">Votre dose hebdomadaire/mensuelle de connaissances et d'inspiration</p>
                                         <form class="mt-12" id="subscribe-form" action="#" method="post"
                                             accept-charset="utf-8" data-mailchimp="true">
                                             <div id="subscribe-content">
@@ -202,20 +263,13 @@
                     <div class="bottom-footer">
                         <div class="container">
                             <div class="content-footer-bottom">
-                                <div class="copyright"> &copy;2024 <a style="color: white" class=""
-                                        href="#">{{ config('app.name') }}</a>, @lang('All Rights Reserved.')
-                                </div>
-                                <div class="row"></div>
-                                <br>
+                                <div class="copyright">©2024 Well-done Real Estate. All Rights Reserved.</div>
 
                                 <ul class="menu-bottom">
+                                    <li><a href="our-service.html">Terms Of Services</a> </li>
 
-                                    <li style="color: white" class="fs-12"> <small> @lang('Template Designed By')<a
-                                                href="https://themesflat.com" target="_blank"> Themesflat
-                                            </a></small> </li>
-                                    <li style="color: white" class="fs-12"> @lang('Distributed By')<a
-                                            href="https://themeforest.net" target="_blank">Themeforest
-                                        </a> </li>
+                                    <li><a href="pricing.html">Privacy Policy</a> </li>
+                                    <li><a href="contact.html">Cookie Policy</a> </li>
 
                                 </ul>
                             </div>
@@ -229,6 +283,14 @@
 
         </div>
 
+        <!-- progression -->
+        {{ include 'assets/components/progress.html' }}
+
+        <!-- login -->
+        {{ include 'assets/components/modal-login.html' }}
+
+        <!-- register -->
+        {{ include 'assets/components/modal-register.html' }}
 
 
         <!-- Javascript -->
@@ -243,14 +305,7 @@
         <script type="text/javascript" src="{{ asset('assets/js/shortcodes.js') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/animation_heading.js') }}"></script>
         <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
-        @stack('js')
 
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-        <x-livewire-alert::scripts />
-        <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-        <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
-        {!! Toastr::message() !!}
-    </div>
+    </body>
 
 </html>

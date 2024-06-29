@@ -3,7 +3,6 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -50,14 +49,6 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
-    }
-    function formatDate($date)
-    {
-        $locale = app()->getLocale();
-        Carbon::setLocale($locale);
-        $format = $locale === 'en' ? 'F d, Y, H:i' : 'd M Y, H:i';
-
-        return Carbon::parse($date)->translatedFormat($format);
     }
 
      // RELATIONSHIPS

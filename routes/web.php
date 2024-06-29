@@ -10,10 +10,6 @@ use App\Http\Controllers\DashboardController;
 
 
 Route::view('/', 'welcome')->name('home');
-Route::view('/contact', 'contact')->name('contact');
-Route::view('/about', 'about')->name('about');
-
-
 
 // _________________________________________________________
 
@@ -29,12 +25,9 @@ Route::view('/about', 'about')->name('about');
 
 Route::middleware(['auth'])->prefix('dashboard')->group(function () {
 
-    Route::get('/index', DashboardController::class)->name('dashboard');
-    Route::view('/users', 'dashboard.users')->name('dashboard.users');
-    Route::view('/messages', 'dashboard.message')->name('dashboard.messages');
+    Route::get('/', DashboardController::class)->name('dashboard');
+    Route::get('/users', [UserController::class, 'index'])->name('dashboard.users');
 });
-
-
 
 Route::get('/dashboard/message', function () {
     return view('dashboard.message');
@@ -43,6 +36,13 @@ Route::get('/dashboard/terrain', function () {
     return view('dashboard.terrain');
 })->name('terrain');
 
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
 // PROFILE
 Route::middleware(['auth'])->group(function () {

@@ -1,770 +1,910 @@
 @extends('layouts.app')
-@section('title', __('Home'))
+
 @section('content')
-    <!-- Slider -->
-    <section class="flat-slider home-1">
-        <div class="container relative">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="slider-content">
-                        <div class="heading text-center">
-                            <h1 class="text-white animationtext slide">
-                                Find Your
-                                <span class="tf-text s1 cd-words-wrapper">
-                                    <span class="item-text is-visible">Dream Home</span>
-                                    <span class="item-text is-hidden text-primary">Perfect Home</span>
-                                    <span class="item-text is-hidden">Real Estate</span>
-                                </span>
-                            </h1>
-                            <p class="subtitle text-center text-white body-1 wow fadeIn" data-wow-delay=".8s"
-                                data-wow-duration="2000ms"> Nous sommes une agence immobilière qui vous aidera à trouver la
-                                meilleure résidence et/ou Terrains dont vous rêvez, discutons-en pour la maison de vos rêves
-                                ?</p>
+
+                <!-- Slider -->
+                <section class="flat-slider home-1">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slider-content">
+                                <div class="heading text-center">
+                                    <h1 class="text-white animationtext slide">
+                                        Find Your
+                                            <span class="tf-text s1 cd-words-wrapper">
+                                                <span class="item-text is-visible">Dream Home</span>
+                                                <span class="item-text is-hidden text-primary">Perfect Home</span>
+                                                <span class="item-text is-hidden">Real Estate</span>
+                                            </span>
+                                    </h1>
+                                    <p class="subtitle text-white body-1 wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms"> Nous sommes une agence immobilière qui vous aidera à trouver la meilleure résidence et/ou Terrains dont vous rêvez, discutons-en pour la maison de vos rêves ?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </section>
+            <!-- End Slider -->
+            <!-- Recommended -->
+            <section class="flat-section flat-recommended">
+                <div class="container">
+                    <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="text-subtitle text-primary">Construction et Vente de Maisons</div>
+                        <h4 class="mb-5">Faites votre choix, Nous le réalisons</h4>
+                    </div>
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/home/house-1.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success">.</li>
+                                                            {{-- <li class="flag-tag style-1">Vendu</li> --}}
+                                                        </ul>
+                                                        {{-- <ul class="d-flex gap-4">
+                                                            <li class="box-icon w-32">
+                                                                <span class="icon icon-arrLeftRight"></span>
+                                                            </li>
+                                                            <li class="box-icon w-32">
+                                                                <span class="icon icon-heart"></span>
+                                                            </li>
+                                                            <li class="box-icon w-32">
+                                                                <span class="icon icon-eye"></span>
+                                                            </li>
+                                                        </ul> --}}
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Villa</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
+                                                    <ul class="meta-list">
+                                                        <li class="item">
+                                                            <i class="icon icon-bed"></i>
+                                                            <span>3</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-bathtub"></i>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-ruler"></i>
+                                                            <span>600 M2</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <h6>65 000 000 - 70 000 000</h6>
+                                                    <span class="text-variant-1">cfa</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/home/house-2.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Villa</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
+                                                    <ul class="meta-list">
+                                                        <li class="item">
+                                                            <i class="icon icon-bed"></i>
+                                                            <span>5</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-bathtub"></i>
+                                                            <span>3</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-ruler"></i>
+                                                            <span>500 M2</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
+                                                <div class="d-flex gap-8 align-items-center">
+                                                    <div class="avatar avt-40 round">
+                                                        <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>70 000 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v2.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/home/house-3.jpg')}}" alt="img">
+                                                    </div>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Villa</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
+                                                    <ul class="meta-list">
+                                                        <li class="item">
+                                                            <i class="icon icon-bed"></i>
+                                                            <span>4</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-bathtub"></i>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-ruler"></i>
+                                                            <span>400 M2</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
+                                                <div class="d-flex gap-8 align-items-center">
+                                                    <div class="avatar avt-40 round">
+                                                        <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avt">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>70 000 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> --}}
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v3.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/home/house-4.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Maison</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Vue sur la mer</a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>imaginez un telle propriete a Kribi</p> </div>
+                                                    <ul class="meta-list">
+                                                        <li class="item">
+                                                            <i class="icon icon-bed"></i>
+                                                            <span>3</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-bathtub"></i>
+                                                            <span>2</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <i class="icon icon-ruler"></i>
+                                                            <span>600 M2</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
+                                                <div class="d-flex gap-8 align-items-center">
+                                                    <div class="avatar avt-40 round">
+                                                        <img src="{{asset('assets/images/avatar/avt-8.jpg')}}" alt="avt">
+                                                    </div>
+
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>80 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v4.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/home/house-5.jpg')}}" alt="img">
+                                                    </div>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Duplex</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
+                                                    <ul class="meta-list">
+                                                        <li class="item">
+                                                            <i class="icon icon-ruler"></i>
+                                                            <span>70 M2</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
+                                                <div class="d-flex gap-8 align-items-center">
+                                                    <div class="avatar avt-40 round">
+                                                        <img src="{{asset('assets/images/avatar/avt-9.jpg')}}" alt="avt">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>45 000 000 F</h6>
+                                                    <span class="text-variant-1">cfa</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/home/house-6.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Studio</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p></p> </div>
+                                                    <ul class="meta-list">
+                                                        <li class="item">
+                                                            <i class="icon icon-ruler"></i>
+                                                            <span>100 M2</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="archive-bottom d-flex justify-content-between align-items-center">
+                                                <div class="d-flex gap-8 align-items-center">
+                                                    <div class="avatar avt-40 round">
+                                                        <img src="{{asset('assets/images/avatar/avt-6.jpg')}}" alt="avt">
+                                                    </div>
+                                                    <span>Floyd Miles</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <h6>65 000</h6>
+                                                    <span class="text-variant-1">/SqFT</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> --}}
+                                </div>
+                                {{-- <div class="text-center">
+                                    <a href="#" class="tf-btn primary size-1">View All Properties</a>
+                                </div> --}}
+                            </div>
                         </div>
                     </div>
 
                 </div>
-            </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
-    <!-- End Slider -->
 
+            </section>
 
-    <!-- Recommended -->
-    <!-- Location -->
-    <section class="flat-section-v3 flat-location bg-surface">
-        <div class="container-full">
-            <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                <div class="text-subtitle text-primary">Explorez Nos Terrains</div>
-                <h4 class="mt-4">Des Terrains Titrés Et Lotis Pour Vous</h4>
-            </div>
-            <div class="wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
-                <div class="swiper tf-sw-location overlay" data-preview-lg="4.1" data-preview-md="3" data-preview-sm="2"
-                    data-space="30" data-centered="true" data-loop="true">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/lotis4.jpg') }}" width="100px"
-                                        height="150px" alt="image-location" >                                                                                                                                                                                   
+            <section class="flat-section flat-recommended">
+                <div class="container">
+                    <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="text-subtitle text-primary">Bornage</div>
+                        <h4 class="mb-5">Lottissement Et Vente De Terrains</h4>
+                    </div>
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis2.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1">Vendu</li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrains</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"> </a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis3.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p> Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v2.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis4.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v2.html" class="link">Lotissement</a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v3.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis5.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
+                                                        Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v4.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis7.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v4.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
+                                                        Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v1.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/lotis8.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success"></li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Terrain</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link"></a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>
+                                                        Kake (Souza vers usine cacao)</p> </div>
+                                                    <ul class="meta-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <span class="sub-title"> 3000 m2</span>
-                                    <h6 class="title">Nkoabang (Carrefour)</h6>
-                                </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="swiper-slide" style="max-height: 50px">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/terrain5.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="flat-section flat-recommended">
+                <div class="container">
+                    <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <h4 class="mb-5">Location Engins</h4>
+                    </div>
+                    <div class="flat-tab-recommended wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="viewAll" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                        <div class="homeya-box">
+                                            <div class="archive-top">
+                                                <a href="property-details-v3.html" class="images-group">
+                                                    <div class="images-style">
+                                                        <img src="{{asset('assets/images/welldone/engin4.jpg')}}" alt="img">
+                                                    </div>
+                                                    <div class="top">
+                                                        <ul class="d-flex gap-8">
+                                                            <li class="flag-tag success">A louer</li>
+                                                            <li class="flag-tag style-1"></li>
+                                                        </ul>
+                                                        <ul class="d-flex gap-4">
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <span class="flag-tag style-2">Engin</span>
+                                                    </div>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="h7 text-capitalize fw-7"><a href="property-details-v3.html" class="link">Louez nos engins a moindre prix</a></div>
+                                                    <div class="desc"><i class="fs-16 icon icon-mapPin"></i><p>Cameroun</p> </div>
+                                                    <ul class="meta-list">
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <span class="sub-title">grande Propriété</span>
-                                    <h6 class="title">Mbanga ( vers usine )</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/lotis8.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
-                                </div>
-                                <div class="content">
-                                    <span class="sub-title">1000 hectares</span>
-                                    <h6 class="title"> Kake (Souza vers usine cacao)</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/terrain4.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
-                                </div>
-                                <div class="content">
-                                    <span class="sub-title">2000 m2</span>
-                                    <h6 class="title">Nkolbisson (Après le Carrefour)</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/lotis5.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
-                                </div>
-                                <div class="content">
-                                    <span class="sub-title">10 propriétés</span>
-                                    <h6 class="title">Nkolbisson (Après le Carrefour)</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/terrain6.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
-                                </div>
-                                <div class="content">
-                                    <span class="sub-title">2180 m2</span>
-                                    <h6 class="title">Nkolbisson (Après le Carrefour)</h6>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="box-navigation">
-                        <div class="navigation swiper-nav-next nav-next-location"><span class="icon icon-arr-l"></span>
-                        </div>
-                        <div class="navigation swiper-nav-prev nav-prev-location"><span class="icon icon-arr-r"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </section>
-    <!-- End Location -->
-
-    {{-- video baner --}}
-    {{-- <div class="container mt-5 center" style="width: 100%">
-        <h4 class="text-primary">Duplex réalisé</h4>
-        <video src="{{asset('assets/video/video.mp4')}}" controls autoplay loop height="600"  ></video>
-    </div> --}}
-
-    <section class="flat-section flat-banner-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h6>
-                        Veuillez Visitez Notre Duplex <br>
-                    </h6>
-                    <span class="text-primary">Cliquez sur le Bouton </span>
-                </div>
-                <div class="col-md-7 hover-btn-view">
-                    <P class="body-2 text-variant-1">Projet Réaliser du debut à la fin; nous avons accompagnés le client de l'achat de terrain en passant par le dossier technique et titre foncier ensuite la conception du plan et en fin la construction et finition . </P>
                 </div>
 
-            </div>
-            <div class="banner-video">
-                <img src="{{asset('assets/images/banner/img-video.jpg')}}" alt="img-video">
-                {{-- <video src="{{asset('assets/video/video.mp4')}}"  autoplay loop height="600"  data-fancybox="gallery1" class="btn-video"></video> --}}
-                <a href="{{asset('assets/video/video1.mp4')}}" data-fancybox="gallery2" class="btn-video"> <span class="icon icon-play"></span></a>
-            </div>
-        </div>
-    </section>
-    
-    {{-- End video baner --}}
+            </section>
 
-    <!-- Service & Counter  -->
-    <section class="flat-section" id="services">
-        <div class="container">
-            <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                <div class="box-left">
-                    <div class="text-subtitle text-primary">Nos Services</div>
-                    <h4 class="mt-4">Que faisons-nous ?</h4>
-                </div>
-                <a href="#" class="btn-view"><span class="text">Voir Nos Services</span> <span
-                        class="icon icon-arrow-right2"></span> </a>
-            </div>
-            <div class="flat-service wrap-service wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
-                <div class="box-service hover-btn-view">
-                    <div class="icon-box">
-                        <span class="icon icon-buy-home"></span>
-                    </div>
-                    <div class="content">
-                        <h6 class="title">Acheter un nouveau logement</h6>
-                        <p class="description">Découvrez la maison de vos rêves sans effort. Explorez diverses propriétés
-                            et bénéficiez des conseils d'experts pour une expérience d'achat sans faille.</p>
-                        {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
-                    </div>
-                </div>
-                <div class="box-service hover-btn-view">
-                    <div class="icon-box">
-                        <span class="icon icon-rent-home"></span>
-                    </div>
-                    <div class="content">
-                        <h6 class="title">Louer un logement</h6>
-                        <p class="description">Découvrez sans effort la location qui vous convient. Explorez une grande
-                            variété d'offres adaptées précisément à vos besoins et à votre style de vie.</p>
-                        {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
-                    </div>
-                </div>
-                <div class="box-service hover-btn-view">
-                    <div class="icon-box">
-                        <span class="icon icon-sale-home"></span>
-                    </div>
-                    <div class="content">
-                        <h6 class="title">Vendre</h6>
-                        <p class="description">Vendez en toute confiance grâce aux conseils d'un expert et à des stratégies
-                            efficaces, en mettant en valeur les meilleurs atouts de votre propriété pour une vente réussie.
-                        </p>
-                        {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
-                    </div>
-                </div>
-                <div class="box-service hover-btn-view">
-                    <div class="icon-box">
-                        <span class="icon icon-profile"></span>
-                    </div>
-                    <div class="content">
-                        <h6 class="title">Etude Et conseils</h6>
-                        <p class="description">Notre section dediée à l'étude et aux conseils vous propose une analyse approfondie du marché immobilier local ,des conseils strtégiques pour optimiser la valeur de vos biens.
-                        </p>
-                        {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
-                    </div>
-                </div>
-            </div>
-            <div class="row  mb-5 centred">
-                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3" >Travaux de Lotissement</h6>
-                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat/vente de Terrains</h6>
-                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Prestations Immobilières</h6>
-                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Construction de Batiment Complet</h6>
-                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Locations D'engins</h6>
-                <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Exploitation de mines et carrièrres</h6>
-            </div>
-            <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s"
-                data-wow-duration="2000ms">
-                <div class="counter-box">
-                    <div class="count-number">
-                        <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">+ 85</div>
-                    </div>
-                    <div class="title-count">Clients satisfaits</div>
-                </div>
-                <div class="counter-box">
-                    <div class="count-number">
-                        <div class="number" data-speed="2000" data-to="112" data-inviewport="yes">+ 100</div>
-                    </div>
-                    <div class="title-count">Recomandations</div>
-                </div>
-
-                <div class="counter-box">
-                    <div class="count-number">
-                        <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">+ 66</div>
-                    </div>
-                    <div class="title-count">Tavaux Trimestriels</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="flat-section flat-benefit bg-surface">
-        <div class="container">
-            <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                <div class="text-subtitle text-primary">Nos avantages</div>
-                <h4 class="mt-4">Pourquoi choisir Well-done</h4>
-            </div>
-            <div class="wrap-benefit wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                <div class="box-benefit">
-                    <div class="icon-box">
-                        <span class="icon icon-proven"></span>
-                    </div>
-                    <div class="content text-center">
-                        <h6 class="title">Une expertise Reconnue</h6>
-                        <p class="description">Notre équipe expérimentée excelle dans l'immobilier avec des années de
-                            navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux.</p>
-                    </div>
-                </div>
-                <div class="box-benefit">
-                    <div class="icon-box">
-                        <span class="icon icon-double-ruler"></span>
-                    </div>
-                    <div class="content text-center">
-                        <h6 class="title">Solutions personnalisées</h6>
-                        <p class="description">Nous sommes fiers d'élaborer des stratégies personnalisées pour répondre à
-                            vos objectifs uniques, garantissant ainsi un parcours immobilier sans faille.</p>
-                    </div>
-                </div>
-                <div class="box-benefit">
-                    <div class="icon-box">
-                        <span class="icon icon-hand"></span>
-                    </div>
-                    <div class="content text-center">
-                        <h6 class="title">Des partenariats transparents</h6>
-                        <p class="description">La transparence est essentielle dans nos relations avec les clients. Nous
-                            privilégions une communication claire et des pratiques éthiques, favorisant ainsi la confiance
-                            et la fiabilité.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- <section class="flat-section flat-property">
+            <!-- Service & Counter  -->
+            <section class="flat-section"  id="services">
                 <div class="container">
                     <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                         <div class="box-left">
-                            <div class="text-subtitle text-primary">Top Properties</div>
-                            <h4 class="mt-4">Best Property Value</h4>
+                            <div class="text-subtitle text-primary">Nos Services</div>
+                            <h4 class="mt-4">Que faisons-nous ?</h4>
                         </div>
-                        <a href="#" class="tf-btn primary size-1">View All</a>
+                        {{-- <a href="#" class="btn-view"><span class="text">View All Services</span> <span class="icon icon-arrow-right2"></span> </a> --}}
                     </div>
-                    <div class="wrap-property">
-                        <div class="box-left  wow fadeInLeftSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                            <div class="homeya-box lg">
-                                <div class="archive-top">
-                                    <a href="property-details-v1.html" class="images-group">
-                                        <div class="images-style">
-                                            <img src="{{asset('assets/images/home/house-7.jpg')}}" alt="img">
-                                        </div>
-                                        <div class="top">
-                                            <ul class="d-flex gap-8">
-                                                <li class="flag-tag success style-3">Featured</li>
-                                                <li class="flag-tag style-1 style-3">For Sale</li>
+                    <div class="flat-service wrap-service wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
+                        <div class="box-service hover-btn-view">
+                            <div class="icon-box">
+                                <span class="icon icon-buy-home"></span>
+                            </div>
+                            <div class="content">
+                                <h6 class="title">Acheter un nouveau logement</h6>
+                                <p class="description">Découvrez la maison de vos rêves sans effort. Explorez diverses propriétés et bénéficiez des conseils d'experts pour une expérience d'achat sans faille.</p>
+                                {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
+                            </div>
+                        </div>
+                        <div class="box-service hover-btn-view">
+                            <div class="icon-box">
+                                <span class="icon icon-rent-home"></span>
+                            </div>
+                            <div class="content">
+                                <h6 class="title">Louer un logement</h6>
+                                <p class="description">Découvrez sans effort la location qui vous convient. Explorez une grande variété d'offres adaptées précisément à vos besoins et à votre style de vie.</p>
+                                {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
+                            </div>
+                        </div>
+                        <div class="box-service hover-btn-view">
+                            <div class="icon-box">
+                                <span class="icon icon-sale-home"></span>
+                            </div>
+                            <div class="content">
+                                <h6 class="title">Vendre</h6>
+                                <p class="description">Vendez en toute confiance grâce aux conseils d'un expert et à des stratégies efficaces, en mettant en valeur les meilleurs atouts de votre propriété pour une vente réussie.</p>
+                                {{-- <a href="#" class="btn-view style-1"><span class="text">Learn More</span> <span class="icon icon-arrow-right2"></span> </a> --}}
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="container-fluid row  mb-5 justify-content">
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3" >Travaux de Lotissement</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Achat et vente de Terrains</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Prestations Immobilières</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Construction de Batiment Complet</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Locations D'engins</h6>
+                        <h6 class="title col-md-4 col-sm-4 col-xl-4 col-xxl-3">Exploitation de mines et carrièrres</h6>
+
+                    </div>
+                     
+                    {{-- <div class="box-title style-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="box-left list-view">
+                            <div class="text-subtitle text-primary">
+                                <h6 class="title">Travaux de Lotissement</h6><h6 class="title">Travaux de Lotissement</h6>
+                            </div>
+                    </div> --}}
+                    <div class="flat-counter tf-counter wrap-counter wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
+                        <div class="counter-box">
+                            <div class="count-number">
+                                <div class="number" data-speed="2000" data-to="85" data-inviewport="yes">+ 85</div>
+                            </div>
+                            <div class="title-count">Clients satisfaits</div>
+                        </div>
+                        <div class="counter-box">
+                            <div class="count-number">
+                                <div class="number" data-speed="2000" data-to="100" data-inviewport="yes">+ 100</div>
+                            </div>
+                            <div class="title-count">Recomandations</div>
+                        </div>
+
+                        <div class="counter-box">
+                            <div class="count-number">
+                                <div class="number" data-speed="2000" data-to="66" data-inviewport="yes">+ 66</div>
+                            </div>
+                            <div class="title-count">Tavaux Trimestriels</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flat-section flat-benefit bg-surface">
+                <div class="container">
+                    <div class="box-title text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="text-subtitle text-primary">Nos avantages</div>
+                        <h4 class="mt-4">Pourquoi choisir Well-done</h4>
+                    </div>
+                    <div class="wrap-benefit wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="box-benefit">
+                            <div class="icon-box">
+                                <span class="icon icon-proven"></span>
+                            </div>
+                            <div class="content text-center">
+                                <h6 class="title">Une expertise Reconnue</h6>
+                                <p class="description">Notre équipe expérimentée excelle dans l'immobilier avec des années de navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux.</p>
+                            </div>
+                        </div>
+                        <div class="box-benefit">
+                            <div class="icon-box">
+                                <span class="icon icon-double-ruler"></span>
+                            </div>
+                            <div class="content text-center">
+                                <h6 class="title">Solutions personnalisées</h6>
+                                <p class="description">Nous sommes fiers d'élaborer des stratégies personnalisées pour répondre à vos objectifs uniques, garantissant ainsi un parcours immobilier sans faille.</p>
+                            </div>
+                        </div>
+                        <div class="box-benefit">
+                            <div class="icon-box">
+                                <span class="icon icon-hand"></span>
+                            </div>
+                            <div class="content text-center">
+                                <h6 class="title">Des partenariats transparents</h6>
+                                <p class="description">La transparence est essentielle dans nos relations avec les clients. Nous privilégions une communication claire et des pratiques éthiques, favorisant ainsi la confiance et la fiabilité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="flat-section-v3 bg-surface flat-testimonial">
+                <div class="cus-layout-1">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="box-title">
+                                <div class="text-subtitle text-primary">Avis de clients</div>
+                                <h4 class="mt-4">Avis de clients</h4>
+                            </div>
+                            <p class="text-variant-1 p-16">Notre équipe expérimentée excelle dans l'immobilier avec des années de navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux.</p>
+                            <div class="box-navigation">
+                                <div class="navigation swiper-nav-next nav-next-testimonial"><span class="icon icon-arr-l"></span></div>
+                                <div class="navigation swiper-nav-prev nav-prev-testimonial"><span class="icon icon-arr-r"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="swiper tf-sw-testimonial" data-preview-lg="2.6" data-preview-md="2" data-preview-sm="2" data-space="30">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
+                                            <ul class="list-star">
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
                                             </ul>
-                                            <ul class="d-flex gap-4">
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-arrLeftRight"></span>
-                                                </li>
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-heart"></span>
-                                                </li>
-                                                <li class="box-icon w-40">
-                                                    <span class="icon icon-eye"></span>
-                                                </li>
+                                            <p class="note body-1">
+                                                "J'ai vraiment apprécié le professionnalisme et les connaissances approfondies de l'équipe de courtage. Ils m'ont non seulement aidé à trouver la maison idéale, mais ils m'ont également assisté pour les aspects juridiques et financiers, ce qui m'a permis de me sentir confiant et sûr de ma décision."                                            </p>
+                                            <div class="box-avt d-flex align-items-center gap-12">
+                                                <div class="avatar avt-60 round">
+                                                    <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="h7 fw-7">Felix Atangana</div>
+                                                    <p class="text-variant-1 mt-4">client</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box-tes-item wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
+                                            <ul class="list-star">
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
                                             </ul>
-                                        </div>
-                                        <div class="bottom">
-                                            <span class="flag-tag style-2">VILLA</span>
-                                        </div>
-                                    </a>
-                                    <div class="content">
-                                        <h5 class="text-capitalize"><a href="property-details-v1.html" class="link"> Rancho Vista Verde, Santa Barbara</a></h5>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <p class="note">"I truly appreciate the professionalism and in-depth...</p>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="archive-bottom d-flex justify-content-between align-items-center">
-                                    <div class="d-flex gap-8 align-items-center">
-                                        <div class="avatar avt-40 round">
-                                            <img src="{{asset('assets/images/avatar/avt-11.jpg')}}" alt="avt">
-                                        </div>
-                                        <span class="body-2">Floyd Miles</span>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <h6>$250,00</h6>
-                                        <span class="text-variant-1">/month</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="box-right wow fadeInRightSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-1.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex gap-4 flex-wrap flex-column">
-                                            <li class="flag-tag success">Featured</li>
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">House</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Lakeview Haven, Lake Tahoe</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-5.jp')}}g" alt="avt">
+                                            <p class="note body-1">
+                                                "Mon expérience avec les services de gestion immobilière a dépassé mes attentes. Ils gèrent efficacement les propriétés avec une approche professionnelle et attentive dans chaque situation. J'ai l'assurance que tout problème sera résolu rapidement et efficacement." </p>
+                                            <div class="box-avt d-flex align-items-center gap-12">
+                                                <div class="avatar avt-60 round">
+                                                    <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avatar">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="h7 fw-7">Claude Nana</div>
+                                                    <p class="text-variant-1 mt-4">client</p>
+                                                </div>
                                             </div>
-                                            <span>Ralph Edwards</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$5050,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
                                         </div>
                                     </div>
-                                </div>
-
-                            </div>
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-2.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex">
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">Villa</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Casa Lomas de Machalí Machas</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avt">
+                                    <div class="swiper-slide">
+                                        <div class="box-tes-item wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
+                                            <ul class="list-star">
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                            </ul>
+                                            <p class="note body-1">
+                                                "J'ai récemment travaillé avec cette agence  pour acheter ma nouvelle maison et je ne peux que les recommander chaleureusement. Leur équipe a fait un travail exceptionnel tout au long du processus. Ils ont pris le temps de bien comprendre mes besoins et mes critères, et m'ont guidé avec patience et professionnalisme pour trouver la propriété idéale. Leur expertise du marché local m'a permis de faire le bon choix, et ils se sont montrés très réactifs à chaque étape. Grâce à eux, l'achat s'est déroulé sans accroc. Je suis ravi de ma nouvelle maison et je remercie toute l'équipe de Well-done pour leur excellent service."   </p>
+                                            <div class="box-avt d-flex align-items-center gap-12">
+                                                <div class="avatar avt-60 round">
+                                                    <img src="{{asset('assets/images/avatar/avt-5.jpg')}}" alt="avatar">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="h7 fw-7">Adam Tchamba</div>
+                                                    <p class="text-variant-1 mt-4">Client</p>
+                                                </div>
                                             </div>
-                                            <span>Annette Black</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$250,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
                                         </div>
                                     </div>
-                                </div>
-
-                            </div>
-                            <div class="homeya-box list-style-1">
-                                <a href="property-details-v1.html" class="images-group">
-                                    <div class="images-style">
-                                        <img src="{{asset('assets/images/home/house-sm-3.jpg')}}" alt="img">
-                                    </div>
-                                    <div class="top">
-                                        <ul class="d-flex">
-
-                                            <li class="flag-tag style-1">For Sale</li>
-                                        </ul>
-                                        <ul class="d-flex gap-4">
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-arrLeftRight"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-heart"></span>
-                                            </li>
-                                            <li class="box-icon w-28">
-                                                <span class="icon icon-eye"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom">
-                                        <span class="flag-tag style-2">Studio</span>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <div class="archive-top">
-                                        <div class="h7 text-capitalize fw-7"><a href="property-details-v1.html" class="link">Coastal Serenity Cottage</a></div>
-                                        <div class="desc"><i class="icon icon-mapPin"></i><p>145 Brooklyn Ave, Califonia, New York</p> </div>
-                                        <ul class="meta-list">
-                                            <li class="item">
-                                                <i class="icon icon-bed"></i>
-                                                <span>4</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-bathtub"></i>
-                                                <span>2</span>
-                                            </li>
-                                            <li class="item">
-                                                <i class="icon icon-ruler"></i>
-                                                <span>600 SqFT</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex gap-8 align-items-center">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{asset('assets/images/avatar/avt-11.jpg')}}" alt="avt">
+                                    <div class="swiper-slide wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
+                                        <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
+                                            <ul class="list-star">
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                            </ul>
+                                            <p class="note body-1">
+                                                "Je tiens à saluer l'excellent service de cette agence lors de mon achat immobilier. Leur conseiller, M. Martin, a été à l'écoute de mes besoins et a su me guider dans le choix de la bonne propriété. Tout au long des démarches, il a fait preuve d'une grande disponibilité et a géré avec brio tous les aspects techniques et juridiques. Grâce à son professionnalisme, l'acquisition s'est déroulée dans les meilleures conditions."    </p>                                        </p>
+                                            <div class="box-avt d-flex align-items-center gap-12">
+                                                <div class="avatar avt-60 round">
+                                                    <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="h7 fw-7">Conrad Tsafack</div>
+                                                    <p class="text-variant-1 mt-4">Client</p>
+                                                </div>
                                             </div>
-                                            <span>Tony Nguyen</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="h7 fw-7">$5050,00</div>
-                                            <span class="text-variant-1">/SqFT</span>
                                         </div>
                                     </div>
+                                    <div class="swiper-slide wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
+                                        <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
+                                            <ul class="list-star">
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                                <li class="icon icon-star"></li>
+                                            </ul>
+                                            <p class="note body-1">Merci pour tous</p>
+                                            <div class="box-avt d-flex align-items-center gap-12">
+                                                <div class="avatar avt-60 round">
+                                                    <img src="{{asset('assets/images/avatar/avt-7.jpg')}}" alt="avatar">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="h7 fw-7">Theandra</div>
+                                                    <p class="text-variant-1 mt-4">Client</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> --}}
-
-
-
-    <!-- Testimonial -->
-    <section class="flat-section-v3 bg-surface flat-testimonial">
-        <div class="cus-layout-1">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
-                    <div class="box-title">
-                        <div class="text-subtitle text-primary">Témoignages</div>
-                        <h4 class="mt-4">Avis des clients</h4>
-                    </div>
-                    <p class=" text-variant-1 p-16">"Notre équipe expérimentée excelle dans l'immobilier avec des années de
-                        navigation réussie sur le marché, offrant des décisions informées et des résultats optimaux."
-                    </p>
-                    <div class="box-navigation">
-                        <div class="navigation swiper-nav-next nav-next-testimonial"><span class="icon icon-arr-l"></span>
-                        </div>
-                        <div class="navigation swiper-nav-prev nav-prev-testimonial"><span class="icon icon-arr-r"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="swiper tf-sw-testimonial" data-preview-lg="2.6" data-preview-md="2" data-preview-sm="2"
-                        data-space="30">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class="text-justify fs-6 note body-1">
-                                        "J'ai acheté ma maison grâce à cette agence et je les recommande vivement. Leur
-                                        équipe a fait preuve d'un professionnalisme exceptionnel, comprenant mes besoins et
-                                        me guidant avec patience. Leur connaissance du marché local et leur réactivité ont
-                                        rendu le processus fluide. Je suis ravi de ma maison et remercie l'équipe de
-                                        Well-done pour leur excellent service." </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent1.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Femi Adebayo</div>
-                                            <p class="text-variant-1 mt-4">Responsable Marketing</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class="text-justify fs-6 note body-1">
-                                        "Je tiens à saluer l'excellent service de cette agence lors de mon achat immobilier.
-                                        Ils ont été à l'écoute de mes besoins et m'ont guidé vers la bonne propriété. Ils
-                                        ont
-                                        géré tous les aspects techniques et juridiques avec professionnalisme, rendant
-                                        l'acquisition fluide et sans accroc."
-                                    </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent5.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Jean-Pierre Ngassa</div>
-                                            <p class="text-variant-1 mt-4">Directeur Hospitalier</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class="text-justify fs-6 note body-1">
-                                        "Mon expérience avec les services de gestion immobilière a été
-                                        exceptionnelle. Ils gèrent les propriétés de manière professionnelle et réactive, et
-                                        résolvent
-                                        rapidement tout problème. Leur approche attentive me donne une grande tranquillité
-                                        d'esprit."
-                                    </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent2.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Abebe Bekele</div>
-                                            <p class="text-variant-1 mt-4">Chef de Projet</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                                <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                    <ul class="list-star">
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                        <li class="icon icon-star"></li>
-                                    </ul>
-                                    <p class=" text-justify fs-6 note body-1">
-                                        "Je suis très satisfait du professionnalisme et des connaissances de l'équipe de
-                                        courtage. Ils m'ont aidé à trouver la maison idéale et m'ont soutenu dans les
-                                        aspects juridiques et financiers, me permettant de prendre ma décision en toute
-                                        confiance."
-                                    </p>
-                                    <div class="box-avt d-flex align-items-center gap-12">
-                                        <div class="avatar avt-60 round">
-                                            <img src="{{ asset('assets/images/agents/agent4.jpg') }}" alt="avatar">
-                                        </div>
-                                        <div class="info">
-                                            <div class="h7 fw-7">Nneka Okeke</div>
-                                            <p class="text-variant-1 mt-4">Responsable de Communication</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                         </div>
 
                     </div>
-
                 </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Testimonial -->
-    <!-- Agents -->
-    <section class="flat-section flat-agents">
-        <div class="container">
-            <div class="box-title text-center wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                <div class="text-subtitle text-primary">Notre Equipe</div>
-                <h4 class="mt-4">Nos Responsables</h4>
-            </div>
-            <div class="row">
-                <div class="box col-lg-3 col-sm-6">
-                    <div class="box-agent hover-img wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/welldone/boss.jpg') }}" alt="image-agent">
-                        </a>
-                        <a href="#" class="content">
-                            <div class="info">
-                                <h6 class="link">Mireille Biloa</h6>
-                                <p class="mt-4 text-variant-1">PDG et Fondatrice</p>
+            </section>
+            <!-- End Testimonial -->
+            <!-- Agents -->
+            <section class="flat-section flat-agents">
+                <div class="container">
+                    <div class="box-title text-center wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
+                        <div class="text-subtitle text-primary">Notre Equipe</div>
+                        <h4 class="mt-4">Nos Agents</h4>
+                    </div>
+                    <div class="row">
+                        <div class="box col-lg-3 col-sm-6">
+                            <div class="box-agent hover-img wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
+                                <a href="#" class="box-img img-style">
+                                    <img src="{{asset('assets/images/welldone/boss.jpg')}}" alt="image-agent">
+                                </a>
+                                <a href="#" class="content">
+                                    <div class="info">
+                                        <h6 class="link">Mireille Biloa</h6>
+                                        <p class="mt-4 text-variant-1">PDG et Fondateur</p>
+                                    </div>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
+                                </a>
                             </div>
-                            <a  target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
-                        </a>
+                        </div>
+                        <div class="box col-lg-3 col-sm-6">
+                            <div class="box-agent hover-img wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
+                                <a href="#" class="box-img img-style">
+                                    <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
+
+                                </a>
+                                <a href="#" class="content">
+                                    <div class="info">
+                                        <h6 class="link">John Tchoungang</h6>
+                                        <p class="mt-4 text-variant-1">Community Manager</p>
+                                    </div>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
+                            </div>
+                        </div>
+                        <div class="box col-lg-3 col-sm-6">
+                            <div class="box-agent hover-img wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
+                                <a href="#" class="box-img img-style">
+                                    <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
+
+                                </a>
+                                <a href="#" class="content">
+                                    <div class="info">
+                                        <h6 class="link">Chris Kenfack</h6>
+                                        <p class="mt-4 text-variant-1">Commercial</p>
+                                    </div>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
+                            </div>
+                        </div>
+                        <div class="box col-lg-3 col-sm-6">
+                            <div class="box-agent hover-img wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">
+                                <a href="#" class="box-img img-style">
+                                    <img src="{{asset('assets/images/logo/logo.jpg')}}" alt="image-agent">
+
+                                </a>
+                                <a href="#" class="content">
+                                    <div class="info">
+                                        <h6 class="link">Octavie Ateba</h6>
+                                        <p class="mt-4 text-variant-1">Assistant de Direction</p>
+                                    </div>
+                                    <a href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="box col-lg-3 col-sm-6">
-                    <div class="box-agent hover-img wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/agents/agent6.jpg') }}" alt="image-agent">
+            </section>
+            <!-- End Agents -->
+            <!-- Latest New -->
 
-                        </a>
-                        <a href="#" class="content">
-                            <div class="info">
-                                <h6 class="link">John Tchoungang</h6>
-                                <p class="mt-4 text-variant-1">Community Manager</p>
-                            </div>
-                            <a target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
-                    </div>
-                </div>
-                <div class="box col-lg-3 col-sm-6">
-                    <div class="box-agent hover-img wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/agents/agent3.jpg') }}" alt="image-agent">
-
-                        </a>
-                        <a href="#" class="content">
-                            <div class="info">
-                                <h6 class="link">Chris Kenfack</h6>
-                                <p class="mt-4 text-variant-1">Commercial</p>
-                            </div>
-                            <a target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
-                    </div>
-                </div>
-                <div class="box col-lg-3 col-sm-6">
-                    <div class="box-agent hover-img wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/agents/agent7.jpg') }}" alt="image-agent">
-
-                        </a>
-                        <a href="#" class="content">
-                            <div class="info">
-                                <h6 class="link">Octavie Ateba</h6>
-                                <p class="mt-4 text-variant-1">Assistant de Direction</p>
-                            </div>
-                            <a target="_blank" href=" https://wa.me/+23799591992"><span class="icon-phone"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Agents -->
-    <!-- Latest New -->
-
-    <!-- End Latest New -->
-    <!-- partner -->
-    {{-- <section class="flat-section-v4 flat-partner">
+            <!-- End Latest New -->
+            <!-- partner -->
+            {{-- <section class="flat-section-v4 flat-partner">
                 <div class="container">
                     <div class="wrap-partner swiper tf-sw-partner" data-preview-lg="5" data-preview-md="4" data-preview-sm="3" data-space="80">
                         <div class="swiper-wrapper">
@@ -869,5 +1009,6 @@
                     </div>
                 </div>
             </section> --}}
-    <!-- End partner -->
+            <!-- End partner -->
+
 @endsection
