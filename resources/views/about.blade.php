@@ -65,7 +65,7 @@
     float: left;
     margin-right: 0.1em;
     line-height: 1;
-    color: #E53935; /* Utilisez une couleur qui s'accorde avec votre thème */
+    color: #E0004D; /* Utilisez une couleur qui s'accorde avec votre thème */
 }
 .flat-banner-about p {
     text-align: justify;
@@ -91,7 +91,7 @@
                 </div>
                 <div class="col-md-7 hover-btn-view">
                     <p class="body-2 text-variant-1 text-justify lettrine" style="text-align: justify; text-indent: 2em;">
-                        L'agence immobilière Well-done s'est imposée comme un acteur incontournable sur le marché local.
+                        L'agence immobilière Well-done Real Estate s'est imposée comme un acteur incontournable sur le marché local.
                         Fondée en 2023 par Mireille Biloa, notre entreprise s'est construite sur des valeurs fortes :
                         l'expertise, la transparence et l'engagement envers nos clients.
                         <br><br>

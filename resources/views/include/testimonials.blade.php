@@ -13,7 +13,7 @@
                 équipe a fait preuve d'un professionnalisme exceptionnel, comprenant mes besoins et
                 me guidant avec patience. Leur connaissance du marché local et leur réactivité ont
                 rendu le processus fluide. Je suis ravi de ma maison et remercie l'équipe de
-                Well-done pour leur excellent service." </p>
+                Well-done Real Estate pour leur excellent service." </p>
             <div class="box-avt d-flex align-items-center gap-12">
                 <div class="avatar avt-60 round">
                     <img src="{{ asset('assets/images/agents/agent1.jpg') }}" alt="avatar">

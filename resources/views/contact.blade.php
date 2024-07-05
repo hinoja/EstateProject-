@@ -122,7 +122,8 @@
             <iframe id="map-contact" class="map-contact position-relative rounded w-100 h-100" data-map-scroll="true"
                 src="https://www.google.com/maps/embed/v1/place?q=Akwa+Nord,+Douala&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                 frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="true" aria-hidden="false"
-                tabindex="0">
+                tabindex="0"
+            >
         </div>
         </iframe>
     </section>
