@@ -28,34 +28,36 @@
                                 </li>
                                 <li>
                                     @auth
-                                <div   class="nav-item dropdown mr-5">
-                                    <button style="background-color: rgb(81,132,197)"
-                                        class="btn btn-primary dropdown-toggle mr-8" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">{{ auth()->user()->name }}</button>
-                                    <ul class="dropdown-menu ">
-                                        @if (auth()->user())
-                                            <li><a class="dropdown-item"
-                                                    href="{{ route('dashboard') }}"><small>@lang('Go to dashboard')</small></a>
-                                            </li>
-                                        @endif
-                                        <form method="POST" action="{{ route('logout') }}">
-                                            @csrf
-                                            <li>
-                                                <a href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault();
+                                        <div class="nav-item dropdown mr-5">
+                                            <button style="background-color: rgb(81,132,197)"
+                                                class="btn btn-primary dropdown-toggle mr-8" type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false">{{ auth()->user()->name }}</button>
+                                            <ul class="dropdown-menu ">
+                                                @if (auth()->user())
+                                                    <li><a class="dropdown-item"
+                                                            href="{{ route('dashboard') }}"><small>@lang('Go to dashboard')</small></a>
+                                                    </li>
+                                                @endif
+                                                <form method="POST" action="{{ route('logout') }}">
+                                                    @csrf
+                                                    <li>
+                                                        <a href="{{ route('logout') }}"
+                                                            onclick="event.preventDefault();
                                             this.closest('form').submit();"
-                                                    class="dropdown-item"> @lang('Log Out')
-                                                </a>
-                                            </li>
-                                        </form>
-                                    </ul>
-                                </div>
-                            @else
-                                <div class="nav-item nav-link auth">
-                                    <a href="{{ route('login') }}" type="button" style="background-color: rgb(81,132,197)"
-                                        class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
-                                </div>
-                            @endauth
+                                                            class="dropdown-item"> @lang('Log Out')
+                                                        </a>
+                                                    </li>
+                                                </form>
+                                            </ul>
+                                        </div>
+                                    @else
+                                        <div class="nav-item nav-link auth">
+                                            <a href="{{ route('login') }}" type="button"
+                                                style="background-color: rgb(81,132,197)"
+                                                class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
+                                        </div>
+                                    @endauth
                                 </li>
                             </ul>
                         </div>
@@ -66,39 +68,7 @@
 
                 <div class="header-account">
                     <div class="register">
-                        {{-- <ul class="d-flex">
 
-                            @auth
-                                <div   class="nav-item dropdown mr-5">
-                                    <button style="background-color: rgb(81,132,197)"
-                                        class="btn btn-primary dropdown-toggle mr-8" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">{{ auth()->user()->name }}</button>
-                                    <ul class="dropdown-menu ">
-                                        @if (auth()->user())
-                                            <li><a class="dropdown-item"
-                                                    href="{{ route('dashboard') }}"><small>@lang('Go to dashboard')</small></a>
-                                            </li>
-                                        @endif
-                                        <form method="POST" action="{{ route('logout') }}">
-                                            @csrf
-                                            <li>
-                                                <a href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault();
-                                            this.closest('form').submit();"
-                                                    class="dropdown-item"> @lang('Log Out')
-                                                </a>
-                                            </li>
-                                        </form>
-                                    </ul>
-                                </div>
-                            @else
-                                <div class="nav-item nav-link auth">
-                                    <a href="{{ route('login') }}" type="button" style="background-color: rgb(81,132,197)"
-                                        class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
-                                </div>
-                            @endauth
-
-                        </ul> --}}
                     </div>
                 </div>
 
@@ -108,3 +78,29 @@
         </div>
     </div>
 </div>
+
+<!-- End Header Lower -->
+
+<!-- Mobile Menu  -->
+<div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>
+<div class="mobile-menu">
+    <div class="menu-backdrop"></div>
+    <nav class="menu-box">
+        <div class="nav-logo"><a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo/logo.jpg') }}"
+                    alt="nav-logo" width="144" height="55"></a></div>
+        <div class="bottom-canvas">
+            <div class="menu-outer"></div>
+            <div class="mobi-icon-box">
+                <div class="box d-flex align-items-center">
+                    <span class="icon icon-phone2"></span>
+                    <div>(+237) 6 99 59 19 92</div>
+                </div>
+                <div class="box d-flex align-items-center">
+                    <span class="icon icon-mail"></span>
+                    <div>welldonerealestate237@yahoo.com</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- End Mobile Menu -->

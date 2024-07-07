@@ -3,6 +3,9 @@
 @section('content')
     <div class="main-content">
         <div class="main-content-inner ">
+            <div class="button-show-hide show-mb">
+                <span class="body-1">Volet de Naviguation  </span>
+            </div>
             <div class="section-body">
                 <div class="row">
                     @livewire('admin.manage-users')

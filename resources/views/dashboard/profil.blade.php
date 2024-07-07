@@ -4,6 +4,9 @@
     <div class="main-content">
         <div class="main-content-inner wrap-dashboard-content-2">
             <div class="button-show-hide show-mb">
+                <span class="body-1">Volet de Naviguation  </span>
+            </div>
+            <div class="button-show-hide show-mb">
                 {{-- <span class="body-1">Show Dashboard</span> --}}
             </div>
 

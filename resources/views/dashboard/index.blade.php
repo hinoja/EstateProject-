@@ -4,7 +4,7 @@
     <div class="main-content">
         <div class="main-content-inner">
             <div class="button-show-hide show-mb">
-                <span class="body-1">Show Dashboard</span>
+                <span class="body-1">Volet de Naviguation  </span>
             </div>
             <div class="flat-counter-v2 tf-counter">
                 <div class="counter-box">
@@ -15,7 +15,8 @@
                     <div class="content-box">
                         <div class="title-count">@lang('Users')</div>
                         <div class="d-flex align-items-end">
-                            <h6 class="number" data-speed="2000" data-to="1" data-inviewport="yes">{{ $users }}</h6>
+                            <h6 class="number" data-speed="2000" data-to="1" data-inviewport="yes">{{ $users }}
+                            </h6>
                         </div>
 
                     </div>
@@ -27,7 +28,8 @@
                     <div class="content-box">
                         <div class="title-count">Terrains</div>
                         <div class="d-flex align-items-end">
-                            <h6 class="number" data-speed="2000" data-to="17" data-inviewport="yes">{{ $estates }}</h6>
+                            <h6 class="number" data-speed="2000" data-to="17" data-inviewport="yes">{{ $estates }}
+                            </h6>
                             {{-- <span class="fw-7 text-variant-2">/17 remaining</span> --}}
                         </div>
 
@@ -53,7 +55,8 @@
                     <div class="content-box">
                         <div class="title-count">Messages</div>
                         <div class="d-flex align-items-end">
-                            <h6 class="number" data-speed="2000" data-to="17" data-inviewport="yes">{{ $messages }}</h6>
+                            <h6 class="number" data-speed="2000" data-to="17" data-inviewport="yes">{{ $messages }}
+                            </h6>
                         </div>
 
                     </div>
