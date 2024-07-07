@@ -44,20 +44,20 @@ class ManageUsers extends Component
         $this->dispatch('openModal');
     }
 
-    public function updateUser()
-    {
-        $newData = $this->validate([
-            'name' => ['string', 'unique:tags,name,' . $this->selectedUser->id . '', 'required', 'min:2'],
-        ]);
-        User::where('id', $this->selectedUser->id)
-            ->update([
-                'name' => $newData['name'],
-            ]);
-        Toastr()->success(trans('The User has been updated'));
-        $this->alert('success', trans('The User has been updated'));
+    // public function updateUser()
+    // {
+    //     $newData = $this->validate([
+    //         'name' => ['string', 'unique:tags,name,' . $this->selectedUser->id . '', 'required', 'min:2'],
+    //     ]);
+    //     User::where('id', $this->selectedUser->id)
+    //         ->update([
+    //             'name' => $newData['name'],
+    //         ]);
+    //     Toastr()->success(trans('The User has been updated'));
+    //     $this->alert('success', trans('The User has been updated'));
 
-        $this->closeModal();
-    }
+    //     $this->closeModal();
+    // }
 
     public function addUser()
     {
@@ -75,7 +75,10 @@ class ManageUsers extends Component
             'password' => Hash::make($newData['password'])
         ]);
         Toastr()->success("l'Utilisateur a été crée ");
-        $this->alert('success', "l'Utilisateur a été crée");
+        // $this->alert('success', "l'Utilisateur a été crée");
+        // Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
+
+
 
         $this->closeModal();
     }
@@ -124,7 +127,8 @@ class ManageUsers extends Component
             0 => __('Account has been successfully blocked.'),
         };
 
-        // toast($message, 'success');
+        // Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
+
         $this->alert('success', $message);
 
         return back();

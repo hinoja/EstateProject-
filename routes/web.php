@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Middleware\IsAdminTest;
 
 // FRONT
 // _________________________________________________________
@@ -14,15 +15,6 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
 
 
-
-// _________________________________________________________
-
-
-
-
-
-
-
 // BACK
 // __________________________________________________________________
 
@@ -30,18 +22,10 @@ Route::view('/about', 'about')->name('about');
 Route::middleware(['auth'])->prefix('dashboard')->group(function () {
 
     Route::get('/index', DashboardController::class)->name('dashboard');
-    Route::view('/users', 'dashboard.users')->name('dashboard.users');
+    Route::view('/users', 'dashboard.users')->middleware(['auth', IsAdminTest::class])->name('dashboard.users');
     Route::view('/messages', 'dashboard.message')->name('dashboard.messages');
+    Route::view('/estate', 'dashboard.estate')->name('dashboard.estates');
 });
-
-
-
-Route::get('/dashboard/message', function () {
-    return view('dashboard.message');
-})->name('message');
-Route::get('/dashboard/terrain', function () {
-    return view('dashboard.terrain');
-})->name('terrain');
 
 
 // PROFILE
@@ -50,35 +34,6 @@ Route::middleware(['auth'])->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-
-
-//
-// Route::get('/dashboard/maison', function () {
-//     return view('dashboard.maison');
-// })->name('maison');
-
-
-
-// Route::get('/dashboard/engin', function () {
-//     return view('dashboard.engin');
-// })->name('engin');
-
-// Route::get('/dashboard/ajout', function () {
-//     return view('dashboard.ajout');
-// })->name('ajout');
-
-
-
-// Route::get('/dashboard/lotissement', function () {
-//     return view('dashboard.lotissement');
-// })->name('lotissement');
-
-
-
-// Route::get('/dashboard/profile', function () {
-//     return view('dashboard.profile');
-// })->name('profile');
 
 
 // -------------------------------------------

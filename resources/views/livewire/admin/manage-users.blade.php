@@ -1,7 +1,8 @@
 <div>
     <div class="widget-box-2 ">
         <h6>Utilisateurs <small class="mr-5">({{ $totalUsers }}) </small><span wire:click="showCreateForm()"
-                class="btn btn-primary" style="background-color: rgb(81,132,197)"> <i class="fa fa-plus" style="color: white"></i></span></h6>
+                class="btn btn-primary" style="background-color: rgb(81,132,197)"> <i class="fa fa-plus"
+                    style="color: white"></i></span></h6>
         <div class="wrap-table">
             <div class="card">
 
@@ -56,7 +57,8 @@
                                                                 class="fa fa-lock"></i></button>
                                                     @else
                                                         <button wire:click="updateStatus({{ $user }})"
-                                                            title=" {{ __('Unblock') }} " style="background-color: rgb(81,132,197)"
+                                                            title=" {{ __('Unblock') }} "
+                                                            style="background-color: rgb(81,132,197)"
                                                             class="btn btn-icon icon-left btn-primary"> <i
                                                                 class="fa fa-lock-open"></i></button>
                                                     @endif
@@ -81,7 +83,7 @@
             </div>
         </div>
 
-        <div class="card-footer text-right">
+        <div class="card-footer text-right" style="float: right">
             <nav class="d-inline-block">
                 {{ $users->links() }}
             </nav>

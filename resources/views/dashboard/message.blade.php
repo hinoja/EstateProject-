@@ -1,11 +1,11 @@
-@extends('layouts.app-template')
+@extends('layouts.back')
 @section('title', __('Messages'))
 @section('content')
     <div class="main-content">
         <div class="main-content-inner ">
 
             <div class="widget-box-2 wd-listing">
-              
+
                 <div class="section-body">
                     <div class="row">
                         @livewire('admin.manage-message')

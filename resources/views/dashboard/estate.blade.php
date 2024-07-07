@@ -1,11 +1,11 @@
 @extends('layouts.back')
-@section('title', __('Users list'))
+@section('title', 'Liste des Terrains')
 @section('content')
     <div class="main-content">
         <div class="main-content-inner ">
             <div class="section-body">
                 <div class="row">
-                    @livewire('admin.manage-users')
+                    @livewire('admin.manage-estate')
                 </div>
             </div>
 
@@ -17,22 +17,22 @@
 @endsection
 @push('js')
     <script type="text/javascript">
-        // close adding user  modal
+        // close adding Estate  modal
         window.addEventListener('openModal', event => {
-            $('#UserModal').modal('show');
+            $('#EstateModal').modal('show');
             //alert('parameter: ' + event.detail.someParameter);
         })
         window.addEventListener('closeModal', () => {
-            $('#UserModal').modal('hide');
+            $('#EstateModal').modal('hide');
         });
 
-        // close delete user  modal
+        // close delete Estate  modal
         window.addEventListener('openDeleteModal', event => {
-            $('#deleteUser').modal('show');
+            $('#deleteEstate').modal('show');
             //alert('parameter: ' + event.detail.someParameter);
         })
         window.addEventListener('closeModal', () => {
-            $('#deleteUser').modal('hide');
+            $('#deleteEstate').modal('hide');
         });
     </script>
 @endpush

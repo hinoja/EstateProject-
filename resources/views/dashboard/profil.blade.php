@@ -1,4 +1,4 @@
-@extends('layouts.app-template')
+@extends('layouts.back')
 @section('title', __('profile page'))
 @section('content')
     <div class="main-content">

@@ -4,7 +4,9 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Carbon\Carbon;
+use App\Models\Role;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -60,9 +62,14 @@ class User extends Authenticatable
         return Carbon::parse($date)->translatedFormat($format);
     }
 
-     // RELATIONSHIPS
-     public function role(): BelongsTo
-     {
-         return $this->belongsTo(Role::class);
-     }
+    // RELATIONSHIPS
+    public function role(): BelongsTo
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public function estates(): HasMany
+    {
+        return $this->hasMany(Estate::class);
+    }
 }

@@ -1,4 +1,4 @@
-@extends('layouts.app-template')
+@extends('layouts.back')
 @section('title', __('dashboard'))
 @section('content')
     <div class="main-content">
@@ -25,9 +25,9 @@
                         <span class="icon icon-list-dashes"></span>
                     </div>
                     <div class="content-box">
-                        <div class="title-count">Maisons</div>
+                        <div class="title-count">Terrains</div>
                         <div class="d-flex align-items-end">
-                            <h6 class="number" data-speed="2000" data-to="17" data-inviewport="yes">17</h6>
+                            <h6 class="number" data-speed="2000" data-to="17" data-inviewport="yes">{{ $estates }}</h6>
                             {{-- <span class="fw-7 text-variant-2">/17 remaining</span> --}}
                         </div>
 

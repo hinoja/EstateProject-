@@ -7,11 +7,12 @@ use Livewire\Component;
 use Livewire\Attributes\On;
 use Livewire\WithPagination;
 use App\Notifications\ResponseNotification;
-use Illuminate\Support\Facades\Notification; 
+use Illuminate\Support\Facades\Notification;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class ManageMessage extends Component
 {
-    use WithPagination;
+    use WithPagination,LivewireAlert;
 
     public $reply;
 
@@ -49,12 +50,12 @@ class ManageMessage extends Component
             'response' => $contact->response,
         ];
 
-        Notification::send($contact, new ResponseNotification($data));
+        // Notification::send($contact, new ResponseNotification($data));
 
         $this->closeModal();
         Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
 
-        // $this->alert('success', trans('The response was successfully sent to ') . $contact->name,);
+        // $this->alert('success', trans('The response wasf successfully sent to ') . $contact->name,);
 
         // toast(trans('The response was successfully sent to ') . $contact->name, 'success');
 

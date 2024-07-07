@@ -22,9 +22,40 @@
                                 <li class="@if (Str::contains($currentUri, 'service')) current @endif"><a
                                         href="#services">@lang('Services')</a> </li>
                                 <li class="@if (Str::contains($currentUri, 'about')) current @endif"><a
-                                        href="{{route('about')}}">@lang('About')</a></li>
+                                        href="{{ route('about') }}">@lang('About')</a></li>
                                 <li class="@if (Str::contains($currentUri, 'contact')) current @endif"><a
                                         href="{{ route('contact') }}">@lang('Contact us')</a>
+                                </li>
+                                <li>
+                                    @auth
+                                <div   class="nav-item dropdown mr-5">
+                                    <button style="background-color: rgb(81,132,197)"
+                                        class="btn btn-primary dropdown-toggle mr-8" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">{{ auth()->user()->name }}</button>
+                                    <ul class="dropdown-menu ">
+                                        @if (auth()->user())
+                                            <li><a class="dropdown-item"
+                                                    href="{{ route('dashboard') }}"><small>@lang('Go to dashboard')</small></a>
+                                            </li>
+                                        @endif
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <li>
+                                                <a href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault();
+                                            this.closest('form').submit();"
+                                                    class="dropdown-item"> @lang('Log Out')
+                                                </a>
+                                            </li>
+                                        </form>
+                                    </ul>
+                                </div>
+                            @else
+                                <div class="nav-item nav-link auth">
+                                    <a href="{{ route('login') }}" type="button" style="background-color: rgb(81,132,197)"
+                                        class="btn btn-primary mt-2 me-2">@lang('Log in')</a>
+                                </div>
+                            @endauth
                                 </li>
                             </ul>
                         </div>
@@ -35,14 +66,15 @@
 
                 <div class="header-account">
                     <div class="register">
-                        <ul class="d-flex">
+                        {{-- <ul class="d-flex">
 
                             @auth
-                                <div style="float: left" class="nav-item dropdown ">
-                                    <button style="background-color: rgb(81,132,197)" class="btn btn-primary dropdown-toggle mr-8" type="button"
+                                <div   class="nav-item dropdown mr-5">
+                                    <button style="background-color: rgb(81,132,197)"
+                                        class="btn btn-primary dropdown-toggle mr-8" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">{{ auth()->user()->name }}</button>
                                     <ul class="dropdown-menu ">
-                                        @if (auth()->user()->role_id === 1)
+                                        @if (auth()->user())
                                             <li><a class="dropdown-item"
                                                     href="{{ route('dashboard') }}"><small>@lang('Go to dashboard')</small></a>
                                             </li>
@@ -66,7 +98,7 @@
                                 </div>
                             @endauth
 
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
 

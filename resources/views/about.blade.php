@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.front')
 @section('title', __('About'))
 @section('content')
     <section class="flat-title-page style-2">
@@ -13,89 +13,57 @@
 
     <!-- End Page Title -->
 
-    <!-- banner video -->
-    {{-- <section class="flat-section flat-banner-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h3>Bienvenu à <br> Well-done Real Estate</h3>
-                </div>
-                <div class="col-md-7 hover-btn-view">
-                    <P class="body-2 text-variant-1 text-justify " style="text-align: justify">
-                        L'agence immobilière Well-done s'est imposée comme un acteur incontournable sur le marché
-                        local.
-                        Fondée en 2023 par Mireille Biloa, notre entreprise s'est construite sur des valeurs fortes :
-                        l'expertise, la transparence et l'engagement envers nos clients.
-
-                        Notre équipe de professionnels passionnés met tout en œuvre pour vous accompagner avec succès dans
-                        vos projets immobiliers, que vous soyez acquéreur, vendeur ou investisseur. Grâce à notre
-                        connaissance approfondie du marché, nous vous proposons des solutions sur-mesure, adaptées à vos
-                        besoins et à votre budget.
-
-                        Fort de notre expérience et de notre savoir-faire, nous mettons à votre disposition tous les moyens
-                        nécessaires pour vous garantir une transaction sereine et réussie. De l'estimation de votre bien à
-                        la négociation, en passant par l'accompagnement administratif et juridique, nos équipes vous guident
-                        pas à pas jusqu'à la finalisation de votre projet.
-
-                        Votre satisfaction est notre priorité. C'est pourquoi nous attachons une importance particulière à
-                        la qualité de notre service et à l'écoute de vos attentes. Chez Well-done, vous pouvez compter sur
-                        des professionnels à votre écoute, réactifs et force de proposition.
-
-                        Rejoignez-nous et bénéficiez de l'expertise d'une agence immobilière locale de confiance, soucieuse
-                        de votre réussite !
-                    </P>
-                </div>
-
-            </div>
-
-        </div>
-    </section> --}}
 
 
     <section class="flat-section flat-banner-about">
         <style>
             /* Ajoutez une police Google */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 
-.lettrine::first-letter {
-    font-size: 3em;
-    font-weight: bold;
-    float: left;
-    margin-right: 0.1em;
-    line-height: 1;
-    color: #E0004D; /* Utilisez une couleur qui s'accorde avec votre thème */
-}
-.flat-banner-about p {
-    text-align: justify;
-    text-indent: 2em;
-    line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-}
+            .lettrine::first-letter {
+                font-size: 3em;
+                font-weight: bold;
+                float: left;
+                margin-right: 0.1em;
+                line-height: 1;
+                color: #E0004D;
+                /* Utilisez une couleur qui s'accorde avec votre thème */
+            }
 
-.flat-banner-about img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
+            .flat-banner-about p {
+                text-align: justify;
+                text-indent: 2em;
+                line-height: 1.6;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.1em;
+            }
 
+            .flat-banner-about img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
         </style>
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <h3>Bienvenue à <br> Well-done Real Estate</h3> <div class="row"></div> <hr style="color: white"> <hr style="color: white">
-                    <img src="{{ asset('assets/images/team2.jpg') }}" alt="Well-done Real Estate" height="250px" style="width:100%; margin-bottom: 20px;">
+                    <h3>Bienvenue à <br> {{ env('APP_NAME') }}</h3>
+                    <div class="row"></div>
+                    <hr style="color: white">
+                    <hr style="color: white">
+                    <img src="{{ asset('assets/images/team2.jpg') }}" alt="{{ env('APP_NAME') }}" height="250px"
+                        style="width:100%; margin-bottom: 20px;">
                     <br>
                 </div>
                 <div class="col-md-7 hover-btn-view">
                     <p class="body-2 text-variant-1 text-justify lettrine" style="text-align: justify; text-indent: 2em;">
-                        L'agence immobilière Well-done Real Estate s'est imposée comme un acteur incontournable sur le marché local.
+                        L'agence immobilière {{ env('APP_NAME') }}  est une entreprise spécialisée dans l'amenagement des espaces et la vente de terrrains.
                         Fondée en 2023 par Mireille Biloa, notre entreprise s'est construite sur des valeurs fortes :
                         l'expertise, la transparence et l'engagement envers nos clients.
                         <br><br>
-                        {{-- <img src="{{ asset('assets/images/team.jpg') }}" alt="Well-done Real Estate" style="width:100%; margin-bottom: 20px;"> --}}
+                        {{-- <img src="{{ asset('assets/images/team.jpg') }}" alt="{{ env('APP_NAME') }}" style="width:100%; margin-bottom: 20px;"> --}}
                         Notre équipe de professionnels passionnés met tout en œuvre pour vous accompagner avec succès dans
                         vos projets immobiliers, que vous soyez acquéreur, vendeur ou investisseur. Grâce à notre
                         connaissance approfondie du marché, nous vous proposons des solutions sur-mesure, adaptées à vos

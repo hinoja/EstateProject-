@@ -20,7 +20,8 @@
                                 <td>{{ $contact->subject }}</td>
                                 <td>{{ $contact->created_at }}</td>
                                 <td>
-                                    <button wire:click="showModalForm({{ $contact }})" {{ $contact->response ? "style='background-color: rgb(81,132,197)'" : ''}}
+                                    <button wire:click="showModalForm({{ $contact }})"
+                                        {{ $contact->response ? "style='background-color: rgb(81,132,197)'" : '' }}
                                         class="btn btn-{{ $contact->response ? 'primary' : 'danger' }}"><i
                                             class="fas fa-eye"></i></button>
                                 </td>
@@ -29,12 +30,14 @@
                     </table>
                 </div>
             </div>
-            <div class="card-footer text-right">
-                <nav class="d-inline-block">
-                    {{ $contacts->links() }}
-                </nav>
-            </div>
+
         </div>
+        <div class="card-footer text-right" style="float: right">
+            <nav class="d-inline-block">
+                {{ $contacts->links() }}
+            </nav>
+        </div>
+
 
         <!-- Modal showMessage -->
         <div wire:ignore.self class="modal fade" id="MessageModal" tabindex="-1" role="dialog"
@@ -88,12 +91,13 @@
                                             @enderror
                                             <div class="row"></div> <br>
                                             <div class="mt-2">
-                                                <button style="background-color: rgb(81,132,197)" wire:loading.remove type="submit" style="float: right;"
-                                                    class="btn btn-primary">
+                                                <button style="background-color: rgb(81,132,197)" wire:loading.remove
+                                                    type="submit" style="float: right;" class="btn btn-primary">
                                                     <i class="fa fa-paper-plane"></i>
                                                     @lang('Send')
                                                 </button>
-                                                <button style="background-color: rgb(81,132,197)" wire:loading wire:target="replyMessage" style="float: right;"
+                                                <button style="background-color: rgb(81,132,197)" wire:loading
+                                                    wire:target="replyMessage" style="float: right;"
                                                     class="btn btn-primary" disabled>
                                                     <span class="spinner-border spinner-border-sm" role="status"
                                                         aria-hidden="true"></span>
