@@ -1,6 +1,5 @@
 <div>
     <div class="tab-content">
-
         {{-- <div class="container"> --}}
         <div class="tab-pane fade active show" id="Bekoko" role="tabpanel">
             <div class="row">
@@ -17,7 +16,7 @@
                                             }
                                         </style>
                                         <img src="{{ $estate->image ? Storage::url($estate->image) : asset('assets/images/home/house-1.jpg') }}"
-                                        alt="img" style="height: 268px; object-fit: cover;">
+                                            alt="img" style="height: 268px; object-fit: cover;">
                                     </div>
                                     <div class="top">
                                         <ul class="d-flex gap-8">
@@ -44,7 +43,7 @@
                             </div>
                             <div class="archive-bottom d-flex justify-content-between align-items-center">
                                 <div class="d-flex gap-8 align-items-center">
-                                    <span>{{ $estate->town }}</span>
+                                    <strong style="font-weight: bold">Ville : </strong> <span>{{ $estate->town }}</span>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <h6>{{ $estate->price ? number_format($estate->price, 0, ',', ' ') : '' }} Fcfa
@@ -69,4 +68,3 @@
 
     </div>
 </div>
-

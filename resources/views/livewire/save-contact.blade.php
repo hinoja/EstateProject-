@@ -36,16 +36,18 @@
 
         </div>
 
-        <fieldset class="box">
-            <div class="form-floating">
-                <textarea class="form-control" wire:model="message" id="message" style="height: 150px"></textarea>
-                <label for="message">Message</label>
+        <div class="box">
+            <fieldset >
+                <div class="form-floating">
+                    <textarea class="form-control" wire:model="message" id="message" style="height: 150px"></textarea>
+                    <label style="font-weight: bold;" for="message"><strong>Message</strong></label>
 
-                @error('message')
-                    <small class=" fs-12 text-danger fw-light"><small>{{ $message }}</small></small>
-                @enderror
-            </div>
-        </fieldset>
+                    @error('message')
+                        <small class=" fs-12 text-danger fw-light"><small>{{ $message }}</small></small>
+                    @enderror
+                </div>
+            </fieldset>
+        </div>
         {{-- <div class="col-12">
             <button wire:click.prevent="save" wire:loading.remove class="btn btn-primary w-100 py-3" type="submit">@lang('Send Message')</button>
             <button wire:loading class="btn btn-primary w-100 py-3" type="button" disabled>

@@ -68,6 +68,12 @@
                                                             class="fa fa-trash"></i></button>
                                                 @endif
 
+                                                {{-- <button wire:click="updateStatus({{ $user }})"
+                                                            title="Mettre à jour le rôle"
+                                                            class="btn btn-icon icon-left btn-warning">   <i class="fas fa-pen-nib"></i></button> --}}
+
+
+
 
                                             </div>
                                         </td>

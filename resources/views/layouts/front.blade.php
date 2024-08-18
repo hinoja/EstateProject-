@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
     <link rel="stylesheet"type="text/css" href="{{ asset('assets/css/styles.css') }}" />
 
+    <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet">
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.jpg') }}">
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">

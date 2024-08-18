@@ -6,8 +6,6 @@
     <title>{{ config('app.name', 'Well-Done REAL Estate. SCI.') }} | @yield('title')</title>
     <meta name="author" content="Well-done Real Estate">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
     <!-- font -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/font-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -25,8 +23,6 @@
 </head>
 
 <body class="body bg-surface counter-scroll">
-
-
     <div id="wrapper">
         <div id="page" class="clearfix">
             <div class="layout-wrap">
@@ -110,9 +106,6 @@
                                             <p class="name">{{ Auth::user()->name }}<span
                                                     class="icon icon-arr-down"></span></p>
                                             <div class="dropdown-menu">
-
-
-
                                                 <a class="dropdown-item" href="{{ route('home') }}">
                                                     @lang('Back to home')</a>
 

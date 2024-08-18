@@ -37,15 +37,17 @@
                         <h5>Contactez nous</h5>
                         <ul>
                             <li class="box">
-                                <div class="text-1 title"> <img src="{{ asset('assets/images/location/map-icon.png') }}"
-                                        width="40px" height="40px" alt=""> Adresse:</div>
+                                <div class="text-1 title"> <i style="color:red;" class="fa-solid fa-location-dot"></i>
+                                    Adresse:</div>
                                 <p class="p-16 text-variant-1">Akwa Nord, Douala
                                     <br>Cameroun
                                 </p>
                             </li>
                             <li class="box">
                                 <div class="text-1 title">Infomations:</div>
-                                <p class="p-16 text-variant-1">(+237) 6 99 59 19 92<br> welldonerealestate237@yahoo.com</p>
+                                <p class="p-16 text-variant-1">(+237) 6 99 59 19 92<br> <a
+                                        href="mailto:contact@welldonerealestatesci.com">contact@welldonerealestatesci.com</a>
+                                </p>
                             </li>
                             <li class="box">
                                 <div class="text-1 title">Ouvert:</div>

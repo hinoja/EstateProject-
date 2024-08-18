@@ -36,7 +36,7 @@
                             </li>
                             <li class="mt-12 d-flex align-items-center gap-8">
                                 <i class="icon icon-mail fs-20 text-variant-2"></i>
-                                <p class="text-white">welldonerealestate237@yahoo.com</p>
+                                <a href="mailto:contact@welldonerealestatesci.com" class="text-white">contact@welldonerealestatesci.com</a>
                             </li>
                         </ul>
 

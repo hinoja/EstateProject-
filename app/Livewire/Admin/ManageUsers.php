@@ -75,9 +75,6 @@ class ManageUsers extends Component
             'password' => Hash::make($newData['password'])
         ]);
         Toastr()->success("l'Utilisateur a été crée ");
-        // $this->alert('success', "l'Utilisateur a été crée");
-        // Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
-
 
 
         $this->closeModal();
@@ -126,8 +123,6 @@ class ManageUsers extends Component
             1 => __('Account has been successfully unblocked.'),
             0 => __('Account has been successfully blocked.'),
         };
-
-        // Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
 
         $this->alert('success', $message);
 

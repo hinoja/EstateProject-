@@ -21,11 +21,19 @@ class UserSeeder extends Seeder
             'is_active' => true,
         ]);
         \App\Models\User::factory()->create([
+            'role_id' => 1,
+            'name' => 'Directrice Mireille',
+            'email' => 'mireilleaudreybiloa@rocketmail.com',
+            'password' => Hash::make('mireille@2024'),
+            'is_active' => true,
+        ]);
+        \App\Models\User::factory()->create([
             'role_id' => 2,
             'name' => 'Admin Estate',
             'email' => 'madame@gmail.com',
             'password' => Hash::make('password'),
             'is_active' => true,
         ]);
+
     }
 }

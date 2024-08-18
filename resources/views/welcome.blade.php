@@ -71,7 +71,7 @@
                     <div class="slider-content">
                         <div class="heading text-center">
                             <h1 class="text-white animationtext slide">
-                                Find Your
+                                <span class="text-center">Find Your</span>
                                 <span class="tf-text s1 cd-words-wrapper">
                                     <span class="item-text is-visible">Dream Home</span>
                                     <span class="item-text is-hidden text-primary">Perfect Ground</span>
@@ -212,7 +212,7 @@
                         <a href="#Tous" class="nav-link-item" data-bs-toggle="tab">Tous</a>
                     </li>
                     <li class="nav-tab-item" role="presentation">
-                        <a href="#Bekoko" class="nav-link-item  active" data-bs-toggle="tab">Bekoko</a>
+                        <a href="#Bekoko" class="nav-link-item " data-bs-toggle="tab">Bekoko</a>
                     </li>
                     <li class="nav-tab-item" role="presentation">
                         <a href="#Bepanda" class="nav-link-item" data-bs-toggle="tab">Bepanda</a>
@@ -230,13 +230,13 @@
                         <a href="#Lendi" class="nav-link-item" data-bs-toggle="tab">Lendi</a>
                     </li>
                     <li class="nav-tab-item" role="presentation">
-                        <a href="#Missole" class="nav-link-item" data-bs-toggle="tab">Missole</a>
+                        <a href="#Missole" class="nav-link-item" data-bs-toggle="tab">Missole I & II</a>
                     </li>
                     <li class="nav-tab-item" role="presentation">
                         <a href="#Souza" class="nav-link-item" data-bs-toggle="tab">Souza</a>
                     </li>
                     <li class="nav-tab-item" role="presentation">
-                        <a href="#Village" class="nav-link-item" data-bs-toggle="tab">Village</a>
+                        <a href="#Village" class="nav-link-item" data-bs-toggle="tab">Ngoma Village</a>
                     </li>
                 </ul>
                 @livewire('show-estate')
@@ -446,23 +446,24 @@
         <div class="container">
             <div class="box-title text-center wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
                 <div class="text-subtitle text-primary">Notre Equipe</div>
-                <h4 class="mt-4">Rencontrez nos Agents</h4>
+                <h4 class="mt-4">Rencontrez nos Responsables</h4>
             </div>
             <div class="row">
-                <div class="box col-lg-3 col-sm-6">
+                <div class="box col-lg-3 col-sm-6 offset-md-2">
                     <div class="box-agent hover-img wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
                         <style>
                             a.box-img.img-style {
                                 max-height: 170px;
                             }
                         </style>
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/welldone/boss.jpg') }}" alt="image-agent">
+                        <a href="#" class="img-style">
+                            <img style="max-height: 200px;" src="{{ asset('assets/images/agents/boss.jpg') }}"
+                                alt="image-agent">
                         </a>
                         <a target="_blank" href="https://wa.me/+23799591992" class="content">
                             <div class="info">
                                 <h6 class="link">Mireille Biloa</h6>
-                                <p class="mt-4 text-variant-1">PDG et Fondatrice</p>
+                                <p class="mt-4 text-variant-1">Directrice Générale</p>
                             </div>
                             <span class="icon-phone"> </span>
 
@@ -471,13 +472,14 @@
                 </div>
                 <div class="box col-lg-3 col-sm-6">
                     <div class="box-agent hover-img wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/agents/agent7.jpg') }}" alt="image-agent">
+                        <a href="#" class="img-style">
+                            <img style="max-height: 200px;" src="{{ asset('assets/images/agents/agent7.jpg') }}"
+                                alt="image-agent">
                         </a>
                         <a target="_blank" href="https://wa.me/+23799591992" class="content">
                             <div class="info">
-                                <h6 class="link">John Tchoungang</h6>
-                                <p class="mt-4 text-variant-1">Community Manager</p>
+                                <h6 class="link">Elisabeth NOAH</h6>
+                                <p class="mt-4 text-variant-1">Assistant & Community Manager</p>
                             </div>
                             <span class="icon-phone"></span>
                         </a>
@@ -485,22 +487,24 @@
                 </div>
                 <div class="box col-lg-3 col-sm-6">
                     <div class="box-agent hover-img wow fadeIn" data-wow-delay=".6s" data-wow-duration="2000ms">
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/agents/agent3.jpg') }}" alt="image-agent">
+                        <a href="#" class="img-style">
+
+                            <img style="height: 200px;" src="{{ asset('assets/images/agents/agent3.jpg') }}"
+                                alt="image-agent">
                         </a>
                         <a target="_blank" href="https://wa.me/+23799591992" class="content">
                             <div class="info">
-                                <h6 class="link">Chris Kenfack</h6>
-                                <p class="mt-4 text-variant-1">Commercial</p>
+                                <h6 class="link">Jean Yves KAMGA</h6>
+                                <p class="mt-4 text-variant-1"> Responsable Commercial & Logistique</p>
                             </div>
                             <span class="icon-phone"></span>
                         </a>
                     </div>
                 </div>
-                <div class="box col-lg-3 col-sm-6">
+                {{-- <div class="box col-lg-3 col-sm-6">
                     <div class="box-agent hover-img wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">
-                        <a href="#" class="box-img img-style">
-                            <img src="{{ asset('assets/images/agents/agent6.jpg') }}" height="100px" alt="image-agent">
+                        <a href="#" class="img-style">
+                            <img style="max-height: 200px;" src="{{ asset('assets/images/agents/agent6.jpg') }}" height="100px" alt="image-agent">
                         </a>
                         <a target="_blank" href="https://wa.me/+23799591992" class="content">
                             <div class="info">
@@ -510,7 +514,7 @@
                             <span class="icon-phone"></span>
                         </a>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
