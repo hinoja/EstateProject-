@@ -39,12 +39,12 @@ class NewContactNotification extends Notification
             ->greeting($info . $notifiable->name)
             ->subject(trans('New Message')
             )
-            ->line(
-                trans('A new message for: ') . $this->contact->subject . trans(', has been sent by ') . $this->contact->name . '.'
-            )
-            ->line(
-                trans('The content of the message: ') . $this->contact->message
-            )
+            // ->line(
+            //     trans('A new message for: ') . $this->contact->subject . trans(', has been sent by ') . $this->contact->name . '.'
+            // )
+            // ->line(
+            //     trans('The content of the message: ') . $this->contact->message
+            // )
             ->line(
                 trans('Your message for: ') . $this->contact->subject . trans(' has been successfully sent to the administrator. You will receive a response as soon as possible.')
             )
