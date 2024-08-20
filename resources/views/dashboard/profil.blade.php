@@ -3,31 +3,18 @@
 @section('content')
     <div class="main-content">
         <div class="main-content-inner wrap-dashboard-content-2">
+
+            <div class="button-show-hide show-mb">
+                {{-- <span class="body-1">Show Dashboard</span> --}}
+            </div>
+
             <div class="widget-box-2">
                 <div class="box">
                     <h6 class="title">Compte {{ Auth::user()->role->name }} </h6>
                     <form id="send-verification" method="post" action="{{ route('verification.send') }}">
                         @csrf
                     </form>
-                    <form method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data"
-                        class="mt-6 space-y-6">
-                        @csrf
-                        @method('patch')
-                        <div class="box-agent-avt">
-                            <div class="img-poster">
-                                <img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('assets/images/avatar/user-default.png') }}"
-                                    alt="avatar" loading="lazy">
-                            </div>
 
-                            <div class="loc-group position-relative">
-                                <x-input-label for="avatar" :value="__('Charger un nouvelle image')" />
-                                <input type="file" class="form-control" name="avatar" value="{{ old('avatar') }}"
-                                    id="avatar" placeholder=" Ajouter une image" accept=".jpg,.png,.jpeg,.ico">
-                                {{-- <span  class="pass-show-eye"><i class="fas fa-eye-slash"></i></span> --}}
-                                <x-input-error :messages="$errors->get('avatar')" class="mt-2" />
-                            </div>
-
-                        </div>
                 </div>
 
                 <h6 class="title">Information</h6>

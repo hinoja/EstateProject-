@@ -73,7 +73,7 @@
                             <h1 class="text-white animationtext slide">
                                 <span class="text-center">Find Your</span>
                                 <span class="tf-text s1 cd-words-wrapper">
-                                    <span class="item-text is-visible">Dream Home</span>
+                                    <span class="item-text is-visible">Dream Land</span>
                                     <span class="item-text is-hidden text-primary">Perfect Ground</span>
                                     <span class="item-text is-hidden">Real Estate</span>
                                 </span>
@@ -502,7 +502,7 @@
                         </a>
                     </div>
                 </div>
-                 
+
             </div>
         </div>
     </section>

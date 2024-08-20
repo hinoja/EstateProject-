@@ -12,7 +12,6 @@
                             <thead>
                                 <tr>
                                     <th class="text-center">#</th>
-                                    <th>@lang('Avatar')</th>
                                     <th>@lang('Name')</th>
                                     <th>@lang('Email')</th>
                                     <th>@lang('Status')</th>
@@ -24,8 +23,6 @@
                                 @foreach ($users as $user)
                                     <tr>
                                         <td class="text-center">{{ $loop->iteration }}</td>
-                                        <td><img src="{{ auth()->user()->avatar ? Storage::url(auth()->user()->avatar) : asset('assets/images/avatar/user-default.png') }}"
-                                                alt=""></td>
                                         <td>{{ $user->name }}
                                         </td>
                                         <td>{{ $user->email }} </td>

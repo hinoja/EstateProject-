@@ -13,6 +13,7 @@ use App\Http\Middleware\IsAdminTest;
 Route::view('/', 'welcome')->name('home');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
+Route::view('/faq', 'faqs')->name('faq');
 
 
 // BACK

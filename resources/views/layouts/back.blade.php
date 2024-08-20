@@ -45,10 +45,7 @@
                                     </div>
                                     <div class="header-account">
                                         <a href="#" class="box-avatar dropdown-toggle" data-bs-toggle="dropdown">
-                                            <div class="avatar avt-40 round">
-                                                <img src="{{ asset('assets/images/avatar/user-default.png') }}"
-                                                    alt="avt">
-                                            </div>
+                                           
                                             <p class="name">{{ Auth::user()->name }}<span
                                                     class="icon icon-arr-down"></span></p>
                                             <div class="dropdown-menu">
