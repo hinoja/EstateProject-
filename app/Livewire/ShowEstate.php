@@ -15,7 +15,7 @@ class ShowEstate extends Component
     public function render()
     {
         return view('livewire.show-estate', [
-            'estates' => Estate::query()->with('user')->orderBy('created_at', 'DESC')->get()->take(6),
+            'estates' => Estate::query()->with('user')->orderBy('created_at', 'DESC')->get()->take(3),
 
         ]);
     }

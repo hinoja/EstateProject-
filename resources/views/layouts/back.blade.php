@@ -52,7 +52,7 @@
                                                 <a class="dropdown-item" href="{{ route('home') }}">
                                                     @lang('Back to home')</a>
 
-                                                <a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a>
+                                                {{-- <a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a> --}}
                                                 <form method="POST" action="{{ route('logout') }}">
                                                     @csrf
                                                     <li>
@@ -114,15 +114,17 @@
                                                 class="nav-menu-link" href="{{ route('dashboard.estates') }}"><span
                                                     class="icon icon-list-dashes"></span>Terrains</a></li>
 
-                                    </ul>
+                                                    <li class="nav-menu-item @if (Str::contains($currentUri, 'profil')) active @endif"><a
+                                                        class="nav-menu-link" href="{{ route('profile.edit') }}"><span
+                                                            class="icon icon-profile"></span>Profile</a></li>
+
 
 
                                 </div>
                                 <div class="mobi-icon-box">
                                     <div class="button-mobi-sell">
 
-                                        {{-- <a class="tf-btn primary" href="add-property.html">Submit Property</a> --}}
-                                    </div>
+                                     </div>
                                     <div class="box d-flex align-items-center">
                                         <span class="icon icon-phone2"></span>
                                         <div>(+237) 6 99 59 19 92</div>

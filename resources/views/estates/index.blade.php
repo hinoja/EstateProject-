@@ -62,7 +62,7 @@
                                     <p class="pr-3"> Localité :<span class="fs-10"> {{ $estate->location }}</span>
                                         <i class="icon icon-ruler"></i>
                                         <span class="ml-3"> {{ number_format($estate->area, 0, ',', ' ') }}
-                                            m<sup><span>2</span></sup></span>
+                                          m<sup><span>2</span></sup></span>
                                     </p>
                                 </div>
                                 <div class="post-author">
