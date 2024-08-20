@@ -37,9 +37,7 @@ class NewContactNotification extends Notification
 
         return (new MailMessage)
             ->greeting($info . $notifiable->name)
-            ->subject(
-
-                fn($mail) => $mail->subject(trans('New Message'))
+            ->subject(trans('New Message')
             )
             ->line(
                 trans('A new message for: ') . $this->contact->subject . trans(', has been sent by ') . $this->contact->name . '.'
