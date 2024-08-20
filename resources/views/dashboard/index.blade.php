@@ -3,9 +3,7 @@
 @section('content')
     <div class="main-content">
         <div class="main-content-inner">
-            <div class="button-show-hide show-mb">
-                <span class="body-1">Volet de Naviguation  </span>
-            </div>
+          
             <div class="flat-counter-v2 tf-counter">
                 <div class="counter-box">
                     <div class="box-icon w-68 round">
