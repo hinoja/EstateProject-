@@ -48,7 +48,7 @@
                     <div class="col-lg-4 col-md-6">
                         <a href="blog-detail.html" class="flat-blog-item hover-img">
                             <div class="img-style">
-                                <img class="images-style" style="width: 360px; height: 240px; object-fit: cover;"
+                                <img class="images-style" style="width: 400px; height: 300px; object-fit: cover;"
                                     src="{{ $estate->image ? Storage::url($estate->image) : asset('assets/images/home/house-1.jpg') }}">
                                 <span class="date-post">Prix : {{ number_format($estate->price, 0, ',', ' ') }} <span
                                         style="text-transform:initial">Fcfa</span> / <span
