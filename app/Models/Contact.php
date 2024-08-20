@@ -12,8 +12,13 @@ class Contact extends Model
     use HasFactory, Notifiable;
 
     protected $fillable = [
-        'name', 'email', 'subject', 'message', 'response',
+        'name',
+        'email',
+        'subject',
+        'message',
+        'response',
     ];
+
 
     // ACCESSORS
     public function getCreatedAtAttribute($created_at)

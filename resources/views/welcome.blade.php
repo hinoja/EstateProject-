@@ -277,8 +277,9 @@
                     <div class="text-subtitle text-primary">Nos Services</div>
                     <h4 class="mt-4">Que faisons-nous ?</h4>
                 </div>
-                <a href="#" class="btn-view"><span class="text">Voir Nos Services</span> <span
-                        class="icon icon-arrow-right2"></span> </a>
+                <a href="/#services" class="btn-view"><span class="text">Nos Services</span>
+                    {{-- <span class="icon icon-arrow-right2"></span> --}}
+                </a>
             </div>
             <div class="flat-service wrap-service wow fadeInUpSmall" data-wow-delay=".4s" data-wow-duration="2000ms">
                 <div class="box-service hover-btn-view">
@@ -501,20 +502,7 @@
                         </a>
                     </div>
                 </div>
-                {{-- <div class="box col-lg-3 col-sm-6">
-                    <div class="box-agent hover-img wow fadeIn" data-wow-delay=".8s" data-wow-duration="2000ms">
-                        <a href="#" class="img-style">
-                            <img style="max-height: 200px;" src="{{ asset('assets/images/agents/agent6.jpg') }}" height="100px" alt="image-agent">
-                        </a>
-                        <a target="_blank" href="https://wa.me/+23799591992" class="content">
-                            <div class="info">
-                                <h6 class="link">Octavie Ateba</h6>
-                                <p class="mt-4 text-variant-1">Assistant de Direction</p>
-                            </div>
-                            <span class="icon-phone"></span>
-                        </a>
-                    </div>
-                </div> --}}
+                 
             </div>
         </div>
     </section>

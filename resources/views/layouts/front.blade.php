@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.jpg') }}">
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 
-    <!-- <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png"> -->
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('assets/images/logo/favicon.png') }}">
     @stack('css')
 </head>
 
@@ -56,7 +56,8 @@
                                     </div>
                                     <div class="box d-flex align-items-center">
                                         <span class="icon icon-mail"></span>
-                                        <div>welldonerealestate237@yahoo.com</div>
+                                        <div><small style="font-size: 0.85em"> contact@welldonerealestatesci.com</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -76,6 +77,14 @@
             </div>
             <!-- /#page -->
 
+        </div>
+        <!-- go top -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                    style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;">
+                </path>
+            </svg>
         </div>
 
         <!-- Javascript -->

@@ -4,7 +4,7 @@
     <div class="main-content">
         <div class="main-content-inner ">
             <div class="button-show-hide show-mb">
-                <span class="body-1">Volet de Naviguation  </span>
+                <span class="body-1">Volet de Naviguation </span>
             </div>
             <div class="section-body">
                 <div class="row">
@@ -13,9 +13,7 @@
             </div>
 
         </div>
-        {{-- <div class="footer-dashboard">
-            <p class="text-variant-2">©2024 Well-done Real Estate. All Rights Reserved.</p>
-        </div> --}}
+
     </div>
 @endsection
 @push('js')

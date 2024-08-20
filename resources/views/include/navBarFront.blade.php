@@ -20,7 +20,7 @@
                                 <li class="@if ($currentRouteName == 'home') current @endif"><a
                                         href="{{ route('home') }}">@lang('Home')</a> </li>
                                 <li class="@if (Str::contains($currentUri, 'service')) current @endif"><a
-                                        href="#services">@lang('Services')</a> </li>
+                                        href="/#services">@lang('Services')</a> </li>
                                 <li class="@if (Str::contains($currentUri, 'about')) current @endif"><a
                                         href="{{ route('about') }}">@lang('About')</a></li>
                                 <li class="@if (Str::contains($currentUri, 'contact')) current @endif"><a

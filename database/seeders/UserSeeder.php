@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
             'role_id' => 1,
             'name' => 'Super Admin',
             'email' => 'adminEstate@gmail.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('toor2024'),
             'is_active' => true,
         ]);
         \App\Models\User::factory()->create([
@@ -27,11 +27,11 @@ class UserSeeder extends Seeder
             'password' => Hash::make('mireille@2024'),
             'is_active' => true,
         ]);
-        \App\Models\User::factory()->create([
+      \App\Models\User::factory()->create([
             'role_id' => 2,
             'name' => 'Admin Estate',
-            'email' => 'madame@gmail.com',
-            'password' => Hash::make('password'),
+            'email' => 'elisabethnoah@gmail.com',
+            'password' => Hash::make('noah2024'),
             'is_active' => true,
         ]);
 

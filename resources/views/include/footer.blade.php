@@ -3,7 +3,8 @@
         <div class="container">
             <div class="content-footer-top">
                 <div class="footer-logo">
-                    <img src="{{ asset('assets/images/logo/logo.jpg') }}" alt="logo-footer" width="160" height="44">
+                    <img src="{{ asset('assets/images/logo/logoFooter.png') }}" alt="logo-footer" width="100"
+                        height="30">
                 </div>
                 <div class="wd-social">
                     <span>Suivez-nous :</span>
@@ -24,7 +25,7 @@
 
                         <p class="text-variant-2"> Spécialisée dans les activités et opérations immobilières
                             pour
-                            les personnes dans le besoin. </p>
+                            les personnes dans le besoin. Contactez-Nous</p>
                         <ul class="mt-12">
                             <li class="mt-12 d-flex align-items-center gap-8">
                                 <i class="icon icon-mapPinLine fs-20 text-variant-2"></i>
@@ -36,7 +37,8 @@
                             </li>
                             <li class="mt-12 d-flex align-items-center gap-8">
                                 <i class="icon icon-mail fs-20 text-variant-2"></i>
-                                <a href="mailto:contact@welldonerealestatesci.com" class="text-white">contact@welldonerealestatesci.com</a>
+                                <a href="mailto:contact@welldonerealestatesci.com"
+                                    class="text-white">contact@welldonerealestatesci.com</a>
                             </li>
                         </ul>
 
@@ -46,10 +48,10 @@
                     <div class="footer-cl-2">
                         <div class="fw-7 text-white">@lang('Categories')</div>
                         <ul class="mt-10 navigation-menu-footer">
-                            <li> <a href="#" class="caption-1 text-variant-2">Nos
+                            <li> <a href="/#services" class="caption-1 text-variant-2">Nos
                                     Services</a> </li>
 
-                            <li> <a href="#" class="caption-1 text-variant-2"> @lang('About')
+                            <li> <a href="{{ route('about') }}" class="caption-1 text-variant-2"> @lang('About')
                                     de Nous</a>
                             </li>
 
@@ -95,9 +97,9 @@
                 <br>
 
                 <ul class="menu-bottom">
-                    <li style="color: white" class="fs-12"> <small> @lang('Made By') :<a href="#"
-                                target="_blank"> JanohiCorporation
-                            </a></small> </li>
+                    <li style="color: white" class="fs-12 "> <small> @lang('Made By') :<a href="#"
+                                target="_blank"> JanohiCorporation & Cabrel
+                            </a></small> </li> <br>
                     <li style="color: white" class="fs-12"> <small> @lang('Template Designed By') : <a
                                 href="https://themesflat.com" target="_blank"> Themesflat
                             </a></small> </li>
