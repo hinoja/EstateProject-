@@ -46,7 +46,7 @@
                                         </td>
                                         <td>
                                             <div style="display: inline-block;">
-                                                @if ($user->role_id > 2)
+                                                @if ($user->role_id > 1)
                                                     @if ($user->is_active)
                                                         <button wire:click="updateStatus({{ $user }})"
                                                             title=" {{ __('Block') }} "
@@ -64,6 +64,7 @@
                                                         class="btn btn-icon icon-left btn-outline-danger"> <i
                                                             class="fa fa-trash"></i></button>
                                                 @endif
+                                   
 
                                                 {{-- <button wire:click="updateStatus({{ $user }})"
                                                             title="Mettre à jour le rôle"

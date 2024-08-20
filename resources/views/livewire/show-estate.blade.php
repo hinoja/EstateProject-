@@ -11,12 +11,12 @@
                                     <div class="images-style">
                                         <style>
                                             .div.images-style¨ {
-                                                width: 358px;
-                                                height: 239px;
+                                                width: 360px;
+                                                height: 240px;
                                             }
                                         </style>
                                         <img src="{{ $estate->image ? Storage::url($estate->image) : asset('assets/images/home/house-1.jpg') }}"
-                                            alt="img" style="height: 268px; object-fit: cover;">
+                                            alt="img" style="height: 240px; object-fit: cover;">
                                     </div>
                                     <div class="top">
                                         <ul class="d-flex gap-8">

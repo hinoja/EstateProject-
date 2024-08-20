@@ -26,8 +26,9 @@
                                     <tr>
                                         <td class="text-center">{{ $loop->iteration }}</td>
                                         <td>
-                                            <img src="{{ $estate->image ? Storage::url($estate->image) : asset('assets/images/home/house-1.jpg') }}" alt="">
-                                            </td>
+                                            <img src="{{ $estate->image ? Storage::url($estate->image) : asset('assets/images/home/house-1.jpg') }}"
+                                                alt="">
+                                        </td>
                                         <td>{{ $estate->location }}
                                         </td>
                                         <td>{{ $estate->town }} </td>
