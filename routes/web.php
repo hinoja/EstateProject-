@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EstateController;
 use App\Http\Middleware\IsAdminTest;
 
 // FRONT
@@ -14,6 +15,13 @@ Route::view('/', 'welcome')->name('home');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
 Route::view('/faq', 'faqs')->name('faq');
+
+Route::controller(EstateController::class)
+    ->group(function () {
+        Route::post('/search', 'search')->name('search');
+        Route::get('/estates', 'index')->name('estates.index');
+    });
+
 
 
 // BACK

@@ -22,7 +22,7 @@
         }
 
         .flat-section.flat-banner-about h6.text-primary {
-            font-size: 1em;
+            font-size: 1em;jq
             color: #007bff;
             margin-bottom: 20px;
         }
@@ -81,7 +81,7 @@
                             <p class="subtitle text-center text-white body-1 wow fadeIn" data-wow-delay=".8s"
                                 data-wow-duration="2000ms"> Nous sommes une agence immobilière qui vous aidera à trouver la
                                 meilleure résidence et/ou Terrains dont vous rêvez, discutons-en pour la maison de vos rêves
-                                ?</p>
+                            </p>
                         </div>
                     </div>
 
@@ -258,6 +258,7 @@
 
             </div>
             <div class="banner-video">
+
                 <video id="promo-video" controls preload="auto" loop width="100%"
                     poster="{{ asset('assets/images/banner/img-video.jpg') }}">
                     <source src="{{ asset('assets/video/video.mp4') }}" type="video/mp4">
@@ -431,7 +432,7 @@
                 <div class="col-lg-9">
                     <div class="swiper tf-sw-testimonial" data-preview-lg="2.6" data-preview-md="2" data-preview-sm="2"
                         data-space="30">
-                        @include('include.testimonials')
+                        @include('include.front.testimonials')
 
                     </div>
 

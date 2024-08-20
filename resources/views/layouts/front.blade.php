@@ -33,7 +33,7 @@
                 <header class="main-header fixed-header">
 
                     <!-- Header Lower -->
-                    @include('include.navBarFront')
+                    @include('include.front.navBar')
                     <!-- End Header Lower -->
 
                     <!-- Mobile Menu  -->
@@ -68,7 +68,7 @@
                 @yield('content')
 
                 <!-- footer -->
-                @include('include.footer')
+                @include('include.front.footer')
                 <!-- end footer -->
 
             </div>

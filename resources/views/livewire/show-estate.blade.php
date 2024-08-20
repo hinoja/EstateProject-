@@ -61,8 +61,10 @@
                     {{-- {{ $estates->links() }} --}}
                 </nav>
             </div>
-            {{-- <a href="#Tous" id="Tous" class="tf-btn primary size-1">View All Properties</a> --}}
-            {{-- </div> --}}
+            <div class="text-center">
+                <a href="{{ route('estates.index') }}" class="tf-btn primary size-1">Voir Tous Nos Terrains <span
+                        class="icon icon-arrow-right2"></span> </a>
+            </div>
         </div>
         {{-- </div> --}}
 

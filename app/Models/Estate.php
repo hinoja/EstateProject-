@@ -23,7 +23,7 @@ class Estate extends Model
     {
         $locale = app()->getLocale();
         Carbon::setLocale($locale);
-        $format = $locale === 'en' ? 'F d, Y, H:i' : 'd M Y, H:i';
+        $format = $locale === 'en' ? 'F d, Y ' : 'd M Y';
 
         return Carbon::parse($date)->translatedFormat($format);
     }

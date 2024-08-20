@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('location')->unique();
             $table->foreignId('user_id')->constrained();
-            $table->string('town')->nullable();
+            $table->string('town');
             $table->float('area')->nullable();
-            $table->float('price')->nullable();
+            $table->float('price');
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });

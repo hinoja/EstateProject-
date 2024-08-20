@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="header-account">
                                         <a href="#" class="box-avatar dropdown-toggle" data-bs-toggle="dropdown">
-                                           
+
                                             <p class="name">{{ Auth::user()->name }}<span
                                                     class="icon icon-arr-down"></span></p>
                                             <div class="dropdown-menu">
@@ -142,7 +142,7 @@
                 </header>
                 <!-- end header -->
                 <!-- sidebar dashboard -->
-                @include('include.sidebar')
+                @include('include.back.sidebar')
 
                 <!-- end sidebar dashboard -->
 

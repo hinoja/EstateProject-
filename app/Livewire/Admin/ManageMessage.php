@@ -12,7 +12,7 @@ use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class ManageMessage extends Component
 {
-    use WithPagination,LivewireAlert;
+    use WithPagination, LivewireAlert;
 
     public $reply;
 

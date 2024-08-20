@@ -59,7 +59,8 @@
                 </div>
                 <div class="col-md-7 hover-btn-view">
                     <p class="body-2 text-variant-1 text-justify lettrine" style="text-align: justify; text-indent: 2em;">
-                        L'agence immobilière {{ env('APP_NAME') }}  est une entreprise spécialisée dans l'amenagement des espaces et la vente de terrrains.
+                        L'agence immobilière {{ env('APP_NAME') }} est une entreprise spécialisée dans l'amenagement des
+                        espaces et la vente de terrrains.
                         Fondée en 2023 par Mireille Biloa, notre entreprise s'est construite sur des valeurs fortes :
                         l'expertise, la transparence et l'engagement envers nos clients.
                         <br><br>
@@ -172,7 +173,7 @@
             </div>
             <div class="swiper tf-sw-testimonial" data-preview-lg="2" data-preview-md="2" data-preview-sm="2"
                 data-space="30">
-                @include('include.testimonials')
+                @include('include.front.testimonials')
                 <div class="sw-pagination sw-pagination-testimonial"></div>
 
             </div>

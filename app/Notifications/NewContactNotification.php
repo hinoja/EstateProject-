@@ -15,9 +15,7 @@ class NewContactNotification extends Notification
     /**
      * Create a new notification instance.
      */
-    public function __construct(public Contact $contact)
-    {
-    }
+    public function __construct(public Contact $contact) {}
     /**
      * Get the notification's delivery channels.
      *
@@ -39,27 +37,23 @@ class NewContactNotification extends Notification
 
         return (new MailMessage)
             ->greeting($info . $notifiable->name)
-            ->when(
-                $notifiable->role_id === 1 || $notifiable->role_id === 2 || $notifiable->role_id === 3,
-                fn ($mail) => $mail->subject(trans('New Message')),
-                fn ($mail) => $mail->subject(trans('Message Sent'))
+            ->subject(
+
+                fn($mail) => $mail->subject(trans('New Message'))
             )
-            ->lineIf(
-                $notifiable->role_id === 1 || $notifiable->role_id === 2 || $notifiable->role_id === 3,
+            ->line(
                 trans('A new message for: ') . $this->contact->subject . trans(', has been sent by ') . $this->contact->name . '.'
             )
-            ->lineIf(
-                $notifiable->role_id === 1,
+            ->line(
                 trans('The content of the message: ') . $this->contact->message
             )
-            ->lineIf(
-                $notifiable->role_id === 1 || $notifiable->role_id === 2 || $notifiable->role_id === 3,
+            ->line(
                 trans('Your message for: ') . $this->contact->subject . trans(' has been successfully sent to the administrator. You will receive a response as soon as possible.')
             )
             ->when(
-                $notifiable->role_id === 1 || $notifiable->role_id === 2 || $notifiable->role_id === 3,
-                fn ($mail) => $mail->action(trans('Go to contacts'), url('/admin/dashboard')),
-                fn ($mail) => $mail->action(trans('Go to website'), url('/')),
+                $notifiable->role_id === 1 || $notifiable->role_id === 2,
+                fn($mail) => $mail->action(trans('Go to contacts'), url('/admin/dashboard')),
+                fn($mail) => $mail->action(trans('Go to website'), url('/')),
             );
     }
 
