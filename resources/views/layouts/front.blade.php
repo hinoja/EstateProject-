@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
 <head>
     <meta charset="utf-8">
     <title>{{ config('app.name', 'Well-Done REAL Estate. SCI.') }} | @yield('title')</title>
-
-    <meta name="author" content="themesflat.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <!-- font -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/fonts.css') }}">
     <!-- Icons -->
