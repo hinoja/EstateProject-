@@ -13,7 +13,7 @@
                                 <tr>
                                     <th class="text-center">#</th>
                                     <th>@lang('Image')</th>
-                                    <th>@lang('location')</th>
+                                    <th>Localité</th>
                                     <th>Ville</th>
                                     <th>Superficie</th>
                                     <th>Prix / m<sup><small>2</small></sup></th>

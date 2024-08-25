@@ -22,8 +22,8 @@
         }
 
         .flat-section.flat-banner-about h6.text-primary {
-            font-size: 1em;jq
-            color: #007bff;
+            font-size: 1em;
+            jq color: #007bff;
             margin-bottom: 20px;
         }
 
@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="content">
                                     <span class="sub-title">1000 hectares</span>
-                                    <h6 class="title"> Kake (Souza vers usine cacao)</h6>
+                                    <h6 class="title"> KAKE (Souza vers usine cacao)</h6>
                                 </div>
                             </a>
                         </div>
@@ -259,10 +259,10 @@
             </div>
             <div class="banner-video">
 
-                <video id="promo-video" controls preload="auto" loop width="100%"
+                <video id="promo-video" controls preload="auto" loop width="900" poster="{{ asset('assets/images/logo/logo.jpg') }}"
                     poster="{{ asset('assets/images/banner/img-video.jpg') }}">
                     <source src="{{ asset('assets/video/video.mp4') }}" type="video/mp4">
-                    Votre navigateur ne supporte pas l'élément vidéo.
+                     
                 </video>
             </div>
         </div>

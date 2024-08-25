@@ -94,7 +94,7 @@
                             <small>@lang('Made By'): <a href="#" class="text text-primary" target="_blank">JanohiCorporation & NTC Digital</a></small>
                         </div>
                     </div>
-                     
+
                     <div class="col-lg-6 col-md-6 col-xs-12">
                         <div style="color: white" class="fs-12">
                             <small>@lang('Template Designed By'): <a class="text text-primary" href="https://themesflat.com" target="_blank">Themesflat</a></small>
