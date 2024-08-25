@@ -15,9 +15,7 @@ Route::view('/', 'welcome')->name('home');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
 Route::view('/faq', 'faqs')->name('faq');
-Route::get('/site-map', function () {
-    return view('sitemap');  // Notez que vous n'avez pas besoin de spécifier l'extension .html
-});
+
 Route::controller(EstateController::class)
     ->group(function () {
         Route::post('/search', 'search')->name('search');
