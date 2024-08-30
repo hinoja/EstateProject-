@@ -1,4 +1,23 @@
 @extends('layouts.front')
+@section('seoSection')
+    <!-- SEO Meta Tags -->
+
+    <meta name="description" content="@yield('meta_description', 'Entrez en contact avec Well Done Real Estate .SCI pour toutes vos questions sur l\'achat, la vente ou la location de propriétés au Cameroun.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'contactez Well Done Real Estate SCI, immobilier Cameroun, agence immobilière Cameroun')">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="@yield('og_title', 'Well Done Real Estate | Achat, Vente et Location de Propriétés au Cameroun')">
+    <meta property="og:description" content="@yield('og_description', 'Well Done Real Estate vous accompagne dans tous vos projets immobiliers. Découvrez nos offres au Cameroun.')">
+    <meta property="og:image" content="@yield('og_image', asset('assets/images/logo/logo.jpg'))">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Well Done Real Estate | Immobilier au Cameroun')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Découvrez les meilleures offres immobilières au Cameroun avec Well Done Real Estate.SCI')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('assets/images/logo/logo.jpg'))">
+@endsection
 @section('title', __('Contact us'))
 @push('css')
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">

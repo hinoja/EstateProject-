@@ -1,5 +1,24 @@
 @extends('layouts.front')
 @section('title', 'Liste des Sites')
+@section('seoSection')
+    <!-- SEO Meta Tags -->
+
+    <meta name="description" content="@yield('meta_description', 'Découvrez notre liste complète de propriétés disponibles à l\'achat ou à la location au Cameroun. Parcourez les offres et trouvez votre prochain terrain ou maison.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'immobilier Cameroun, achat terrain, vente propriété, location immobilière, Well Done Real Estate SCI, terrains à douala,terrain à louer ,terrain à KAKE,terrain à Missole ,terrain à Mbanga,terrain à acheter à SOUZA ,agence immobilièere au cameroun')">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="@yield('og_title', 'Well Done Real Estate SCI | Achat, Vente et Location de Propriétés au Cameroun')">
+    <meta property="og:description" content="@yield('og_description', 'Well Done Real Estate SCI vous accompagne dans tous vos projets immobiliers. Découvrez nos offres au Cameroun.')">
+    <meta property="og:image" content="@yield('og_image', asset('assets/images/logo/logo.jpg'))">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Well Done Real Estate SCI | Immobilier au Cameroun')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Découvrez les meilleures offres immobilières au Cameroun avec Well Done Real Estate.SCI')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('assets/images/logo/logo.jpg'))">
+@endsection
 @section('content')
     <section class="flat-title-page style-2">
         <div class="container">
@@ -90,7 +109,8 @@
                         .pagination .page-item.active .page-link {
                             background-color: rgb(81, 132, 197);
                             border-color: rgb(81, 132, 197);
-                            color: white; /* Couleur du texte en blanc */
+                            color: white;
+                            /* Couleur du texte en blanc */
                         }
 
                         .pagination .page-link {
@@ -100,7 +120,8 @@
                         .pagination .page-link:hover {
                             background-color: rgba(81, 132, 197, 0.7);
                             border-color: rgba(81, 132, 197, 0.7);
-                            color: white; /* Assure que le texte reste blanc au survol */
+                            color: white;
+                            /* Assure que le texte reste blanc au survol */
                         }
                     </style>
                     {{ $estates->links() }}

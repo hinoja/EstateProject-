@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\Admin\UserController;
+use App\Http\Middleware\IsAdminTest;
+use Spatie\Sitemap\SitemapGenerator;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EstateController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\EstateController;
-use App\Http\Middleware\IsAdminTest;
+use App\Http\Controllers\Admin\UserController;
 
 // FRONT
 // _________________________________________________________
@@ -25,7 +26,10 @@ Route::controller(EstateController::class)
     });
 
 
-
+Route::get('/sitemap',function ()  {
+    // SitemapGenerator::create('https://welldonerealestatesci.com/')->writeToFile(public_path('sitemap/sitemap.xml'));
+    SitemapGenerator::create('localhost')->writeToFile(public_path('sitemap/sitemap.xml'));
+});
 
 // BACK
 // __________________________________________________________________

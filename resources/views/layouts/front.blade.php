@@ -3,25 +3,40 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{{ config('app.name', 'Well-Done REAL Estate. SCI.') }} | @yield('title')</title>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- font -->
+
+    <!-- SEO Integration -->
+    {!! seo() !!}
+
+    @yield('seoSection')
+    <!-- Fonts -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/fonts.css') }}">
+
     <!-- Icons -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/font-icons.css') }}">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet"type="text/css" href="{{ asset('assets/css/styles.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/styles.css') }}" />
 
+
+
+    <!-- FontAwesome -->
     <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-    <!-- Favicon and Touch Icons  -->
+
+    <!-- Favicon and Touch Icons -->
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/logo.jpg') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('assets/images/logo/favicon.png') }}">
+
+    <!-- Toastr for Notifications -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('assets/images/logo/favicon.png') }}">
     @stack('css')
 </head>
+
 
 <body class="body counter-scroll">
     @include('sweetalert::alert')

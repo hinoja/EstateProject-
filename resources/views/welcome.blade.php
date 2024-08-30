@@ -1,4 +1,25 @@
 @extends('layouts.front')
+@section('seoSection')
+    <!-- SEO Meta Tags -->
+    <title>{{ config('app.name', 'Well-Done REAL Estate. SCI.') }} | @yield('title')</title>
+    <meta name="description" content="@yield('meta_description', 'Découvrez les meilleures offres de vente et location de terrains et propriétés au Cameroun avec Well Done Real Estate.SCI')">
+    <meta name="keywords" content="@yield('meta_keywords', 'immobilier Cameroun, achat terrain, vente propriété, location immobilière, Well Done Real Estate SCI, terrains à douala,terrain à louer ,terrain à KAKE,terrain à Missole ,terrain à Mbanga,terrain à acheter à SOUZA ,agence immobilièere au cameroun')">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="@yield('og_title', 'Well Done Real Estate | Achat, Vente et Location de Propriétés au Cameroun')">
+    <meta property="og:description" content="@yield('og_description', 'Well Done Real Estate SCI  vous accompagne dans tous vos projets immobiliers. Découvrez nos offres au Cameroun.')">
+    <meta property="og:image" content="@yield('og_image', asset('assets/images/logo/logo.jpg'))">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Well Done Real Estate | Immobilier au Cameroun')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Découvrez les meilleures offres immobilières au Cameroun avec Well Done Real Estate.SCI')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('assets/images/logo/logo.jpg'))">
+
+
+@endsection
 @section('title', __('Home'))
 @push('js')
     <script>
