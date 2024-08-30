@@ -5,7 +5,9 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Carbon\Carbon;
 use App\Models\Role;
+use App\Notifications\password\Front\ResetPasswordNotification as FrontResetPasswordNotification;
 use Illuminate\Notifications\Notifiable;
+use App\Notifications\ResetPasswordNotification;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -72,4 +74,19 @@ class User extends Authenticatable
     {
         return $this->hasMany(Estate::class);
     }
+
+
+        /**
+     * Send the password reset notification.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token): void
+{
+    $domain=config('app.url');
+    $url = $domain.'/reset-password?token='.$token;
+
+    $this->notify(new ResetPasswordNotification($url));
+}
 }

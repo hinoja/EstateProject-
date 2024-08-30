@@ -1,2 +1,11 @@
 User-agent: *
-Disallow:
+Disallow: /login
+Disallow: /search
+Disallow: /dashboard/index
+Disallow: /dashboard/users
+Disallow: /dashboard/messages
+Disallow: /dashboard/estate
+Disallow: /profile
+Sitemap: lien pour accéder au fichier xml
+
+

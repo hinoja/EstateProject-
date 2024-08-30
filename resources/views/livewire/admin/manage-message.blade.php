@@ -34,6 +34,25 @@
         </div>
         <div class="card-footer text-right" style="float: right">
             <nav class="d-inline-block">
+                <style>
+                    .pagination .page-item.active .page-link {
+                        background-color: rgb(81, 132, 197);
+                        border-color: rgb(81, 132, 197);
+                        color: white;
+                        /* Couleur du texte en blanc */
+                    }
+
+                    .pagination .page-link {
+                        color: rgb(81, 132, 197);
+                    }
+
+                    .pagination .page-link:hover {
+                        background-color: rgba(81, 132, 197, 0.7);
+                        border-color: rgba(81, 132, 197, 0.7);
+                        color: white;
+                        /* Assure que le texte reste blanc au survol */
+                    }
+                </style>
                 {{ $contacts->links() }}
             </nav>
         </div>

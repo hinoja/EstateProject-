@@ -11,7 +11,7 @@
                         <table class="table table-striped ">
                             <thead>
                                 <tr>
-                                    <th class="text-center">#</th>
+                                    <th style="width: 5px" style="width: 5px" class="text-center">#</th>
                                     <th>@lang('Image')</th>
                                     <th>Localité</th>
                                     <th>Ville</th>
@@ -26,6 +26,12 @@
                                     <tr>
                                         <td class="text-center">{{ $loop->iteration }}</td>
                                         <td>
+                                            <style>
+                                                img {
+                                                    height: 80px;
+
+                                                }
+                                            </style>
                                             <img src="{{ $estate->image ? Storage::url($estate->image) : asset('assets/images/home/house-1.jpg') }}"
                                                 alt="">
                                         </td>
@@ -43,18 +49,12 @@
                                         <td>
                                             <div style="display: inline-block;">
 
-                                                {{-- @if ($estate->is_active)
-                                                    <button wire:click="updateStatus({{ $estate }})"
-                                                        title=" {{ __('Block') }} "
-                                                        class="btn btn-icon icon-left btn-danger"> <i
-                                                            class="fa fa-lock"></i></button>
-                                                @else
-                                                    <button wire:click="updateStatus({{ $estate }})"
-                                                        title=" {{ __('Unblock') }} "
-                                                        style="background-color: rgb(81,132,197)"
-                                                        class="btn btn-icon icon-left btn-primary"> <i
-                                                            class="fa fa-lock-open"></i></button>
-                                                @endif --}}
+
+                                                {{-- <button wire:click="updateStatus({{ $estate }})"
+                                                    title=" {{ __('Edit') }} "
+                                                    style="background-color: rgb(81,132,197)"
+                                                    class="btn btn-icon icon-left btn-primary"> <i
+                                                        class="fa fa-edit"></i></button> --}}
                                                 <button wire:click="showDeleteForm({{ $estate }})"
                                                     title=" {{ __('Delete') }}"
                                                     class="btn btn-icon icon-left btn-outline-danger"> <i
@@ -74,8 +74,27 @@
             </div>
         </div>
 
-        <div style="float: right" class="card-footer  text-right">
+        <div class="card-footer text-right" style="float: right">
             <nav class="d-inline-block">
+                <style>
+                    .pagination .page-item.active .page-link {
+                        background-color: rgb(81, 132, 197);
+                        border-color: rgb(81, 132, 197);
+                        color: white;
+                        /* Couleur du texte en blanc */
+                    }
+
+                    .pagination .page-link {
+                        color: rgb(81, 132, 197);
+                    }
+
+                    .pagination .page-link:hover {
+                        background-color: rgba(81, 132, 197, 0.7);
+                        border-color: rgba(81, 132, 197, 0.7);
+                        color: white;
+                        /* Assure que le texte reste blanc au survol */
+                    }
+                </style>
                 {{ $estates->links() }}
             </nav>
         </div>
@@ -90,7 +109,7 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="addEstateLabel">
                             @if ($selectedEstate)
-                                @lang('Edit') @lang('User')
+                                @lang('Edit') Un Terrain
                             @else
                                 Ajouter un Nouveau Terrain
                             @endif
@@ -113,10 +132,17 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label class="control-label">Le Lieu(le nom ) </label>
-                                <input type="text" wire:model="location" class="form-control"
-                                    placeholder=" {{ __('location') }}" />
+                                <label class="control-label">La Localité </label>
+                                <input type="text" wire:model="location" class="form-control" placeholder="kake" />
                                 @error('location')
+                                    <small class="fs-12 text-danger ">{{ $message }} </small>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Description </label>
+                                <input type="text" wire:model="description" class="form-control"
+                                    placeholder="mini description en une ou deux phrases" />
+                                @error('description')
                                     <small class="fs-12 text-danger ">{{ $message }} </small>
                                 @enderror
                             </div>

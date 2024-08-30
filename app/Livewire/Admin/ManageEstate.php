@@ -8,18 +8,14 @@ use Livewire\Component;
 use Illuminate\Support\Str;
 use Livewire\WithPagination;
 use Livewire\WithFileUploads;
-use Illuminate\Validation\Rules;
-use App\Actions\UpdateUserStatus;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Password;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class ManageEstate extends Component
 {
     use WithPagination, WithFileUploads, LivewireAlert;
     protected $paginationTheme = 'bootstrap';
-    public $location, $image, $area, $town, $price, $selectedEstate, $deleteId, $deleteEstate;
+    public $location, $description, $image, $area, $town, $price, $selectedEstate, $deleteId, $deleteEstate;
 
     //CRUD User
     public function closeModal()
@@ -30,14 +26,14 @@ class ManageEstate extends Component
         $this->dispatch('closeModal');
     }
 
-    public function showEditForm(User $user)
+    public function showEditForm(Estate $estate)
     {
         $this->reset('location');
         $this->resetErrorBag();
-        $this->dispatch('openEditModal');
+        $this->dispatch('openModal');
         $this->resetValidation();
-        $this->selectedEstate = $user;
-        $this->location = $this->selectedEstate->location;
+        $this->selectedEstate = $estate;
+        // $this->location = $this->selectedEstate->location;
     }
 
     public function showCreateForm()
@@ -47,20 +43,7 @@ class ManageEstate extends Component
         $this->dispatch('openModal');
     }
 
-    // public function updateUser()
-    // {
-    //     $newData = $this->validate([
-    //         'location' => ['string', 'unique:tags,name,' . $this->selectedEstate->id . '', 'required', 'min:2'],
-    //     ]);
-    //     User::where('id', $this->selectedEstate->id)
-    //         ->update([
-    //             'location' => $newData['location'],
-    //         ]);
-    //     Toastr()->success(trans('The User has been updated'));
-    //     $this->alert('success', trans('The User has been updated'));
-
-    //     $this->closeModal();
-    // }
+ 
 
     public function addEstate()
     {
@@ -68,8 +51,9 @@ class ManageEstate extends Component
         $this->resetErrorBag();
         $this->resetValidation();
         $newData = $this->validate([
-            'image' => 'nullable|image|mimes:jpeg,jpg,ico,png|max:1024',
-            'location' => ['required', 'string', 'max:255', 'unique:estates,location'],
+            'image' => 'required|image|mimes:jpeg,jpg,ico,png|max:6144',
+            'location' => ['required', 'string', 'max:255'],
+            'description' => ['nullable', 'string', 'max:400',],
             'town' => ['required', 'string', 'max:255'],
             'price' => ['nullable', 'numeric', 'min:0'],
             'area' => ['nullable', 'numeric', 'min:0'],
@@ -77,6 +61,7 @@ class ManageEstate extends Component
         $estate = Estate::create([
             'image' => $newData['image'],
             'location' => $newData['location'],
+            'description' => $newData['description'],
             'town' => $newData['town'],
             'price' => $newData['price'],
             'area' => $newData['area'],
@@ -91,7 +76,7 @@ class ManageEstate extends Component
 
         Toastr()->success("l'Utilisateur a été crée ");
         $this->alert('success', "l'Utilisateur a été crée");
-
+        $this->resetAttributes();
         $this->closeModal();
     }
 
@@ -119,7 +104,7 @@ class ManageEstate extends Component
 
     public function resetAttributes()
     {
-        $this->reset(['location', 'deleteId', 'selectedEstate', 'deleteEstate']);
+        $this->reset(['location', 'description', 'price', 'area', 'town', 'deleteId', 'selectedEstate', 'deleteEstate']);
     }
 
     /**

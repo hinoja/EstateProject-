@@ -16,7 +16,7 @@ class ManageUsers extends Component
 {
     use WithPagination, LivewireAlert;
     protected $paginationTheme = 'bootstrap';
-    public $name, $email, $password, $selectedUser, $deleteId, $deleteUser;
+    public $name, $email, $password, $selectedUser, $deleteId, $editId, $deleteUser;
 
     //CRUD User
     public function closeModal()
@@ -27,15 +27,7 @@ class ManageUsers extends Component
         $this->dispatch('closeModal');
     }
 
-    public function showEditForm(User $user)
-    {
-        $this->reset('name');
-        $this->resetErrorBag();
-        $this->dispatch('openEditModal');
-        $this->resetValidation();
-        $this->selectedUser = $user;
-        $this->name = $this->selectedUser->name;
-    }
+
 
     public function showCreateForm()
     {
@@ -44,20 +36,6 @@ class ManageUsers extends Component
         $this->dispatch('openModal');
     }
 
-    // public function updateUser()
-    // {
-    //     $newData = $this->validate([
-    //         'name' => ['string', 'unique:tags,name,' . $this->selectedUser->id . '', 'required', 'min:2'],
-    //     ]);
-    //     User::where('id', $this->selectedUser->id)
-    //         ->update([
-    //             'name' => $newData['name'],
-    //         ]);
-    //     Toastr()->success(trans('The User has been updated'));
-    //     $this->alert('success', trans('The User has been updated'));
-
-    //     $this->closeModal();
-    // }
 
     public function addUser()
     {
@@ -84,6 +62,33 @@ class ManageUsers extends Component
     {
         $this->deleteId = $id;
         $this->name = (User::find($this->deleteId))->name;
+    }
+
+
+    // the following both functions help to edit role of a user
+
+    // This function helps to display a  modal text for user
+    public function showEditForm(User $user)
+    {
+        $this->dispatch('openEditModal');
+        $this->editId = $user->id;
+        $this->name = $user->name;
+        $this->selectedUser = $user->role_id;
+    }
+    // this function update this
+    public function UpdateUser()
+    {
+        $EditUser = User::find($this->editId);
+        if ($EditUser->role_id === 3) //editor role
+        {
+            $EditUser->role_id = 2;
+        } elseif ($EditUser->role_id === 2) {
+            $EditUser->role_id = 3;
+        }
+        $EditUser->save();
+        // Toastr()->success("l'utilisateur a été supprimé");
+        $this->alert('success', "Le rôle a été mis a jour avec succès");
+        $this->closeModal();
     }
 
     public function showDeleteForm(User $user)

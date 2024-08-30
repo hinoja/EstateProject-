@@ -19,6 +19,7 @@ class EstateFactory extends Factory
         return [
             'image' => null,
             'location' => fake()->unique()->name(),
+            'description' => fake()->unique()->sentences(4),
             'user_id' => fake()->numberBetween(1, 6),
             'town' => fake('it_IT')->city(),
             'area' => fake()->numberBetween(100, 500),

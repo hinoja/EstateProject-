@@ -110,7 +110,7 @@
                             <a href="#" class="box-location">
                                 <div class="image">
 
-                                    <img src="{{ asset('assets/images/welldone/lotis4.jpg') }}" width="347px"
+                                    <img src="{{ asset('assets/images/welldone/lotis1.jpg') }}" width="347px"
                                         height="300px" alt="image-location">
                                     <style>
                                         div.image {
@@ -121,68 +121,32 @@
                                     </style>
                                 </div>
                                 <div class="content">
-                                    <span class="sub-title"> 3000 m2</span>
-                                    <h6 class="title">Nkoabang (Carrefour)</h6>
+                                    <span class="sub-title"> --- </span>
+                                    <h6 class="title">KAKE (Souza vers usine cacao)</h6>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="box-location">
                                 <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/terrain5.jpg') }}" width="80px"
+                                    <img src="{{ asset('assets/images/welldone/missole.jpg') }}" width="80px"
                                         height="100px" alt="image-location">
                                 </div>
                                 <div class="content">
-                                    <span class="sub-title">grande Propriété</span>
-                                    <h6 class="title">Mbanga ( vers usine )</h6>
+                                    <span class="sub-title">---</span>
+                                    <h6 class="title">Missole 2</h6>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="box-location">
                                 <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/lotis8.jpg') }}" width="80px"
+                                    <img src="{{ asset('assets/images/welldone/terrain3.jpg') }}" width="80px"
                                         height="100px" alt="image-location">
                                 </div>
                                 <div class="content">
-                                    <span class="sub-title">1000 hectares</span>
-                                    <h6 class="title"> KAKE (Souza vers usine cacao)</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/terrain4.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
-                                </div>
-                                <div class="content">
-                                    <span class="sub-title">2000 m2</span>
-                                    <h6 class="title">Nkolbisson (Après le Carrefour)</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/lotis5.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
-                                </div>
-                                <div class="content">
-                                    <span class="sub-title">10 propriétés</span>
-                                    <h6 class="title">Nkolbisson (Après le Carrefour)</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="box-location">
-                                <div class="image">
-                                    <img src="{{ asset('assets/images/welldone/terrain6.jpg') }}" width="80px"
-                                        height="100px" alt="image-location">
-                                </div>
-                                <div class="content">
-                                    <span class="sub-title">2180 m2</span>
-                                    <h6 class="title">Nkolbisson (Après le Carrefour)</h6>
+                                    <span class="sub-title"> --- </span>
+                                    <h6 class="title">Missole 2 </h6>
                                 </div>
                             </a>
                         </div>
@@ -259,10 +223,11 @@
             </div>
             <div class="banner-video">
 
-                <video id="promo-video" controls preload="auto" loop width="900" poster="{{ asset('assets/images/logo/logo.jpg') }}"
+                <video id="promo-video" controls preload="auto" loop width="900"
+                    poster="{{ asset('assets/images/logo/logo.jpg') }}"
                     poster="{{ asset('assets/images/banner/img-video.jpg') }}">
                     <source src="{{ asset('assets/video/video.mp4') }}" type="video/mp4">
-                     
+
                 </video>
             </div>
         </div>

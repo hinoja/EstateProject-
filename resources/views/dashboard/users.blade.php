@@ -12,6 +12,7 @@
         </div>
 
     </div>
+
 @endsection
 @push('js')
     <script type="text/javascript">
@@ -22,6 +23,15 @@
         })
         window.addEventListener('closeModal', () => {
             $('#UserModal').modal('hide');
+        });
+
+        // close edit role user  modal
+        window.addEventListener('openEditModal', event => {
+            $('#editUser').modal('show');
+            //alert('parameter: ' + event.detail.someParameter);
+        })
+        window.addEventListener('closeModal', () => {
+            $('#editUser').modal('hide');
         });
 
         // close delete user  modal

@@ -16,11 +16,14 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
 Route::view('/faq', 'faqs')->name('faq');
 
+
+
 Route::controller(EstateController::class)
     ->group(function () {
         Route::post('/search', 'search')->name('search');
         Route::get('/estates', 'index')->name('estates.index');
     });
+
 
 
 

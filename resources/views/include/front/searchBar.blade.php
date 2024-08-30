@@ -5,7 +5,8 @@
             <div class="flat-tab flat-tab-form">
                 <ul class="nav-tab-form style-3 justify-content-center" role="tablist">
                     <li class="nav-tab-item">
-                        <a href="{{ route('estates.index') }}" class="nav-link-item active" data-bs-toggle="tab">Sites
+                        <a href="#" class="nav-link-item active" data-bs-toggle="tab">
+                            Sites
                             Disponibles</a>
                     </li>
 
@@ -26,8 +27,6 @@
 
                                             <a href="#" class="icon icon-locate"></a>
                                             <a href="#" class="icon icon-marker"></a>
-                                            {{-- <a style="color:red;" class="fa-solid fa-location-dot"></a> --}}
-                                            {{-- <a href="#" class="icon icon-money"></a> --}}
                                         </div>
                                         <div class="form-group-2 form-style">
                                             <label>Ville</label>
@@ -39,33 +38,13 @@
                                             </div>
                                         </div>
 
-                                        {{-- <div class="form-group-2 form-style">
-                                            <label>Prix/m<sup>2</sup></label>
-
-                                            <div class="group-select">
-                                                <div class="nice-select" tabindex="0"><span class="current">Le
-                                                        prix</span>
-                                                    <ul class="list">   <li data-value="villa" class="option">Moins de 3 000 FcFa </li>
-                                                        <li data-value="studio" class="option">Entre 3 000 et 5 000 FcFa
-                                                        </li>
-                                                        <li data-value="office" class="option">5 000 et 10 000 FcFa</li>
-                                                        <li data-value="house" class="option">10 000 FcFa et plus</li>
-
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div> --}}
-
-
                                     </div>
-                                    @if (!request()->locality || !request()->town)
-                                        <button type="submit" class="tf-btn primary btn-hover"
-                                            href="#">Rechercher</button>
+                                    @if (!request()->locality && !request()->town)
+                                        <button type="submit"
+                                            class="tf-btn primary btn-hover">@lang('Search')</button>
                                     @else
-                                        <a style="background: rgb(81,132,197)" type="reset"
-                                            class="tf-btn primary btn-hover"
-                                            href="{{ route('estates.index') }}">Réinitialiser</a>
+                                        <button style=" background: rgb(81,132,197)" type="reset"
+                                            class="tf-btn primary btn-hover">@lang('Reset')</button>
                                     @endif
 
                                 </div>

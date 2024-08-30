@@ -134,6 +134,7 @@ return [
 
     'attributes' => [
         'address' => 'adresse',
+        'town'=>'ville',
         'age' => 'âge',
         'available' => 'disponible',
         'city' => 'ville',

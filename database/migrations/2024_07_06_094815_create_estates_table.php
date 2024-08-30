@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('estates', function (Blueprint $table) {
             $table->id();
-            $table->string('image')->nullable();
-            $table->string('location')->unique();
+            $table->string('image');
+            $table->string('location');
+            $table->text('description')->nullable();
             $table->foreignId('user_id')->constrained();
             $table->string('town');
             $table->float('area')->nullable();
-            $table->float('price');
+            $table->float('price')->nullable();
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });

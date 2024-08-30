@@ -1,3 +1,6 @@
+@php
+    use Illuminate\Support\Str;
+@endphp
 <div>
     <div class="tab-content">
         {{-- <div class="container"> --}}
@@ -36,8 +39,12 @@
                                         <p class="mr-5">{{ $estate->location }} </p> <i class="icon icon-ruler"></i>
                                         <span class="ml-3"> {{ number_format($estate->area, 0, ',', ' ') }}
                                             m<sup><span>2</span></sup></span>
+                                        <div class="row"></div>
 
-                                    </div>
+
+                                    </div> <br>
+                                    <p><small><i>{{ Str::limit($estate->description, 80, '...') }}</i></small></p>
+
 
                                 </div>
                             </div>
