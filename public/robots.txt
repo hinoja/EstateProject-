@@ -6,6 +6,6 @@ Disallow: /dashboard/users
 Disallow: /dashboard/messages
 Disallow: /dashboard/estate
 Disallow: /profile
-Sitemap: lien pour accéder au fichier xml
+Sitemap: https://welldonerealestatesci.com//xmlsitemap.xml
 
 
