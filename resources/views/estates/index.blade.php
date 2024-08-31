@@ -72,12 +72,14 @@
                             </div>
                             <div class="content-box">
                                 <div class="post-author">
-                                    <p class="pr-3"><i class="fas fa-map-marker-alt"></i> Localité :<span class="fs-10">
-                                            {{ $estate->location }}</span>
-                                        <i class="fas fa-ruler-combined"></i>
-                                        <span class="ml-3"> {{ number_format($estate->area, 0, ',', ' ') }}
+                                    <div ><i class="fas fa-map-marker-alt"></i> Localité :<span class="fs-10">
+                                            {{ $estate->location }} </span>
+                                       <span style="float: right;">
+                                         <i class="fas fa-ruler-combined ml-3"></i>
+                                        <span > {{ number_format($estate->area, 0, ',', ' ') }}
                                             m<sup><span>2</span></sup></span>
-                                    </p>
+                                       </span>
+                                    </div>
                                 </div>
                                 <div class="post-author">
                                     <p class="fs-6"> <i class="fas fa-city"></i> Ville :<span class=" text text-success">
@@ -85,11 +87,9 @@
                                     </p>
                                 </div>
 
-
                                 <p class="description mb-2"><i class="icon icon-note"></i> <small
                                         style="text-align: justify"
                                         style="font-style: italic">{{ $estate->description }}</small></p>
-
 
                                 <p class="description" style="float: right"><i class="icon icon-calendar"></i> <small
                                         style="font-style: italic">posté le

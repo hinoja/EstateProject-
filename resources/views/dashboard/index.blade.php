@@ -3,7 +3,7 @@
 @section('content')
     <div class="main-content">
         <div class="main-content-inner">
-          
+
             <div class="flat-counter-v2 tf-counter">
                 <div class="counter-box">
                     <div class="box-icon w-68 round">
@@ -28,23 +28,11 @@
                         <div class="d-flex align-items-end">
                             <h6 class="number" data-speed="2000" data-to="17" data-inviewport="yes">{{ $estates }}
                             </h6>
-                            {{-- <span class="fw-7 text-variant-2">/17 remaining</span> --}}
-                        </div>
+                         </div>
 
                     </div>
                 </div>
-                {{-- <div class="counter-box">
-                    <div class="box-icon w-68 round">
-                        <span class="icon icon-clock-countdown"></span>
-                    </div>
-                    <div class="content-box">
-                        <div class="title-count">Pending</div>
-                        <div class="d-flex align-items-end">
-                            <h6 class="number" data-speed="2000" data-to="0" data-inviewport="yes">0</h6>
-                        </div>
 
-                    </div>
-                </div> --}}
 
                 <div class="counter-box">
                     <div class="box-icon w-68 round">
