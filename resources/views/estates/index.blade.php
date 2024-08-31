@@ -5,7 +5,7 @@
 
     <meta name="description" content="@yield('meta_description', 'Découvrez notre liste complète de propriétés disponibles à l\'achat ou à la location au Cameroun. Parcourez les offres et trouvez votre prochain terrain ou maison.')">
     <meta name="keywords" content="@yield('meta_keywords', 'immobilier Cameroun, achat terrain, vente propriété, location immobilière, Well Done Real Estate SCI, terrains à douala,terrain à louer ,terrain à KAKE,terrain à Missole ,terrain à Mbanga,terrain à acheter à SOUZA ,agence immobilièere au cameroun')">
-
+    <meta name="msvalidate.01" content="DC5ABB857EEC63973701106D742FB9C9" />
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="@yield('og_title', 'Well Done Real Estate SCI | Achat, Vente et Location de Propriétés au Cameroun')">
     <meta property="og:description" content="@yield('og_description', 'Well Done Real Estate SCI vous accompagne dans tous vos projets immobiliers. Découvrez nos offres au Cameroun.')">

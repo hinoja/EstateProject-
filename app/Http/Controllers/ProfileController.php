@@ -31,7 +31,7 @@ class ProfileController extends Controller
 
         // if (isset($request->avatar)) {
         $user = User::find($request->user()->id);
-        // dd($request);
+        // dd($user);
         // $filename_chemin = 'avatars/' . $user->id . '.' . $user->avatar->getClientOriginalExtension();
 
         // $filename = $user->id . '.' . $user->avatar->getClientOriginalExtension();

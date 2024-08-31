@@ -43,7 +43,6 @@ class ManageEstate extends Component
         $this->dispatch('openModal');
     }
 
- 
 
     public function addEstate()
     {
@@ -74,8 +73,8 @@ class ManageEstate extends Component
         $this->image->storeAs('public/estates', $filename);
         $estate->save();
 
-        Toastr()->success("l'Utilisateur a été crée ");
-        $this->alert('success', "l'Utilisateur a été crée");
+        Toastr()->success("Un Site a été ajouté avec  ");
+        $this->alert('success', "Un Site a été ajouté avec succès");
         $this->resetAttributes();
         $this->closeModal();
     }
@@ -97,8 +96,8 @@ class ManageEstate extends Component
     {
         $this->deleteEstate = Estate::find($this->deleteId);
         $this->deleteEstate->delete();
-        Toastr()->success("Le terrain a été supprimé");
-        $this->alert('success', "Le terrain a été supprimé");
+        Toastr()->success("Le Site a été supprimé");
+        $this->alert('success', "Le Site a été supprimé");
         $this->closeModal();
     }
 
