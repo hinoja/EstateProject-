@@ -43,8 +43,9 @@
                                         <button type="submit"
                                             class="tf-btn primary btn-hover">@lang('Search')</button>
                                     @else
-                                        <button style=" background: rgb(81,132,197)" type="reset"
-                                            class="tf-btn primary btn-hover">@lang('Reset')</button>
+                                        <a style="background: rgb(81,132,197)" type="reset"
+                                            class="tf-btn primary btn-hover"
+                                            href="{{ route('estates.index') }}">@lang('Reset')</a>
                                     @endif
 
                                 </div>
