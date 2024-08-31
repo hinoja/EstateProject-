@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msvalidate.01" content="DC5ABB857EEC63973701106D742FB9C9" />
     <!-- SEO Integration -->
     {!! seo() !!}
 
