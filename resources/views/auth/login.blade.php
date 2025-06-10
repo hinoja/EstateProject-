@@ -25,16 +25,18 @@
                 <label for="password" class="form-label fw-medium mb-2">@lang('Password')</label>
                 <div class="input-group">
                     <input type="password" id="password" name="password"
-                        class="form-control @error('password') is-invalid @enderror"
+                        class="form-control style-1 password-field @error('password') is-invalid @enderror"
                         required>
-                    <span class="icon-pass">
-                        <i class="fas fa-eye" id="togglePassword"></i>
-                    </span>
+                        <span class="show-pass p-0 m-0">
+                            <i class="icon-pass icon-eye"></i>
+                            <i class="icon-pass icon-eye-off"></i>
+                        </span>
                 </div>
                 @error('password')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
+
 
             <div class="d-flex justify-content-between align-items-center mt-4">
                 <div class="custom-control custom-checkbox">
@@ -47,6 +49,8 @@
                     </a>
                 @endif
             </div>
+
+
 
 
             <button   type="submit" class=" btn btn-primary  w-100 mt-4 tx">@lang('Log in')</button>
