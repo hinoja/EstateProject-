@@ -63,17 +63,27 @@ class DashboardController extends Controller
 
         // Formater les données pour les graphiques
         $visitLabels = $visitorData->map(function ($item) {
-            return $item['date']->format('D');
+            return \Carbon\Carbon::parse($item->date)->format('D'); // ✅ Utilise ->date
         })->toArray();
 
-        $visitData = $visitorData->pluck('visitors')->toArray();
-        $pageViewData = $visitorData->pluck('pageViews')->toArray();
+        $visitData = $visitorData->map(function ($item) {
+            return $item->visitors;
+        })->toArray();
+
+        $pageViewData = $visitorData->map(function ($item) {
+            return $item->pageViews;
+        })->toArray();
+
         $totalVisitors = array_sum($visitData);
 
         // Récupérer les sources de trafic
         $trafficSources = $this->analyticsService->getTrafficSources($days);
-        $sourceLabels = $trafficSources->pluck('source')->toArray();
-        $sourceData = $trafficSources->pluck('sessions')->toArray();
+        $sourceLabels = $trafficSources->map(function ($item) {
+            return $item->source;
+        })->toArray();
+        $sourceData = $trafficSources->map(function ($item) {
+            return $item->sessions;
+        })->toArray();
 
         // Récupérer les pages les plus visitées
         $topPages = $this->analyticsService->getTopPages($days);
@@ -89,5 +99,3 @@ class DashboardController extends Controller
         ];
     }
 }
-
-

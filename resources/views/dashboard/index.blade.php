@@ -158,20 +158,16 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($topPages as $page)
+                                        <!-- Pour les données de visite -->
+                                        @foreach($topPages as $page)
                                             <tr>
-                                                {{-- <td>{{ $page->page_url }}</td>
-                                            <td>{{ $page->views }}</td> --}}
+                                                <td>{{ $page->page_url }}</td>
+                                                <td>{{ $page->views }}</td>
+                                                @php
+                                                    $bounceRate = rand(20, 70);
+                                                    $badgeClass = $bounceRate < 40 ? 'bg-success' : ($bounceRate < 55 ? 'bg-warning' : 'bg-danger');
+                                                @endphp
                                                 <td>
-                                                    @php
-                                                        $bounceRate = rand(20, 70);
-                                                        $badgeClass =
-                                                            $bounceRate < 40
-                                                                ? 'bg-success'
-                                                                : ($bounceRate < 55
-                                                                    ? 'bg-warning'
-                                                                    : 'bg-danger');
-                                                    @endphp
                                                     <span class="badge {{ $badgeClass }}">{{ $bounceRate }}%</span>
                                                 </td>
                                             </tr>
