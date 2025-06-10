@@ -114,9 +114,9 @@
                                                 class="nav-menu-link" href="{{ route('dashboard.estates') }}"><span
                                                     class="icon icon-list-dashes"></span>Terrains</a></li>
 
-                                                    <li class="nav-menu-item @if (Str::contains($currentUri, 'profil')) active @endif"><a
-                                                        class="nav-menu-link" href="{{ route('profile.edit') }}"><span
-                                                            class="icon icon-profile"></span>Profile</a></li>
+                                        <li class="nav-menu-item @if (Str::contains($currentUri, 'profil')) active @endif"><a
+                                                class="nav-menu-link" href="{{ route('profile.edit') }}"><span
+                                                    class="icon icon-profile"></span>Profile</a></li>
 
 
 
@@ -124,7 +124,7 @@
                                 <div class="mobi-icon-box">
                                     <div class="button-mobi-sell">
 
-                                     </div>
+                                    </div>
                                     <div class="box d-flex align-items-center">
                                         <span class="icon icon-phone2"></span>
                                         <div>(+237) 6 99 59 19 92</div>
@@ -179,6 +179,18 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <x-livewire-alert::scripts />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-72L2N05SRQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-72L2N05SRQ');
+    </script>
     <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
     {!! Toastr::message() !!}

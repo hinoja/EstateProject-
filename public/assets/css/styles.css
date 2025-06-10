@@ -2,7 +2,7 @@
     * Name: Homzen
     * Version: 1.0.0
     * Author: Themesflat
-    * Author URI: http://themesflat.com 
+    * Author URI: http://themesflat.com
 
 	* Abstracts variable
 
@@ -1436,7 +1436,7 @@ label {
   display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Mobile Menu
@@ -2317,6 +2317,101 @@ label {
   opacity: 0.6;
 }
 .flat-slider.home-1 .slider-content {
+  /* Ajoutez ces styles à la fin de votre fichier CSS */
+
+  /* Dashboard modern styles */
+  .dashboard-header {
+    padding: 1.5rem 0;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .bg-primary-soft {
+    background-color: rgba(13, 110, 253, 0.15);
+  }
+
+  .bg-success-soft {
+    background-color: rgba(25, 135, 84, 0.15);
+  }
+
+  .bg-warning-soft {
+    background-color: rgba(255, 193, 7, 0.15);
+  }
+
+  .bg-info-soft {
+    background-color: rgba(13, 202, 240, 0.15);
+  }
+
+  .flat-counter-v2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .flat-counter-v2 .counter-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flat-counter-v2 .counter-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+
+  .card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.5rem;
+  }
+
+  .avatar-initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .list-group-item {
+    padding: 1rem 1.5rem;
+    border-left: none;
+    border-right: none;
+  }
+
+  .table {
+    margin-bottom: 0;
+  }
+
+  .table th {
+    font-weight: 600;
+    border-top: none;
+  }
+
+  .badge {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .flat-counter-v2 {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+}
   position: relative;
   z-index: 1;
   padding: 233px 0px;
@@ -10091,5 +10186,6 @@ tr {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
 
 

@@ -1,62 +1,82 @@
 <div>
-    <div class="widget-box-2 ">
-        <h6>Utilisateurs <small class="mr-5">({{ $totalUsers }}) </small><span wire:click="showCreateForm()"
-                class="btn btn-primary" style="background-color: rgb(81,132,197)"> <i class="fa fa-plus"
-                    style="color: white"></i></span></h6>
+    <div class="widget-box-2">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="d-flex align-items-center">
+                <h6 class="mb-0 me-3">Utilisateurs</h6>
+                <span class="badge bg-primary rounded-pill">{{ $totalUsers }}</span>
+            </div>
+            <button wire:click="showCreateForm()" class="btn btn-primary d-flex align-items-center">
+                <i class="fas fa-user-plus me-2"></i>
+                <span>Ajouter un utilisateur</span>
+            </button>
+        </div>
         <div class="wrap-table">
             <div class="card">
 
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-striped ">
-                            <thead>
+                        <table class="table table-hover align-middle">
+                            <thead class="bg-light">
                                 <tr>
-                                    <th class="text-center">#</th>
+                                    <th class="text-center" width="60">#</th>
                                     <th>@lang('Name')</th>
                                     <th>@lang('Email')</th>
                                     <th>@lang('Status')</th>
                                     <th>@lang('Role')</th>
-                                    <th>Action</th>
+                                    <th width="150">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($users as $user)
                                     <tr>
                                         <td class="text-center">{{ $loop->iteration }}</td>
-                                        <td>{{ $user->name }}
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-3">
+                                                    <span class="avatar-initial rounded-circle bg-primary">
+                                                        {{ substr($user->name, 0, 1) }}
+                                                    </span>
+                                                </div>
+                                                <div>{{ $user->name }}</div>
+                                            </div>
                                         </td>
-                                        <td>{{ $user->email }} </td>
+                                        <td>{{ $user->email }}</td>
                                         <td>
                                             @if ($user->is_active)
-                                                <div class="py-2 px-2">
-                                                    <span style="background-color: rgb(81,132,197)"
-                                                        class="py-1 px-3 rounded-full text-white badge-pill waves-effect text-lg  ">
-                                                        Actif </span>
-                                                </div>
+                                                <span class="badge bg-success rounded-pill px-3 py-2">
+                                                    <i class="fas fa-check-circle me-1"></i> Actif
+                                                </span>
                                             @else
-                                                <div class="py-2 px-2">
-                                                    <span
-                                                        class="py-1 px-3 rounded-full text-white badge-pill waves-effect text-lg bg-dark ">
-                                                        Bloqué</span>
-                                                </div>
+                                                <span class="badge bg-danger rounded-pill px-3 py-2">
+                                                    <i class="fas fa-ban me-1"></i> Bloqué
+                                                </span>
                                             @endif
                                         </td>
                                         <td>
-                                            {{ $user->role->name }}
+                                            <span class="badge bg-info rounded-pill px-3 py-2">
+                                                <i class="fas fa-user-tag me-1"></i> {{ $user->role->name }}
+                                            </span>
                                         </td>
                                         <td>
-                                            <div style="display: inline-block;">
-                                                @if ($user->role_id > 1)
+                                            <div class="d-flex gap-2">
+                                                @if ($user->id !== auth()->id())
                                                     @if ($user->is_active)
                                                         <button wire:click="updateStatus({{ $user }})"
-                                                            title=" {{ __('Block') }} "
-                                                            class="btn btn-icon icon-left btn-danger"> <i
-                                                                class="fa fa-lock"></i></button>
+                                                            class="btn btn-sm btn-danger" title="{{ __('Block') }}">
+                                                            <i class="fas fa-user-lock"></i>
+                                                        </button>
                                                     @else
                                                         <button wire:click="updateStatus({{ $user }})"
-                                                            title=" {{ __('Unblock') }} "
-                                                            class="btn btn-icon icon-left btn-primary"> <i
-                                                                class="fa fa-lock-open"></i></button>
+                                                            class="btn btn-sm btn-success" title="{{ __('Unblock') }}">
+                                                            <i class="fas fa-user-check"></i>
+                                                        </button>
+                                                    @endif
+                                                    @if ($user->role_id === 3)
+                                                        <button wire:click="showEditForm({{ $user }})"
+                                                            class="btn btn-sm btn-warning"
+                                                            title="Mettre à jour le rôle">
+                                                            <i class="fas fa-user-edit"></i>
+                                                        </button>
                                                     @endif
                                                     @if ($user->role_id === 3)
                                                         <button wire:click="showEditForm({{ $user }})"
@@ -70,11 +90,11 @@
                                                                 class="fas fa-arrow-down"></i></button>
                                                     @endif
                                                     <button wire:click="showDeleteForm({{ $user }})"
-                                                        title=" {{ __('Delete') }}"
-                                                        class="btn btn-icon icon-left btn-outline-danger"> <i
-                                                            class="fa fa-trash"></i></button>
+                                                        class="btn btn-sm btn-outline-danger"
+                                                        title="{{ __('Delete') }}">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </button>
                                                 @endif
-
                                             </div>
                                         </td>
                                     </tr>

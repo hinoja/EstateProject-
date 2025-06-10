@@ -64,12 +64,16 @@
                             </li>
                             <li class="box">
                                 <div class="text-1 title">Infomations:</div>
-                                <p class="p-16 text-variant-1">(+237) 6 99 59 19 92<br> <a
-                                        href="mailto:contact@welldonerealestatesci.com">contact@welldonerealestatesci.com</a>
+                                <p class="p-16 text-variant-1">
+                                    <i style="color:red;" class="fas fa-phone"></i> (+237) 6 99 59 19 92<br>
+                                    <i style="color:red;" class="fas fa-phone"></i> (+237) 6 87 50 39 36 <br>
+                                    <a href="mailto:contact@welldonerealestatesci.com"> <i style="color:red;"
+                                            class="fas fa-envelope"></i>
+                                        contact@welldonerealestatesci.com</a>
                                 </p>
                             </li>
                             <li class="box">
-                                <div class="text-1 title">Ouvert:</div>
+                                <div class="text-1 title"> <i style="color:red;" class="fas fa-clock "></i> Ouvert:</div>
                                 <p class="p-16 text-variant-1">Lundi - Vendredi : 08:00 - 18:00 <br> Samedi : 10:00 -
                                     15:00</p>
 

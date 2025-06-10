@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             UserSeeder::class,
         ]);
+        
         if (!app()->environment('production')) {
             User::factory(5)->create();
             Contact::factory()->count(5)->create();
