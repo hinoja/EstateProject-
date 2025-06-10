@@ -3,63 +3,71 @@
 @section('title', __('Log in'))
 
 @section('content')
-    <div class="card card-danger ">
-        <div class="flat-account bg-surface">
-
-            <h5 class="title text-center">@lang('Log in')</h5>
-
-            <form method="POST" class="row gap-3" action="{{ route('login') }}">
-                @csrf
-                <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-                    <label for="email" class="control-label">@lang('Email')</label>
-                    <input style="height: 2.5rem;" id="email" type="email"
-                        class="form-control  @error('email') is-invalid @enderror" name="email"
-                        value="{{ old('email') }}" tabindex="1" required autofocus>
-                    @error('email')
-                        <small style="font-size: 11px;" class="small invalid-feedback">{{ $message }}</small>
-                    @enderror
-                </div>
-                <br>
-                <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-                    <label for="password" class="control-label">@lang('Password')</label>
-                    <div class="box-password">
-                        <input style="height: 2.5rem;" type="password" type="password" name="password" tabindex="2"
-                            required class="form-contact style-1 password-field" placeholder="Password">
-                        <span class="show-pass p-0 m-0">
-                            <i class="icon-pass icon-eye"></i>
-                            <i class="icon-pass icon-eye-off"></i>
-                        </span>
-                    </div>
-                    @error('password')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-
-                <div class="d-flex justify-content-between flex-wrap gap-12">
-                    <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="remember" class="custom-control-input" tabindex="3"
-                                id="remember-me">
-                            <label class="custom-control-label" for="remember-me">@lang('Remember Me')</label>
-                        </div>
-                    </div>
-                    <div class="float-right">
-                        @if (Route::has('password.request'))
-                            <small><a href="{{ route('password.request') }}"
-                                    class="caption-1 text-primary">@lang('Forgot your password?')</a></small>
-                        @endif
-                    </div>
-                </div>
-
-                <button type="submit" class="tf-btn primary w-80 text-center">@lang('Log in')</button>
-
-
-                <small class="float-left fs-12"><a href="{{ route('home') }}" style="color: rgb(81,132,197)"
-                        class="text-small"><i class="fas fa-arrow-left"></i>
-                        @lang('Back to home')</a>
-
-            </form>
-
+    <div class="auth-card">
+        <div class="text-center mb-4">
+            <h4 class="text-primary mb-2">Bienvenue à nouveau !</h4>
+            <p class="text-muted"> Veuillez vous connecter à votre compte </p>
         </div>
+
+        <form method="POST" action="{{ route('login') }}" class="space-y-4">
+            @csrf
+            <div class="form-group">
+                <label for="email" class="form-label fw-medium mb-2">@lang('Email')</label>
+                <input type="email" id="email" name="email"
+                    class="form-control @error('email') is-invalid @enderror"
+                    value="{{ old('email') }}" required autofocus>
+                @error('email')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="password" class="form-label fw-medium mb-2">@lang('Password')</label>
+                <div class="input-group">
+                    <input type="password" id="password" name="password"
+                        class="form-control @error('password') is-invalid @enderror"
+                        required>
+                    <span class="icon-pass">
+                        <i class="fas fa-eye" id="togglePassword"></i>
+                    </span>
+                </div>
+                @error('password')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="remember" class="custom-control-input" id="remember-me">
+                    <label class="custom-control-label" for="remember-me">@lang('Remember Me')</label>
+                </div>
+                @if (Route::has('password.request'))
+                    <a href="{{ route('password.request') }}" class="text-primary text-decoration-none">
+                        @lang('Forgot your password?')
+                    </a>
+                @endif
+            </div>
+
+
+            <button   type="submit" class=" btn btn-primary  w-100 mt-4 tx">@lang('Log in')</button>
+
+            <div class="text-center mt-4">
+                <a href="{{ route('home') }}" class="text-muted text-decoration-none">
+                    <i class="fas fa-arrow-left me-2"></i>@lang('Back to home')
+                </a>
+            </div>
+        </form>
     </div>
+
+    @push('js')
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const password = document.getElementById('password');
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+    @endpush
 @endsection

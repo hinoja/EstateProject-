@@ -1,46 +1,37 @@
 @extends('layouts.AppAuth')
 @section('title', __('Forgot Password'))
 @section('content')
-    <div class="card card-danger ">
-        <div class="flat-account bg-surface">
-
-            <h6 class="title text-center mb-4 text-gray-600">
-                {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-
-            </h6>
-
-            <x-auth-session-status class="mb-4 text text-primary" :status="session('status')" />
-
-            <form method="POST" action="{{ route('password.email') }}">
-                @csrf
-                <!-- Email Address -->
-                <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-                    <label for="email" class="control-label">@lang('Email')</label>
-                    <input style="height: 2.5rem;" id="email" type="email"
-                        class="form-control  @error('email') is-invalid @enderror" name="email"
-                        value="{{ old('email') }}" tabindex="1" required autofocus>
-                    @error('email')
-                        <small style="font-size: 11px;" class="small invalid-feedback">{{ $message }}</small>
-                    @enderror
-                </div>
-                <br>
-
-
-                <div class="d-flex justify-content-between flex-wrap gap-12">
-
-
-                </div>
-
-                <button type="submit" style="background-color: rgb(237,44,89): auto;margin-right: auto;"
-                    class="tf-btn primary w-100 ">{{ __('Email Password Reset Link') }}</button>
-
-
-                <small class="float-left fs-12"><a href="{{ route('home') }}" style="color: rgb(81,132,197)"
-                        class="text-small"><i class="fas fa-arrow-left"></i>
-                        @lang('Back to home')</a>
-
-            </form>
-
+    <div class="auth-card">
+        <div class="text-center mb-4">
+            <h4 class="text-primary mb-2">@lang('Mot de passe oublié ?')</h4>
+            <p class="text-muted">
+                {{ __('Pas de problème. Indiquez-nous simplement votre adresse e-mail et nous vous enverrons un lien de réinitialisation qui vous permettra d\'en choisir un nouveau.') }}
+            </p>
         </div>
+
+        <x-auth-session-status class="alert alert-success mb-4" :status="session('status')" />
+
+        <form method="POST" action="{{ route('password.email') }}" class="space-y-4">
+            @csrf
+            <div class="form-group">
+                <label for="email" class="form-label fw-medium mb-2">@lang('Email')</label>
+                <input type="email" id="email" name="email"
+                    class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required
+                    autofocus>
+                @error('email')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <button style="border-top: 10px;"  type="submit" class="tx  w-100 mt-8 ">
+                @lang('Envoyer le lien de réinitialisation')
+            </button>
+
+            <div class="text-center mt-4">
+                <a href="{{ route('login') }}" class="text-muted text-decoration-none">
+                    <i class="fas fa-arrow-left me-2"></i>@lang('Retour à la connexion')
+                </a>
+            </div>
+        </form>
     </div>
 @endsection
