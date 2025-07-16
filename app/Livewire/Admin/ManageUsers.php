@@ -52,8 +52,11 @@ class ManageUsers extends Component
             'role_id' => 3, //editor
             'password' => Hash::make($newData['password'])
         ]);
-        Toastr()->success("l'Utilisateur a été crée ");
+        // Toastr()->success("l'Utilisateur a été crée ");
+        $this->alert('success', "l'Utilisateur a été crée avec succès");
 
+
+        session()->flash('success', "l'Utilisateur a été crée");
 
         $this->closeModal();
     }
@@ -88,6 +91,9 @@ class ManageUsers extends Component
         $EditUser->save();
         // Toastr()->success("l'utilisateur a été supprimé");
         $this->alert('success', "Le rôle a été mis a jour avec succès");
+
+        session()->flash('success', "Le rôle a été mis a jour avec succès");
+
         $this->closeModal();
     }
 
@@ -102,8 +108,11 @@ class ManageUsers extends Component
     {
         $this->deleteUser = User::find($this->deleteId);
         $this->deleteUser->delete();
-        Toastr()->success("l'utilisateur a été supprimé");
-        $this->alert('success', "l'utilisateur a été supprimé");
+        // Toastr()->success("l'utilisateur a été supprimé");
+        // $this->alert('success', "l'utilisateur a été supprimé");
+
+        session()->flash('success', "l'utilisateur a été supprimé");
+
         $this->closeModal();
     }
 
@@ -130,6 +139,8 @@ class ManageUsers extends Component
         };
 
         $this->alert('success', $message);
+
+        session()->flash('success', $message);
 
         return back();
     }

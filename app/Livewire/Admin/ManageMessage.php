@@ -53,11 +53,14 @@ class ManageMessage extends Component
         Notification::send($contact, new ResponseNotification($data));
 
         $this->closeModal();
-        Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
+
+        // Toastr()->success(trans('The response was successfully sent to ') . $contact->name);
 
         $this->alert('success', trans('The response was successfully sent to ') . $contact->name,);
 
         // toast(trans('The response was successfully sent to ') . $contact->name, 'success');
+
+        // session()->flash('success', trans('The response was successfully sent to ') . $contact->name);
 
         return redirect()->route('dashboard.messages');
     }
